@@ -41,7 +41,7 @@ void listing_4_24()
     // misdeed
     //a1[-2] = 20.2;
     //std::cout << "a1[-2]: " << a1[-2] << " at " << &a1[-2] << '\n';
-    
+    //Finaly!
     
     
     
