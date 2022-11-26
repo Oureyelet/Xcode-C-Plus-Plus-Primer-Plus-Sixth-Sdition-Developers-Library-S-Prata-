@@ -39,16 +39,18 @@ void listing_4_24()
     std::cout << "a4[2]: " << a4[2] << " at " << &a4[2] << '\n';
     
     // misdeed
-    //a1[-2] = 20.2;
-    //std::cout << "a1[-2]: " << a1[-2] << " at " << &a1[-2] << '\n';
-    //Finaly!
+    *(a1-2) = 20.2; // same as *(a1-2) mean where a1 point move backword two doubles elements
+                   // this is an example of the unsafe behavior of build-in array
+    std::cout << "*(a1-2): //is same as a1[-2] " << *(a1-2) << " at " << &a1-2 << '\n';
+    std::cout << "a3[2]: " << a3[2] << " at " << &a3[2] << '\n';
+    std::cout << "a4[2]: " << a4[2] << " at " << &a4[2] << '\n';
     
+    // Vector object is stored in free store or heap region of memory
     
-    
-    
-    
-    
-    
+    a4.at(3) = 3.33; // assign 3.33 to a4[4]
+    /*The difference between using bracket notation and the at() member function is that if you use at(), an invalid index is caught during runtime and the program, by default, aborts.*/
+
+    exit(0);
 }
 
 #endif /* Listinng_h */

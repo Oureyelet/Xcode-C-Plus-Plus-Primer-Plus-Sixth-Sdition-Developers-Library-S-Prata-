@@ -45,15 +45,83 @@ int main()
     //unlike the case of vector, size of array can't be variable.
     
     
-    //--------------------------------------------------------------------------------------------
-    // Comparing Arrays, Vector Object and Array Objects:
-    //--------------------------------------------------------------------------------------------
-    
+    //-----------------------------------------------------------------------------------------------------
+    // Comparing Arrays, Vector Object and Array Objects: check example here -> "Listing 4.24 choices.h"
+    //-----------------------------------------------------------------------------------------------------
     
     listing_4_24();
     
+    //-----------------------------------------------------------------------------------------------------
+    // Summary:
+    //-----------------------------------------------------------------------------------------------------
     
     
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Chapter Review:
+    //-----------------------------------------------------------------------------------------------------
+    /*
+     
+     1. How would you declare each of the following?
+         a. actors is an array of 30 char.
+            - char actors[30];
+         b. betsie is an array of 100 short.
+            - short betsid[100];
+         c. chuck is an array of 13 float.
+            - float chuck[13];
+         d. dipsea is an array of 64 long double.
+            - double dipsea[64];
+     
+     2. Does Chapter Review Question 1 use the array template class instead of built-in
+     arrays.
+        - std::array<char, 30> actors;
+        - std::array<short, 100> betsid;
+        - std::array<float, 13> chuck;
+        - std::array<double, 64> dipsea;
+     
+     3. Declare an array of five ints and initialize it to the first five odd positive integers.
+        - std::array<int, 5> odd_positive_int = {1, 3, 5, 7, 9 , 11};
+        - int odd_positive_int[5] = {1, 3, 5, 7, 9 , 11};
+     
+     4. Write a statement that assigns the sum of the first and last elements of the array in Question 3 to the variable even.
+        - int even = odd_positive_int[0] + odd_positive_int[4];
+     
+     5. Write a statement that displays the value of the second element in the float array ideas.
+     
+     6. Declare an array of char and initialize it to the string "cheeseburger".
+     
+     7. Declare a string object and initialize it to the string "Waldorf Salad".
+     
+     8. Devise a structure declaration that describes a fish.The structure should include the kind, the weight in whole ounces, and the length in fractional inches.
+     
+     9. Declare a variable of the type defined in Question 8 and initialize it.
+     
+     10. Use enum to define a type called Response with the possible values Yes, No, and
+     Maybe. Yes should be 1, No should be 0, and Maybe should be 2.
+     
+     11. Suppose ted is a double variable. Declare a pointer that points to ted and use the
+     pointer to display ted’s value.
+     
+     12. Supposetreacleisanarrayof10floats.Declareapointerthatpointstothefirstele-
+     ment of treacle and use the pointer to display the first and last elements of the array.
+     
+     13. Write a code fragment that asks the user to enter a positive integer and then cre- ates a dynamic array of that many ints. Do this by using new, then again using a vector object.
+     Chapter Review 191
+                                             192 Chapter 4 Compound Types
+     
+     14. Is the following valid code? If so, what does it print?
+     cout << (int *) “Home of the jolly bytes”;
+     
+     15. Write a code fragment that dynamically allocates a structure of the type described in Question 8 and then reads a value for the kind member of the structure.
+     
+     16. Listing 4.6 illustrates a problem created by following numeric input with line-ori- ented string input. How would replacing this:
+     cin.getline(address,80);
+     with this:
+     cin >> address;
+     affect the working of this program?
+     
+     17. Declare a vector object of 10 string objects and an array object of 10 string objects. Show the necessary header files and don’t use using. Do use a const for the number of strings.
+     */
     
     return 0;
 }
