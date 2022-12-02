@@ -26,6 +26,7 @@
 		B87B06EA292988F600F1115A /* C++ Primer Plus 6th Edytion Stephen Prata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ Primer Plus 6th Edytion Stephen Prata"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87B06ED292988F600F1115A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
+		B88E166D2936968800F1FB17 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B825D7C02939C8F10004DAB3 /* Chapter 4 Compound Types  */ = {
+			isa = PBXGroup;
+			children = (
+				B88E166D2936968800F1FB17 /* test.h */,
+				B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */,
+				B87B06ED292988F600F1115A /* main.cpp */,
+			);
+			path = "Chapter 4 Compound Types ";
+			sourceTree = "<group>";
+		};
 		B87B06E1292988F600F1115A = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +69,7 @@
 		B87B06EC292988F600F1115A /* C++ Primer Plus 6th Edytion Stephen Prata */ = {
 			isa = PBXGroup;
 			children = (
-				B87B06ED292988F600F1115A /* main.cpp */,
-				B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */,
+				B825D7C02939C8F10004DAB3 /* Chapter 4 Compound Types  */,
 			);
 			path = "C++ Primer Plus 6th Edytion Stephen Prata";
 			sourceTree = "<group>";

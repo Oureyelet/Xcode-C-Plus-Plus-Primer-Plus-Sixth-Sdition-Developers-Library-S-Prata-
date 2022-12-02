@@ -8,10 +8,15 @@
 #include <vector>
 #include <array>
 #include "Listing 4.24 choices.h"
+#include "test.h"
+
+//functions prototypes:
+void test2();
+
+
 
 int main()
 {
-
     std::cout << "Hello, World\n";
     
     
@@ -32,7 +37,7 @@ int main()
     int n;
     std::cin >> n;
     
-    std::vector<double> vd(n);  // create an array of n doubles
+    std::vector<int> vd(n);  // create an array of n doubles
     
     std::cout << "vd vector size is: " <<vd.size() << '\n';
     
@@ -87,32 +92,96 @@ int main()
         - int even = odd_positive_int[0] + odd_positive_int[4];
      
      5. Write a statement that displays the value of the second element in the float array ideas.
+        - float ideas[4] = {3.3, 5.5, 6.7, 23.3};
+        - std::cout << ideas[1] << '\n';
      
      6. Declare an array of char and initialize it to the string "cheeseburger".
+        - char meal[13] = "cheeseburger". // number of characters + 1 (null character on the end of any strings)
      
      7. Declare a string object and initialize it to the string "Waldorf Salad".
+        - std::string question7{ "Waldorf Salad" };
+        - std::string question7 = "Waldorf Salad";
+     
      
      8. Devise a structure declaration that describes a fish.The structure should include the kind, the weight in whole ounces, and the length in fractional inches.
      
+        struct Fish
+        {
+            std::string kind; // or char kind[20];
+            int weight;
+            double lenght; // or float lennght;
+        };
+     
      9. Declare a variable of the type defined in Question 8 and initialize it.
+        
+        Fish fish;
+        fish.kind = "salmon";
+        fish.weight = 15;
+        fish.lenght = 3.3;
+     
+     or:
+     
+         Fish salmon =
+         {
+             "Salmon",
+             12,
+             3.3
+         };
      
      10. Use enum to define a type called Response with the possible values Yes, No, and
      Maybe. Yes should be 1, No should be 0, and Maybe should be 2.
      
+        enum Response
+        {
+            no,
+            yes,
+            maybe
+        };
+     
      11. Suppose ted is a double variable. Declare a pointer that points to ted and use the
      pointer to display ted’s value.
+        
+        double ted = 12.2;
+        double* ptr_ted = &ted;
+        std::cout << *ptr_ted << '\n';
      
-     12. Supposetreacleisanarrayof10floats.Declareapointerthatpointstothefirstele-
+     12. Suppose treacle is an array of 10 floats. Declare a pointer that points to the first ele-
      ment of treacle and use the pointer to display the first and last elements of the array.
      
+         float treacle[10] = {12.2, 34.4, 23.1, 67.4, 23.5, 7.5, 23.2, 89.3, 44.6, 9.6};
+         float* ptr_treacle = treacle;
+         std::cout << *treacle << treacle[9] << '\n';
+         
      13. Write a code fragment that asks the user to enter a positive integer and then cre- ates a dynamic array of that many ints. Do this by using new, then again using a vector object.
-     Chapter Review 191
-                                             192 Chapter 4 Compound Types
+        
+        std::cout << "enter a positive integer: "
+        int x;
+        std::cin >> x;
+        int* array_x = new int[x];
+        delete [] array_x;
+        std::vector<int> vd(n);
+            
      
      14. Is the following valid code? If so, what does it print?
-     cout << (int *) “Home of the jolly bytes”;
+     cout << (int *) "Home of the jolly bytes";
+        - we are casting string into int and then print adress of this int
      
      15. Write a code fragment that dynamically allocates a structure of the type described in Question 8 and then reads a value for the kind member of the structure.
+         
+        struct Fish
+        {
+         std::string kind; // or char kind[20];
+         int weight;
+         double lenght; // or float lennght;
+        };
+     
+        Fish* ptr_struct = new Fish;
+
+        std::cout << "Enter the kind of fish: ";
+        std::getline(std::cin, ptr_struct->kind);
+
+        std::cout << ptr_struct->kind << " was created.\n";
+        
      
      16. Listing 4.6 illustrates a problem created by following numeric input with line-ori- ented string input. How would replacing this:
      cin.getline(address,80);
@@ -123,5 +192,11 @@ int main()
      17. Declare a vector object of 10 string objects and an array object of 10 string objects. Show the necessary header files and don’t use using. Do use a const for the number of strings.
      */
     
+    std::cout << "Fininsh :)" << '\n';
     return 0;
+}
+
+void test2()
+{
+    
 }
