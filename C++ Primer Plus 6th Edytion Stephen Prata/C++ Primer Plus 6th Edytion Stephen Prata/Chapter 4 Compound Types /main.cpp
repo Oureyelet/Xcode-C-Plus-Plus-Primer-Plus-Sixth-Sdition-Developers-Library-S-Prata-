@@ -200,8 +200,6 @@ int main()
         const std::array<std::string, 10> ten_object_array{};
     */
     
-    std::cout << "Fininsh :)" << '\n';
-    //std::cin.get();
     return 0;
 }
 
