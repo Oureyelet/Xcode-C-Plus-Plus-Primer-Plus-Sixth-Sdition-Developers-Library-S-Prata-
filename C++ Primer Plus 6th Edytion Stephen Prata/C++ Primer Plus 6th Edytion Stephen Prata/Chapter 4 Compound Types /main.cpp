@@ -10,8 +10,8 @@
 #include "Listing 4.24 choices.h"
 #include "test.h"
 
-//functions prototypes:
-void test2();
+//Programmin Exercises functions prototype:
+void Programming_exercises_1();
 
 
 
@@ -188,15 +188,36 @@ int main()
      with this:
      cin >> address;
      affect the working of this program?
+        - so my answer is if we changed the cin.getline() to just std::cin >>... we only will be able to read string until fist 'space' where cin.getlinne() read our whole input (line)
      
      17. Declare a vector object of 10 string objects and an array object of 10 string objects. Show the necessary header files and don’t use using. Do use a const for the number of strings.
-     */
+     
+        const std::vector<std::string> ten_object_vector(10);
+        or:
+        const std::vector<std::string> ten_object_vector{};
+        ten_object_vector.reserve(10);
+
+        const std::array<std::string, 10> ten_object_array{};
+    */
     
     std::cout << "Fininsh :)" << '\n';
+    //std::cin.get();
     return 0;
 }
 
-void test2()
+void Programming_exercises_1()
 {
+    /*
+        Write a C++ program that requests and displays information as shown in the fol- lowing example of output:
+        What is your first name? Betty Sue
+        What is your last name? Yewe
+        What letter grade do you deserve? B What is your age? 22
+        Name: Yewe, Betty Sue
+        Grade: C
+        Age: 22
+        Note that the program should be able to accept first names that comprise more than one word.Also note that the program adjusts the grade downward—that is,up one letter. Assume that the user requests an A, a B, or a C so that you don’t have to worry about the gap between a D and an F.
+     */
+    
+    
     
 }
