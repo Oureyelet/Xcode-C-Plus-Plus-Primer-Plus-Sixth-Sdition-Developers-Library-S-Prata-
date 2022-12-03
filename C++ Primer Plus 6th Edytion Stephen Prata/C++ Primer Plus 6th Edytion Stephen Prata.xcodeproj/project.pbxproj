@@ -50,6 +50,13 @@
 			path = "Chapter 4 Compound Types ";
 			sourceTree = "<group>";
 		};
+		B825D7C1293BE4900004DAB3 /* Chapter 5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Chapter 5";
+			sourceTree = "<group>";
+		};
 		B87B06E1292988F600F1115A = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +76,7 @@
 		B87B06EC292988F600F1115A /* C++ Primer Plus 6th Edytion Stephen Prata */ = {
 			isa = PBXGroup;
 			children = (
+				B825D7C1293BE4900004DAB3 /* Chapter 5 */,
 				B825D7C02939C8F10004DAB3 /* Chapter 4 Compound Types  */,
 			);
 			path = "C++ Primer Plus 6th Edytion Stephen Prata";
