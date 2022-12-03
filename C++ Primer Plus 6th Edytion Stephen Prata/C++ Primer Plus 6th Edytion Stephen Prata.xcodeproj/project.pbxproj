@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B825D7C2293BE5500004DAB3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B87B06EA292988F600F1115A /* C++ Primer Plus 6th Edytion Stephen Prata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ Primer Plus 6th Edytion Stephen Prata"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87B06ED292988F600F1115A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		B825D7C1293BE4900004DAB3 /* Chapter 5 */ = {
 			isa = PBXGroup;
 			children = (
+				B825D7C2293BE5500004DAB3 /* main.cpp */,
 			);
 			path = "Chapter 5";
 			sourceTree = "<group>";
