@@ -9,9 +9,14 @@
 #include <array>
 #include "Listing 4.24 choices.h"
 #include "test.h"
+#include <cstring>
+
 
 //Programmin Exercises functions prototype:
 void Programming_exercises_1();
+void Programming_exercises_2();
+void Programming_exercises_3();
+void test2();
 
 
 
@@ -200,22 +205,101 @@ int main()
         const std::array<std::string, 10> ten_object_array{};
     */
     
+    // Programming_exercises_1();
+    // Programming_exercises_2();
+    Programming_exercises_3();
+    
     return 0;
 }
 
 void Programming_exercises_1()
 {
     /*
-        Write a C++ program that requests and displays information as shown in the fol- lowing example of output:
+        Write a C++ program that requests and displays information as shown in the following example of output:
         What is your first name? Betty Sue
         What is your last name? Yewe
-        What letter grade do you deserve? B What is your age? 22
+        What letter grade do you deserve? B
+        What is your age? 22
         Name: Yewe, Betty Sue
         Grade: C
         Age: 22
+     
         Note that the program should be able to accept first names that comprise more than one word.Also note that the program adjusts the grade downward—that is,up one letter. Assume that the user requests an A, a B, or a C so that you don’t have to worry about the gap between a D and an F.
      */
     
+    std::cin.ignore();
+    std::cout << "What is your first name? ";
+    std::string first_name;
+    std::getline(std::cin, first_name);
+    
+    std::cout << "What is your last name? ";
+    std::string last_name;
+    std::getline(std::cin, last_name);
+    
+    std::cout << "What letter grade do you deserve? ";
+    char grade;
+    std::cin >> grade;
+    
+    std::cout << "What is your age? ";
+    int age;
+    std::cin >> age;
+    
+    std::cout << "Name: " << last_name << ", " << first_name << '\n';
+    std::cout << "Grade: " << ++grade << '\n';
+    std::cout << "Age: " << age << '\n';
+}
+
+void Programming_exercises_2()
+{
+    /* Rewrite Listing 4.4, using the C++ string class instead of char arrays. */
+    
+    const int arSize = 20;
+    //char name[arSize];
+    std::string name;
+    //char dessert[arSize];
+    std::string dessert;
+
+    std::cin.ignore();
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+    std::cout << "Enter your favorite dessert: ";
+    std::getline(std::cin, dessert);
+    std::cout << "I have some delicious " << dessert;
+    std::cout << " for you " << name << std::endl;
+}
+
+void Programming_exercises_3()
+{
+    /*
+    Write a program that asks the user to enter his or her first name and then last name, and that then constructs, stores, and displays a third string, consisting of the user’s last name followed by a comma, a space, and first name. Use char arrays and functions from the cstring header file. A sample run could look like this:
+    Enter your first name: Flip
+    Enter your last name: Fleming
+    Here’s the information in a single string: Fleming, Flip
+     */
+    
+    std::cin.ignore();
+    std::cout << "Enter your first name: ";
+    char first_name[]{};
+    int first_name_lenght = sizeof(first_name);
+    std::cin.getline(first_name, first_name_lenght);
+    
+    std::cout << "Enter your last name: ";
+    char last_name[]{};
+    int last_name_lenght = sizeof(last_name);
+    std::cin.getline(last_name, last_name_lenght);
+    
+    char result[]{};
+    strcat(result , first_name);
+    strcat(result , ", ");
+    strcat(result , last_name);
+    
+    std::cout << result << '\n';
     
     
+    
+    
+}
+
+void test2()
+{
 }
