@@ -10,6 +10,7 @@
 #include "Listing 4.24 choices.h"
 #include "test.h"
 #include <cstring>
+#include <iterator>
 
 
 //Programmin Exercises functions prototype:
@@ -206,7 +207,7 @@ int main()
     */
     
     // Programming_exercises_1();
-    // Programming_exercises_2();
+     //Programming_exercises_2();
     Programming_exercises_3();
     
     return 0;
@@ -280,18 +281,19 @@ void Programming_exercises_3()
     std::cin.ignore();
     std::cout << "Enter your first name: ";
     char first_name[]{};
-    int first_name_lenght = sizeof(first_name);
-    std::cin.getline(first_name, first_name_lenght);
+    //char* ptr_f_name = new char[strlen(first_name)];
+    std::cin.getline(first_name, strlen(first_name));
+    
     
     std::cout << "Enter your last name: ";
     char last_name[]{};
-    int last_name_lenght = sizeof(last_name);
-    std::cin.getline(last_name, last_name_lenght);
+    std::cin.getline(last_name, strlen(last_name));
     
-    char result[]{};
-    strcat(result , first_name);
-    strcat(result , ", ");
-    strcat(result , last_name);
+    char result[250];
+    
+    strcat(result, first_name);
+    strcat(result, ", " );
+    strcat(result, last_name);
     
     std::cout << result << '\n';
     
