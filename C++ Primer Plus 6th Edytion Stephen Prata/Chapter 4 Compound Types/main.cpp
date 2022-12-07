@@ -17,7 +17,17 @@
 void Programming_exercises_1();
 void Programming_exercises_2();
 void Programming_exercises_3();
+void Programming_exercises_4();
+void Programming_exercises_5();
 void test2();
+
+//structure for Programming_exercises_5:
+struct CandyBar
+{
+    std::string name;
+    float weight;
+    int calories;
+};
 
 
 
@@ -206,11 +216,92 @@ int main()
         const std::array<std::string, 10> ten_object_array{};
     */
     
-    // Programming_exercises_1();
-     //Programming_exercises_2();
-    Programming_exercises_3();
+    //Programming_exercises_1();
+    //Programming_exercises_2();
+    //Programming_exercises_3();
+    //Programming_exercises_4();
+    //Programming_exercises_5();
+    
     
     return 0;
+}
+
+void Programming_exercises_5()
+{
+    /*
+     The CandyBar structure contains three members.The first member holds the brand name of a candy bar.The second member holds the weight (which may have a frac- tional part) of the candy bar, and the third member holds the number of calories (an integer value) in the candy bar.Write a program that declares such a structure and creates a CandyBar variable called snack, initializing its members to "Mocha Munch", 2.3, and 350, respectively.The initialization should be part of the declara- tion for snack. Finally, the program should display the contents of the snack vari- able.
+     */
+    
+}
+
+void Programming_exercises_4()
+{
+    /*
+    Write a program that asks the user to enter his or her first name and then last name, and that then constructs, stores, and displays a third string consisting of the user’s last name followed by a comma, a space, and first name. Use string objects and methods from the string header file. A sample run could look like this: Enter your first name: Flip
+    Enter your last name: Fleming
+    Here’s the information in a single string: Fleming, Flip
+    */
+    
+    std::cin.ignore();
+    std::cout << "Enter your first name: ";
+    std::string first_name;
+    std::getline(std::cin, first_name);
+    
+    
+    std::cout << "Enter your last name: ";
+    std::string last_name;
+    std::getline(std::cin, last_name);
+    
+    std::string result = first_name + ", " + last_name;
+    
+    std::cout << result << '\n';
+}
+
+void Programming_exercises_3()
+{
+    /*
+    Write a program that asks the user to enter his or her first name and then last name, and that then constructs, stores, and displays a third string, consisting of the user’s last name followed by a comma, a space, and first name. Use char arrays and functions from the cstring header file. A sample run could look like this:
+    Enter your first name: Flip
+    Enter your last name: Fleming
+    Here’s the information in a single string: Fleming, Flip
+     */
+    
+    std::cin.ignore();
+    std::cout << "Enter your first name: ";
+    char first_name[250];
+    std::cin.getline(first_name, 250);
+    
+    
+    std::cout << "Enter your last name: ";
+    char last_name[250];
+    std::cin.getline(last_name, 250);
+    
+    char result[250];
+    
+    strcat(result, first_name);
+    strcat(result, ", " );
+    strcat(result, last_name);
+    
+    std::cout << result << '\n';
+}
+
+void Programming_exercises_2()
+{
+    /* Rewrite Listing 4.4, using the C++ string class instead of char arrays. */
+    
+    const int arSize = 20;
+    //char name[arSize];
+    std::string name;
+    //char dessert[arSize];
+    std::string dessert;
+
+    std::cin.ignore();
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+    std::cout << "Enter your favorite dessert: ";
+    std::getline(std::cin, dessert);
+    std::cout << "I have some delicious " << dessert;
+    std::cout << " for you " << name << std::endl;
 }
 
 void Programming_exercises_1()
@@ -248,58 +339,6 @@ void Programming_exercises_1()
     std::cout << "Name: " << last_name << ", " << first_name << '\n';
     std::cout << "Grade: " << ++grade << '\n';
     std::cout << "Age: " << age << '\n';
-}
-
-void Programming_exercises_2()
-{
-    /* Rewrite Listing 4.4, using the C++ string class instead of char arrays. */
-    
-    const int arSize = 20;
-    //char name[arSize];
-    std::string name;
-    //char dessert[arSize];
-    std::string dessert;
-
-    std::cin.ignore();
-    std::cout << "Enter your name: ";
-    std::getline(std::cin, name);
-    std::cout << "Enter your favorite dessert: ";
-    std::getline(std::cin, dessert);
-    std::cout << "I have some delicious " << dessert;
-    std::cout << " for you " << name << std::endl;
-}
-
-void Programming_exercises_3()
-{
-    /*
-    Write a program that asks the user to enter his or her first name and then last name, and that then constructs, stores, and displays a third string, consisting of the user’s last name followed by a comma, a space, and first name. Use char arrays and functions from the cstring header file. A sample run could look like this:
-    Enter your first name: Flip
-    Enter your last name: Fleming
-    Here’s the information in a single string: Fleming, Flip
-     */
-    
-    std::cin.ignore();
-    std::cout << "Enter your first name: ";
-    char first_name[]{};
-    //char* ptr_f_name = new char[strlen(first_name)];
-    std::cin.getline(first_name, strlen(first_name));
-    
-    
-    std::cout << "Enter your last name: ";
-    char last_name[]{};
-    std::cin.getline(last_name, strlen(last_name));
-    
-    char result[250];
-    
-    strcat(result, first_name);
-    strcat(result, ", " );
-    strcat(result, last_name);
-    
-    std::cout << result << '\n';
-    
-    
-    
-    
 }
 
 void test2()
