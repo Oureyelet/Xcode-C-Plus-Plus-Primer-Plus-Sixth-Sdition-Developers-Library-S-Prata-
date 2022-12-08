@@ -19,6 +19,9 @@ void Programming_exercises_2();
 void Programming_exercises_3();
 void Programming_exercises_4();
 void Programming_exercises_5();
+void Programming_exercises_6();
+void Programming_exercises_7();
+void Programming_exercises_8();
 void test2();
 
 //structure for Programming_exercises_5:
@@ -29,6 +32,13 @@ struct CandyBar
     int calories;
 };
 
+//structure for Programming_exercises_7:
+struct Pizza
+{
+    std::string name;
+    float diameter;
+    int weight;
+};
 
 
 int main()
@@ -221,9 +231,68 @@ int main()
     //Programming_exercises_3();
     //Programming_exercises_4();
     //Programming_exercises_5();
+    //Programming_exercises_6();
+    Programming_exercises_7();
     
     
     return 0;
+}
+
+void Programming_exercises_9()
+{
+    /*
+     Do Programming Exercise 7 but use new to allocate a structure instead of declaring a structure variable.Also have the program request the pizza diameter before it requests the pizza company name.
+     */
+    
+}
+
+void Programming_exercises_7()
+{
+    /*
+     William Wingate runs a pizza-analysis service. For each pizza, he needs to record the following information:
+     
+     - The name of the pizza company, which can consist of more than one word
+     - The diameter of the pizza
+     - The weight of the pizza
+     
+     Devise a structure that can hold this information and write a program that uses a structure variable of that type.The program should ask the user to enter each of the preceding items of information, and then the program should display that informa- tion. Use cin (or its methods) and cout.
+     */
+    std::cin.ignore();
+    Pizza analysis;
+    std::cout << "Please enter the details of pizza to analysing. \n";
+    std::cout << "Enter the name of pizza company to analysing: ";
+    std::getline(std::cin, analysis.name);
+    std::cout << "What is the diameter of " << analysis.name << " pizza: ";
+    std::cin >> analysis.diameter;
+    std::cout << "What is the weight of " << analysis.name << " pizza: ";
+    std::cin >> analysis.weight;
+    
+    std::cout << "Pizza to analusis:\n";
+    std::cout << "The name of the pizza company: " << analysis.name << '\n';
+    std::cout << "The diameter of " << analysis.name << " is " << analysis.diameter << "cm.\n";
+    std::cout << "The weight of " << analysis.name << " is " << analysis.weight << "grams.\n";
+        
+}
+
+void Programming_exercises_6()
+{
+    /*
+     The CandyBar structure contains three members, as described in Programming Exercise 5.Write a program that creates an array of three CandyBar structures, ini- tializes them to values of your choice, and then displays the contents of each struc- ture.
+     */
+    CandyBar custom[3] =
+    {
+        { "Mars", 150.5, 250 },
+        { "Twix", 75.25, 100 },
+        { "Milcyway", 122.2, 200 }
+    };
+    
+    std::cout << "Here is our custom 3 canby bars: " << '\n';
+    std::cout << "First candy bar is " << custom[0].name << " he has " << custom[0].weight << " grams and "
+                << custom[0].calories << " calories\n";
+    std::cout << "First candy bar is " << custom[1].name << " he has " << custom[1].weight << " grams and "
+                << custom[1].calories << " calories\n";
+    std::cout << "First candy bar is " << custom[2].name << " he has " << custom[2].weight << " grams and "
+                << custom[2].calories << " calories\n";
 }
 
 void Programming_exercises_5()
@@ -232,6 +301,16 @@ void Programming_exercises_5()
      The CandyBar structure contains three members.The first member holds the brand name of a candy bar.The second member holds the weight (which may have a frac- tional part) of the candy bar, and the third member holds the number of calories (an integer value) in the candy bar.Write a program that declares such a structure and creates a CandyBar variable called snack, initializing its members to "Mocha Munch", 2.3, and 350, respectively.The initialization should be part of the declara- tion for snack. Finally, the program should display the contents of the snack vari- able.
      */
     
+    CandyBar snack =
+    {
+        "Mocha Munch",
+        2.3,
+        350
+    };
+    
+    std::cout << "Snack name: " << snack.name << '\n';
+    std::cout << "Snack weight: " << snack.weight << '\n';
+    std::cout << "Snack calories: " << snack.calories << '\n';
 }
 
 void Programming_exercises_4()
