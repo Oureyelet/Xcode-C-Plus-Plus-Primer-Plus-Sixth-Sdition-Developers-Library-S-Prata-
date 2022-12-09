@@ -11,6 +11,7 @@
 #include "test.h"
 #include <cstring>
 #include <iterator>
+#include <limits>
 
 
 //Programmin Exercises functions prototype:
@@ -22,6 +23,7 @@ void Programming_exercises_5();
 void Programming_exercises_6();
 void Programming_exercises_7();
 void Programming_exercises_8();
+void Programming_exercises_9();
 void test2();
 
 //structure for Programming_exercises_5:
@@ -207,6 +209,8 @@ int main()
         std::getline(std::cin, ptr_struct->kind);
 
         std::cout << ptr_struct->kind << " was created.\n";
+     
+        delete ptr_struct;
         
      
      16. Listing 4.6 illustrates a problem created by following numeric input with line-ori- ented string input. How would replacing this:
@@ -232,8 +236,9 @@ int main()
     //Programming_exercises_4();
     //Programming_exercises_5();
     //Programming_exercises_6();
-    Programming_exercises_7();
-    
+    //Programming_exercises_7();
+    //Programming_exercises_8();
+    Programming_exercises_9();
     
     return 0;
 }
@@ -241,9 +246,55 @@ int main()
 void Programming_exercises_9()
 {
     /*
+     Do Programming Exercise 6, but instead of declaring an array of three CandyBar structures, use new to allocate the array dynamically.
+     */
+    
+    CandyBar custom[3] =
+    {
+        { "Mars", 150.5, 250 },
+        { "Twix", 75.25, 100 },
+        { "Milcyway", 122.2, 200 }
+    };
+    
+    CandyBar* ptr_CandyBar = new CandyBar[3];
+    
+    ptr_CandyBar[0] = { "Mars", 150.5, 250 };
+    
+    std::cout << "Here is our custom 3 canby bars: " << '\n';
+    std::cout << "First candy bar is " << ptr_CandyBar[0].name << " he has " << ptr_CandyBar[0].weight << " grams and "
+                << ptr_CandyBar[0].calories << " calories\n";
+//    std::cout << "First candy bar is " << custom[1].name << " he has " << custom[1].weight << " grams and "
+//                << custom[1].calories << " calories\n";
+//    std::cout << "First candy bar is " << custom[2].name << " he has " << custom[2].weight << " grams and "
+//                << custom[2].calories << " calories\n";
+}
+
+void Programming_exercises_8()
+{
+    /*
      Do Programming Exercise 7 but use new to allocate a structure instead of declaring a structure variable.Also have the program request the pizza diameter before it requests the pizza company name.
      */
     
+    Pizza* dynamicly_struct = new Pizza;
+    
+    std::cout << "Please enter the details of pizza to analysing. \n";
+    std::cout << "What is the diameter of pizza: ";
+    std::cin >> (*dynamicly_struct).diameter; // or dynamicly_struct->diameter
+    std::cout << "Enter the name of pizza company to analysing: ";
+    //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //if you dont want to use cin.ignore go with just this line: std::cin >> (*dynamicly_struct).name; but then u will read only one work to your string
+    //std::getline(std::cin, dynamicly_struct->name);
+    
+    // or even you can use:
+    (std::cin >> dynamicly_struct->name).get();
+    std::cout << "What is the weight of " << dynamicly_struct->name << " pizza: "; // or (*dynamicly_struct).name
+    std::cin >> dynamicly_struct->weight;
+    
+    std::cout << "Pizza to analusis:\n";
+    std::cout << "The name of the pizza company: " << dynamicly_struct->name << '\n';
+    std::cout << "The diameter of " << dynamicly_struct->name << " is " << dynamicly_struct->diameter << "cm.\n";
+    std::cout << "The weight of " << dynamicly_struct->name << " is " << dynamicly_struct->weight << "grams.\n";
+    
+    delete dynamicly_struct;
 }
 
 void Programming_exercises_7()
