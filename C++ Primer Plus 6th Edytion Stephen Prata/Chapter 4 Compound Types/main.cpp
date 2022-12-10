@@ -1,5 +1,5 @@
 //
-//  main.cpp -- S.Prata C++ Primer Plus 6th ed. Chapter 4 -- Compound Types.
+//  main.cpp -- S.Prata C++ Primer Plus 6th ed.
 //  Chapter 4 Compound Types (Xcode)
 //
 //  Created by Mateusz Kacperski on 16/11/2022.
@@ -8,7 +8,6 @@
 #include <vector>
 #include <array>
 #include "Listing 4.24 choices.h"
-#include "test.h"
 #include <cstring>
 #include <iterator>
 #include <limits>
@@ -25,7 +24,6 @@ void Programming_exercises_7();
 void Programming_exercises_8();
 void Programming_exercises_9();
 void Programming_exercises_10();
-void test2();
 
 //structure for Programming_exercises_5:
 struct CandyBar
@@ -486,8 +484,4 @@ void Programming_exercises_1()
     std::cout << "Name: " << last_name << ", " << first_name << '\n';
     std::cout << "Grade: " << ++grade << '\n';
     std::cout << "Age: " << age << '\n';
-}
-
-void test2()
-{
 }
