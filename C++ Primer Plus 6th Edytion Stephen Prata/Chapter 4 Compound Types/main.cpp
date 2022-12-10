@@ -24,6 +24,7 @@ void Programming_exercises_6();
 void Programming_exercises_7();
 void Programming_exercises_8();
 void Programming_exercises_9();
+void Programming_exercises_10();
 void test2();
 
 //structure for Programming_exercises_5:
@@ -230,17 +231,41 @@ int main()
         const std::array<std::string, 10> ten_object_array{};
     */
     
-    //Programming_exercises_1();
-    //Programming_exercises_2();
-    //Programming_exercises_3();
-    //Programming_exercises_4();
-    //Programming_exercises_5();
-    //Programming_exercises_6();
-    //Programming_exercises_7();
-    //Programming_exercises_8();
+    Programming_exercises_1();
+    Programming_exercises_2();
+    Programming_exercises_3();
+    Programming_exercises_4();
+    Programming_exercises_5();
+    Programming_exercises_6();
+    Programming_exercises_7();
+    Programming_exercises_8();
     Programming_exercises_9();
+    Programming_exercises_10();
     
     return 0;
+}
+
+void Programming_exercises_10()
+{
+    /*
+     Write a program that requests the user to enter three times for the 40-yd dash (or 40-meter, if you prefer) and then displays the times and the average. Use an array object to hold the data. (Use a built-in array if array is not available.)
+     */
+    
+    std::array<float, 3> dash;
+    
+    std::cout << "Enter three times for the 40-yd dash." << '\n';
+    std::cout << "Enter first time: ";
+    std::cin >> dash[0];
+    std::cout << "Enter second time: ";
+    std::cin >> dash[1];
+    std::cout << "Enter third time: ";
+    std::cin >> dash[2];
+    
+    std::cout << "1st time: " << dash[0] << " sec. " << '\n';
+    std::cout << "2nd time: " << dash[1] << " sec. " << '\n';
+    std::cout << "3th time: " << dash[2] << " sec. " << '\n';
+    std::cout << "Average time = " << (dash[0] + dash[1] + dash[2]) / 3 << " sec. " << '\n';
+    
 }
 
 void Programming_exercises_9()
@@ -249,24 +274,16 @@ void Programming_exercises_9()
      Do Programming Exercise 6, but instead of declaring an array of three CandyBar structures, use new to allocate the array dynamically.
      */
     
-    CandyBar custom[3] =
-    {
-        { "Mars", 150.5, 250 },
-        { "Twix", 75.25, 100 },
-        { "Milcyway", 122.2, 200 }
-    };
-    
     CandyBar* ptr_CandyBar = new CandyBar[3];
     
     ptr_CandyBar[0] = { "Mars", 150.5, 250 };
+    ptr_CandyBar[1] = { "Twix", 75.25, 100 };
+    ptr_CandyBar[2] = { "Milcyway", 122.2, 200 };
     
-    std::cout << "Here is our custom 3 canby bars: " << '\n';
-    std::cout << "First candy bar is " << ptr_CandyBar[0].name << " he has " << ptr_CandyBar[0].weight << " grams and "
-                << ptr_CandyBar[0].calories << " calories\n";
-//    std::cout << "First candy bar is " << custom[1].name << " he has " << custom[1].weight << " grams and "
-//                << custom[1].calories << " calories\n";
-//    std::cout << "First candy bar is " << custom[2].name << " he has " << custom[2].weight << " grams and "
-//                << custom[2].calories << " calories\n";
+    std::cout << "Here is our custom 3 candy bars: " << '\n';
+    std::cout << "First candy bar is " << ptr_CandyBar[0].name << " he has " << ptr_CandyBar[0].weight << " grams and " << ptr_CandyBar[0].calories << " calories\n";
+    std::cout << "Second candy bar is " << ptr_CandyBar[1].name << " he has " << ptr_CandyBar[1].weight << " grams and " << ptr_CandyBar[1].calories << " calories\n";
+    std::cout << "Third candy bar is " << ptr_CandyBar[2].name << " he has " << ptr_CandyBar[2].weight << " grams and " << ptr_CandyBar[2].calories << " calories\n";
 }
 
 void Programming_exercises_8()
