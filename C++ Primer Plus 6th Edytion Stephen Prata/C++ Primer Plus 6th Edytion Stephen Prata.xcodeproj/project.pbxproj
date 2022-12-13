@@ -7,20 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B86ADB42293C05F200757B38 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B86ADB41293C05F200757B38 /* main.cpp */; };
 		B8AF2376293BEBFB00B09481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8AF2375293BEBFB00B09481 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B8AF2365293BEAFF00B09481 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		B8AF2371293BEBFB00B09481 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,21 +24,15 @@
 
 /* Begin PBXFileReference section */
 		B86ADB41293C05F200757B38 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B86ADB4329451FC500757B38 /* Listing 5.1 forloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.1 forloop.h"; sourceTree = "<group>"; };
+		B86ADB442948444C00757B38 /* Listing 5.2 num_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.2 num_test.h"; sourceTree = "<group>"; };
+		B86ADB45294849DD00757B38 /* Listing 5.3 express.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.3 express.h"; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
-		B88E166D2936968800F1FB17 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		B8AF2367293BEAFF00B09481 /* Chapter 4 Compound Types */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 4 Compound Types"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 5 Loops and Relational Expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF2375293BEBFB00B09481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B8AF2364293BEAFF00B09481 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B8AF2370293BEBFB00B09481 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,7 +55,6 @@
 		B87B06EB292988F600F1115A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8AF2367293BEAFF00B09481 /* Chapter 4 Compound Types */,
 				B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
 			);
 			name = Products;
@@ -80,7 +63,6 @@
 		B8AF2368293BEAFF00B09481 /* Chapter 4 Compound Types */ = {
 			isa = PBXGroup;
 			children = (
-				B88E166D2936968800F1FB17 /* test.h */,
 				B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */,
 				B86ADB41293C05F200757B38 /* main.cpp */,
 			);
@@ -91,6 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				B8AF2375293BEBFB00B09481 /* main.cpp */,
+				B86ADB4329451FC500757B38 /* Listing 5.1 forloop.h */,
+				B86ADB442948444C00757B38 /* Listing 5.2 num_test.h */,
+				B86ADB45294849DD00757B38 /* Listing 5.3 express.h */,
 			);
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";
@@ -98,23 +83,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8AF2366293BEAFF00B09481 /* Chapter 4 Compound Types */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8AF236B293BEAFF00B09481 /* Build configuration list for PBXNativeTarget "Chapter 4 Compound Types" */;
-			buildPhases = (
-				B8AF2363293BEAFF00B09481 /* Sources */,
-				B8AF2364293BEAFF00B09481 /* Frameworks */,
-				B8AF2365293BEAFF00B09481 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Chapter 4 Compound Types";
-			productName = "Chapter 4 Compound Types";
-			productReference = B8AF2367293BEAFF00B09481 /* Chapter 4 Compound Types */;
-			productType = "com.apple.product-type.tool";
-		};
 		B8AF2372293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8AF2377293BEBFB00B09481 /* Build configuration list for PBXNativeTarget "Chapter 5 Loops and Relational Expressions" */;
@@ -141,9 +109,6 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					B8AF2366293BEAFF00B09481 = {
-						CreatedOnToolsVersion = 14.1;
-					};
 					B8AF2372293BEBFB00B09481 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -162,21 +127,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8AF2366293BEAFF00B09481 /* Chapter 4 Compound Types */,
 				B8AF2372293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B8AF2363293BEAFF00B09481 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B86ADB42293C05F200757B38 /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B8AF236F293BEBFB00B09481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,26 +253,6 @@
 			};
 			name = Release;
 		};
-		B8AF236C293BEAFF00B09481 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B8AF236D293BEAFF00B09481 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		B8AF2378293BEBFB00B09481 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,15 +281,6 @@
 			buildConfigurations = (
 				B87B06EF292988F600F1115A /* Debug */,
 				B87B06F0292988F600F1115A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8AF236B293BEAFF00B09481 /* Build configuration list for PBXNativeTarget "Chapter 4 Compound Types" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8AF236C293BEAFF00B09481 /* Debug */,
-				B8AF236D293BEAFF00B09481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
