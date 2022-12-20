@@ -8,7 +8,7 @@
 #ifndef Listing_5_4_formore_h
 #define Listing_5_4_formore_h
 
-const int ArSize = 160; // example of external declaration
+const int ArSize = 16; // example of external declaration
 
 void listing_5_4()
 {
