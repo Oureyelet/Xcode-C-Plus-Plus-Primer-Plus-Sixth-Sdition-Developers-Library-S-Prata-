@@ -7,11 +7,14 @@
 
 #include <iostream>
 #include <thread>
+#include <string>
 
 #include "Listing 5.1 forloop.h"
 #include "Listing 5.2 num_test.h"
 #include "Listing 5.3 express.h"
 #include "Listing 5.4 formore.h"
+#include "Listing 5.5 bigstep.h"
+#include "Listing 5.6 forstr1.h"
 
 int main()
 {
@@ -72,7 +75,7 @@ int main()
     // Back to the for Loop: check example here -> "Listing 5.4 formore.h"
     //-----------------------------------------------------------------------------------------------------
     
-     listing_5_4();
+    // listing_5_4();
         
         // Program note:
         
@@ -82,7 +85,25 @@ int main()
     // Changing the Step Size: check example here ->> "Listing 5.5 bitstep.h"
     //-----------------------------------------------------------------------------------------------------
     
+    // listing_5_5();
     
+        // "This example illustrates the use of using declarations instead of a using directive."
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Inside Strings with the for Loop: check example here ->> "Listing 5.6 forstr1.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+     listing_5_6();
+
+//    std::string word = "Holiday";
+//
+//    int word_l = word.length();
+//    int word_s = word.size();
+//
+//    std::cout << "Word length: " << word_l << '\n';
+//    std::cout << "Word size: " << word_s << '\n';
     
     
     std::cin.get();

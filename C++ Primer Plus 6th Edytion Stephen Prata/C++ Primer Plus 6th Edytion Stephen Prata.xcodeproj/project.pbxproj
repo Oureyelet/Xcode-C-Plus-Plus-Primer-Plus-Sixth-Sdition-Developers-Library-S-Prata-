@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.5 bigstep.h"; sourceTree = "<group>"; };
+		B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.6 forstr1.h"; sourceTree = "<group>"; };
 		B86ADB41293C05F200757B38 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B86ADB4329451FC500757B38 /* Listing 5.1 forloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.1 forloop.h"; sourceTree = "<group>"; };
 		B86ADB442948444C00757B38 /* Listing 5.2 num_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.2 num_test.h"; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 				B86ADB442948444C00757B38 /* Listing 5.2 num_test.h */,
 				B86ADB45294849DD00757B38 /* Listing 5.3 express.h */,
 				B86ADB462949990600757B38 /* Listing 5.4 formore.h */,
+				B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */,
+				B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */,
 			);
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";
