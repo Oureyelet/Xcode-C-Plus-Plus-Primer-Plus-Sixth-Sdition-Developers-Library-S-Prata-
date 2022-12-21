@@ -13,20 +13,18 @@
 
 void listing_5_6()
 {
-    
-    std::cout << "Enter the word: ";
+    std::cout << "Enter a word: ";
     std::string word;
     std::cin >> word;
     
-    std::size_t word_length = word.length();
-    
     int index_zero = -1;
     
-    for (std::size_t i = word_length - 1 ; i != index_zero; i--)
+    // display letters in reverse order
+    for (std::size_t i = word.size() - 1; i != index_zero; i--)
     {
         std::cout << word[i] << ' ';
     }
-    std::cout << std::endl;
+    std::cout << "\nBye. \n";
     
 }
 
