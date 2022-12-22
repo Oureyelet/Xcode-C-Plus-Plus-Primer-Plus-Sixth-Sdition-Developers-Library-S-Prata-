@@ -18,6 +18,7 @@
 #include "Listing 5.6 forstr1.h"
 #include "Listing 5.7 plus_one.h"
 #include "Listing 5.8 block.h"
+#include "Listing 5.9 forstr2.h"
 
 int main()
 {
@@ -201,13 +202,58 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // More Syntax Tricks—The Comma Operator:
+    // More Syntax Tricks—The Comma Operator: check example here ->> "Listing 5.9 forstr2.h"
     //-----------------------------------------------------------------------------------------------------
     
     int i = 2;
     int j = 4;
     
     ++i, --j;   // two expressions count as one for syntax purposes
+    
+    double o, p; // comma is a separator here, not an operator
+    
+    // listing_5_9();
+    
+        // Program Notes:
+            
+
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Comma Operator Tidbits:
+    //-----------------------------------------------------------------------------------------------------
+        
+        /*
+         C++ guarantees that the first expression is evaluated before the second:
+         */
+        
+    int w1;
+    int g1;
+    
+    w1 = 20, g1 = 2 * w1; // w1 set to 20, then g1 set to 40
+    
+        /*
+         The comma operator has the lowest precedence of any operator. For example, this statement:
+         */
+    int cata;
+    cata = 17, 240;
+    
+    //gets read as this:
+    
+    (cata = 18), 240; // That is, cats is set to 18, and 240 does nothing.
+    
+    cata = (17,240); // But because parentheses have high precedence, the following results in cats being set to 240, the value              // of the expression on the right of the comma
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Relational Expressions:
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Assignment, Comparison, and a Mistake You’ll Probably Make:
+    //-----------------------------------------------------------------------------------------------------
     
     
     

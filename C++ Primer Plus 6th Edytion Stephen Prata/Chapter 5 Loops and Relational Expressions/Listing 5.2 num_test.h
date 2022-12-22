@@ -1,6 +1,6 @@
 //  C++ Primer Plus 6th Edytion Stephen Prata
-//  Listing 5.2 use numeric test in for loop
 //  Chapter 5 Loops and Relational Expressions
+//  Listing 5.2 -- use numeric test in for loop
 //
 //  Created by Mateusz Kacperski on 13/12/2022.
 //

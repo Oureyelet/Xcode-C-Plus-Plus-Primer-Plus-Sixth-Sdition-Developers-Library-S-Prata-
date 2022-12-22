@@ -1,6 +1,6 @@
 //  C++ Primer Plus 6th Edytion Stephen Prata
-//  Listing 5.8 -- use a block statement
 //  Chapter 5 Loops and Relational Expressions
+//  Listing 5.8 -- use a block statement
 //
 //  Created by Mateusz Kacperski on 22/12/2022.
 //

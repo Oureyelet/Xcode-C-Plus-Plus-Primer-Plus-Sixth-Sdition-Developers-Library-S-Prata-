@@ -1,6 +1,6 @@
 //  C++ Primer Plus 6th Edytion Stephen Prata
-//  Listing 5.5 -- count as directed
 //  Chapter 5 Loops and Relational Expressions
+//  Listing 5.5 -- count as directed
 //
 //  Created by Mateusz Kacperski on 20/12/2022.
 //

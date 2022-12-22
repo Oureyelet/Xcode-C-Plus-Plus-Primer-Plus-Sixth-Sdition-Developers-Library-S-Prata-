@@ -1,6 +1,6 @@
 //  C++ Primer Plus 6th Edytion Stephen Prata
-//  Listing 5.7 -- The increment operator
 //  Chapter 5 Loops and Relational Expressions
+//  Listing 5.7 -- The increment operator
 //
 //  Created by Mateusz Kacperski on 21/12/2022.
 //

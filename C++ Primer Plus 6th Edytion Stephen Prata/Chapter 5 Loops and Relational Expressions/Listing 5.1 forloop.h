@@ -1,6 +1,6 @@
 //  C++ Primer Plus 6th Edytion Stephen Prata
-//  Listing 5.1 introducing the for loop
 //  Chapter 5 Loops and Relational Expressions
+//  Listing 5.1 -- introducing the for loop
 //
 //  Created by Mateusz Kacperski on 10/12/2022.
 //
