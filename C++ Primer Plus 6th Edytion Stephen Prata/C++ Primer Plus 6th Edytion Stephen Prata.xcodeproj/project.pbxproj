@@ -26,6 +26,7 @@
 		B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.5 bigstep.h"; sourceTree = "<group>"; };
 		B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.6 forstr1.h"; sourceTree = "<group>"; };
 		B847D2972953A76A006C92FD /* Listing 5.7 plus_one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.7 plus_one.h"; sourceTree = "<group>"; };
+		B847D29829544EFE006C92FD /* Listing 5.8 block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.8 block.h"; sourceTree = "<group>"; };
 		B86ADB41293C05F200757B38 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B86ADB4329451FC500757B38 /* Listing 5.1 forloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.1 forloop.h"; sourceTree = "<group>"; };
 		B86ADB442948444C00757B38 /* Listing 5.2 num_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.2 num_test.h"; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */,
 				B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */,
 				B847D2972953A76A006C92FD /* Listing 5.7 plus_one.h */,
+				B847D29829544EFE006C92FD /* Listing 5.8 block.h */,
 			);
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";

@@ -9,6 +9,7 @@
 #include <thread>
 #include <string>
 
+// Examples include in header files:
 #include "Listing 5.1 forloop.h"
 #include "Listing 5.2 num_test.h"
 #include "Listing 5.3 express.h"
@@ -16,6 +17,7 @@
 #include "Listing 5.5 bigstep.h"
 #include "Listing 5.6 forstr1.h"
 #include "Listing 5.7 plus_one.h"
+#include "Listing 5.8 block.h"
 
 int main()
 {
@@ -104,7 +106,7 @@ int main()
     // The Increment (++) and Decrement (--) Operators: check example here ->> "Listing 5.7 plus_one.h"
     //-----------------------------------------------------------------------------------------------------
     
-    listing_5_7();
+    // listing_5_7();
     
     int x = 5;
     int y = ++x; // change x, then assing to y
@@ -163,6 +165,50 @@ int main()
     //-----------------------------------------------------------------------------------------------------
     // Combination Assignment Operators:
     //-----------------------------------------------------------------------------------------------------
+    
+    int window = 5;
+    double glass = 7;
+    
+    window += glass; // is equivalent to windown = window + glass
+    
+    int *pa = new int[10];  // pa points to pa[0]
+    pa[4] = 12;
+    pa[4] += 6;             // pa[4] set to 18 so is same as pa[4] = pa[4] + 6
+    *(pa + 4) += 7;         // same as pa[4] += 7 -- pa[4] set to 25
+    
+    std::cout << *(pa + 4) << '\n';
+    
+    pa += 2;                // ok, pa points to the former pa[2]
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Compound Statements, or Blocks: check example here ->> "Listing 5.8 Listing 5.8 block.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    // listing_5_8();
+    
+    int thursday = 22;                                      // original 'thursday'
+    
+    {                                                       // block starts
+        std::cout << "Thursday: " << thursday << '\n';      // use original 'thursday'
+        int thursday = 23;                                  // new 'thursday'
+        std::cout << "Thursday: " << thursday << '\n';      // use new 'thursday'
+    }                                                       // block ends
+    
+    std::cout << "Thursday: " << thursday << '\n';          // use original 'thursday' againn
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // More Syntax Tricks—The Comma Operator:
+    //-----------------------------------------------------------------------------------------------------
+    
+    int i = 2;
+    int j = 4;
+    
+    ++i, --j;   // two expressions count as one for syntax purposes
+    
     
     
     
