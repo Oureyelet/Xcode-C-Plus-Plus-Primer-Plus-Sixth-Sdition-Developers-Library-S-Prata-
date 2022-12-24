@@ -19,6 +19,10 @@
 #include "Listing 5.7 plus_one.h"
 #include "Listing 5.8 block.h"
 #include "Listing 5.9 forstr2.h"
+#include "Listing 5.10 equal.h"
+
+// function prototypes:
+
 
 int main()
 {
@@ -235,13 +239,14 @@ int main()
          The comma operator has the lowest precedence of any operator. For example, this statement:
          */
     int cata;
-    cata = 17, 240;
-    
-    //gets read as this:
-    
-    (cata = 18), 240; // That is, cats is set to 18, and 240 does nothing.
-    
-    cata = (17,240); // But because parentheses have high precedence, the following results in cats being set to 240, the value              // of the expression on the right of the comma
+//    cata = 17, 240;
+//
+//    //gets read as this:
+//
+//    (cata = 18), 240; // That is, cats is set to 18, and 240 does nothing.
+//
+//    cata = (17,240); // But because parentheses have high precedence, the following results in cats being set to 240, the value              // of the expression on the right of the comma
+//
     
     
     
@@ -251,14 +256,30 @@ int main()
     
     
     
-    //-----------------------------------------------------------------------------------------------------
-    // Assignment, Comparison, and a Mistake You’ll Probably Make:
-    //-----------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------------
+    // Assignment, Comparison, and a Mistake You’ll Probably Make: check example here ->> "Listing 5.10 equal.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+     listing_5_10();
+    
+            /*
+             Caution:
+             
+             Don’t use = to compare for equality; use ==.
+             */
     
     
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Comparing C-Style Strings: 
+    //-----------------------------------------------------------------------------------------------------------
+    
+	
     
     
     
     std::cin.get();
     return 0;
 }
+
+

@@ -36,6 +36,7 @@
 		B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 5 Loops and Relational Expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF2375293BEBFB00B09481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B8B47F3029547AEA008D7C2B /* Listing 5.9 forstr2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.9 forstr2.h"; sourceTree = "<group>"; };
+		B8B47F312955CD1B008D7C2B /* Listing 5.10 equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.10 equal.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 				B847D2972953A76A006C92FD /* Listing 5.7 plus_one.h */,
 				B847D29829544EFE006C92FD /* Listing 5.8 block.h */,
 				B8B47F3029547AEA008D7C2B /* Listing 5.9 forstr2.h */,
+				B8B47F312955CD1B008D7C2B /* Listing 5.10 equal.h */,
 			);
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";
