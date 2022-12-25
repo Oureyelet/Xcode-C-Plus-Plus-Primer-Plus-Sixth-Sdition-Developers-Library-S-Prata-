@@ -8,6 +8,7 @@
 #include <iostream>
 #include <thread>
 #include <string>
+#include <cstring>
 
 // Examples include in header files:
 #include "Listing 5.1 forloop.h"
@@ -260,7 +261,7 @@ int main()
     // Assignment, Comparison, and a Mistake You’ll Probably Make: check example here ->> "Listing 5.10 equal.h"
     //-----------------------------------------------------------------------------------------------------------
     
-     listing_5_10();
+     // listing_5_10();
     
             /*
              Caution:
@@ -274,10 +275,27 @@ int main()
     // Comparing C-Style Strings: 
     //-----------------------------------------------------------------------------------------------------------
     
+    char string1[] = "Sophie";
+    char string2[] = "Ania";
+    char string3[] = "Sophie";
 	
+    if (strcmp(string1, string3))
+        std::cout << "char string is not same...\n";
+    else
+        std::cout << "char string is same...\n";
     
+        /*
+         Comparing std::string objects:
+         */
+        std::string str1 = "Sophie";
+        std::string str2 = "Ania";
+        std::string str3 = "Sophie";
     
-    
+        if (str1.compare(str2))
+            std::cout << "std::string object is not same...\n";
+        else
+            std::cout << "std::string object is same...\n";
+        
     std::cin.get();
     return 0;
 }
