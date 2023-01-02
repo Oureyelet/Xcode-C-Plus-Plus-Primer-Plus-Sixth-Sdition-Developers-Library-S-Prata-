@@ -21,6 +21,10 @@
 #include "Listing 5.8 block.h"
 #include "Listing 5.9 forstr2.h"
 #include "Listing 5.10 equal.h"
+#include "Listing 5.11 compstr1.h"
+#include "Listing 5.12 compstr2.h"
+#include "Listing 5.13 while.h"
+#include "Listing 5.14 waiting.h"
 
 // function prototypes:
 
@@ -272,17 +276,17 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------------
-    // Comparing C-Style Strings: 
+    // Comparing C-Style Strings: check example here ->> "Listing 5.11 compstr1.h"
     //-----------------------------------------------------------------------------------------------------------
     
-    char string1[] = "Sophie";
-    char string2[] = "Ania";
-    char string3[] = "Sophie";
+    char string1[30] = "Sophie";
+    char string2[40] = "Ania";
+    char string3[50] = "Sophie";
 	
     if (strcmp(string1, string3))
-        std::cout << "char string is not same...\n";
+        std::cout << "char string is not the same...\n";
     else
-        std::cout << "char string is same...\n";
+        std::cout << "char string is the same...\n";
     
         /*
          Comparing std::string objects:
@@ -295,7 +299,100 @@ int main()
             std::cout << "std::string object is not same...\n";
         else
             std::cout << "std::string object is same...\n";
+    
+    
+    /*
+     By the way, although you can’t use relational operators to compare strings, you can use them to compare characters because characters are actually integer types.Therefore, the following is valid code, at least for the ASCII and Unicode character sets, for displaying the characters of the alphabet:
+     */
+    
+    for(char ch = 'a'; ch <= 'z'; ch++)
+        std::cout << ch << ' ';
+    std::cout << '\n';
+
+//    listing_5_11();
+    
+        //Program Notes:
+    
+    //    if_is_equality();
+
+    
+    
+    
         
+    //-----------------------------------------------------------------------------------------------------------
+    // Comparing string Class Strings: check example here ->> "Listing 5.12 compstr2.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+    // listing_5_12();
+    
+        // Program Notes:
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // The while Loop: check example here ->> "Listing 5.13 while.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+    // listing_5_13();
+    
+        // Program Notes:
+            
+            //infinity_loop();
+
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // for Versus while:
+    //-----------------------------------------------------------------------------------------------------------
+    
+    //    for ( ; ; ) body this loop run forever
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Just a Moment—Building a Time-Delay Loop: check example here ->> "Listing 5.14 waiting"
+    //-----------------------------------------------------------------------------------------------------------
+    
+    // Álisting_5_14();
+    
+        /*
+         Type Aliases:
+         
+         C++ has two ways to establish a new name as an alias for a type. One is to use the pre- processor:
+         
+            #define BYTE char              // preprocessor replaces BYTE with char
+         
+         The second method is to use the C++ (and C) keyword typedef to create an alias:
+         
+            typedef char byte;             // makes byte an alias for char
+            typedef char * byte_pointer;   // pointer to char type
+         
+         */
+    
+    typedef int liczba;
+    liczba licznik = 23;
+    
+    std::cout << licznik + 3 << '\n';
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // The do while Loop:
+    //-----------------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
     std::cin.get();
     return 0;
 }
