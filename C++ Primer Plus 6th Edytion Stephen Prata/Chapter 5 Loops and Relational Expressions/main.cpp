@@ -9,6 +9,8 @@
 #include <thread>
 #include <string>
 #include <cstring>
+#include <limits> // for: std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
 
 // Examples include in header files:
 #include "Listing 5.1 forloop.h"
@@ -25,6 +27,9 @@
 #include "Listing 5.12 compstr2.h"
 #include "Listing 5.13 while.h"
 #include "Listing 5.14 waiting.h"
+#include "Listing 5.15 dowhile.h"
+#include "Listing 5.16 textin1.h"
+#include "Listing 5.17 textin2.h"
 
 // function prototypes:
 
@@ -356,10 +361,10 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------------
-    // Just a Moment—Building a Time-Delay Loop: check example here ->> "Listing 5.14 waiting"
+    // Just a Moment—Building a Time-Delay Loop: check example here ->> "Listing 5.14 waiting.h"
     //-----------------------------------------------------------------------------------------------------------
     
-    // Álisting_5_14();
+    // listing_5_14();
     
         /*
          Type Aliases:
@@ -385,14 +390,136 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------------
-    // The do while Loop:
+    // The do while Loop: check example here ->> "Listing 5.15 dowhile.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+    // listing_5_15();
+    
+                        // "infinity loop"
+    int op2;
+            
+    for (; ; )          // sometimes called a "forever loop"
+    {
+        op2++;
+        std::cout << "op2 = " << op2 << '\n';
+        if (op2 >= 30)  // if statement and break (Chapter 6)
+        {
+            break;
+        }
+    }
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // The Range-Based for Loop (C++11):
+    //-----------------------------------------------------------------------------------------------------------
+    
+    double princes[5] = { 4.99, 10.99, 6.87, 7.99, 8.49 };
+    
+    for (double x : princes)
+    {
+        std::cout << x << ' ';
+    }
+    std::cout << std::endl;
+    
+    /*
+     To modify array values, you need a different syntax for the loop variable:
+     */
+    
+    for (double &x : princes)
+    {
+        x = x * 0.80;   //20% off sale
+        std::cout << x << ' ';
+    }
+    
+    /*
+     The range-based for loop also can be used with initialization lists:
+     */
+    for (int x : { 3, 5, 2, 8, 6 })
+    {
+        std::cout << x << ' ';
+    }
+    std::cout << std::endl;
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Loops and Text Input:
     //-----------------------------------------------------------------------------------------------------------
     
     
     
     
     
+    //-----------------------------------------------------------------------------------------------------------
+    // Using Unadorned cin for Input: see example at "Listing 5.16 textin1.h"
+    //-----------------------------------------------------------------------------------------------------------
     
+    // "sentinel character" - see book to full explanation.
+    
+    // listing_5_16();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // cin.get(char) to the Rescue: see example at "Listing 5.17 textin2.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+     // listing_5_17();
+    
+    /*
+     cin.get() is used for accessing character array. It includes white space characters. Generally, cin with an extraction operator (>>) terminates when whitespace is found. However, cin.get() reads a string with the whitespace.
+     */
+    
+    
+    char name_and_surname[50];
+
+    std::cout << "[CHAR ARRAY] Enter your name and surname please: ";
+    std::cin >> name_and_surname;
+    std::cout << "[CHAR ARRAY] Hello " << name_and_surname << '\n';
+
+    std::cout << "[CHAR ARRAY] Now with cin.get()...\n";
+
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    std::cout << "[CHAR ARRAY] Enter your name and surname please: ";
+    cin.get(name_and_surname, 50);
+    std::cout << "[CHAR ARRAY] Hello " << name_and_surname << '\n';
+
+    //and here is exaclly same code but with std::string...
+
+    std::string name_and_surname2;
+
+    std::cout << "[STD::STRING] Enter your name and surname please: ";
+    std::cin >> name_and_surname2;
+    std::cout << "[STD::STRING] Hello " << name_and_surname2 << '\n';
+
+    std::cout << "[STD::STRING] Now with std::getline()...\n";
+
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    std::cout << "[STD::STRING] Enter your name and surname please: ";
+    std::getline(std::cin, name_and_surname2);
+    std::cout << "[STD::STRING] Hello " << name_and_surname2 << '\n';
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Which cin.get() Should You Use?:
+    //-----------------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+
     std::cin.get();
     return 0;
 }

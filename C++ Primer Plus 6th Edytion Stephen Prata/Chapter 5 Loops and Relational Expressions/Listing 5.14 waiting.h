@@ -1,6 +1,6 @@
 //  C++ Primer Plus 6th Edytion Stephen Prata
 //  Chapter 5 Loops and Relational Expressions
-//  Listing 5.13 waiting.h -- using clock() in a time-delay loop
+//  Listing 5.14 waiting.h -- using clock() in a time-delay loop
 //
 //  Created by Mateusz Kacperski on 02/01/2023.
 //
