@@ -16,7 +16,7 @@ void listing_5_17()
     int count = 0;  // use basic input
     
     std::cout << "Enter characters; enter # to quit:\n";
-    cin.get(ch);    // use the cin.get(ch) function
+    std::cin.get(ch);    // use the cin.get(ch) function
     
     /*
      cin.get() is used for accessing character array. It includes white space characters. Generally, cin with an extraction operator (>>) terminates when whitespace is found. However, cin.get() reads a string with the whitespace.
@@ -26,7 +26,7 @@ void listing_5_17()
     {
         std::cout << ch;    // echo the character
         ++count;            // count the character
-        cin.get(ch);        // use it again
+        std::cin.get(ch);        // use it again
     }
     std::cout << std::endl << count << "  characters read.\n";
 }

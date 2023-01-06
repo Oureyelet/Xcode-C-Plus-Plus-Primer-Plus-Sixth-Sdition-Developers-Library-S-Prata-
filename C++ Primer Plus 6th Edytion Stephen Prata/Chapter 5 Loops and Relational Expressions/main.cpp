@@ -30,6 +30,7 @@
 #include "Listing 5.15 dowhile.h"
 #include "Listing 5.16 textin1.h"
 #include "Listing 5.17 textin2.h"
+#include "Listing 5.18 textin3.h"
 
 // function prototypes:
 
@@ -497,7 +498,7 @@ int main()
     std::string name_and_surname2;
 
     std::cout << "[STD::STRING] Enter your name and surname please: ";
-    std::cin >> name_and_surname2;
+    std::cin >> name_and_surname2;  // like this cin read onnly one work from input - until white space
     std::cout << "[STD::STRING] Hello " << name_and_surname2 << '\n';
 
     std::cout << "[STD::STRING] Now with std::getline()...\n";
@@ -505,7 +506,7 @@ int main()
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
     std::cout << "[STD::STRING] Enter your name and surname please: ";
-    std::getline(std::cin, name_and_surname2);
+    std::getline(std::cin, name_and_surname2); // here is read whole line
     std::cout << "[STD::STRING] Hello " << name_and_surname2 << '\n';
     
     
@@ -519,7 +520,50 @@ int main()
     
     
     
-
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // The End-of-File Condition: see example at "Listing 5.18 textin3.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+        // info only: (EOF) mean end-of-file.
+    
+    // listing_5_18();
+    
+        /*
+         Here is sample output from the program in Listing 5.18:
+         
+         The green bird sings in the winter.<ENTER>
+         The green bird sings in the winter.
+         Yes, but the crow flies in the dawn.<ENTER>
+         Yes, but the crow flies in the dawn.
+         <CTRL>+<D>
+         73 characters read
+         */
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // EOF Ends Input:
+    //-----------------------------------------------------------------------------------------------------------
+    
+        /*
+         Remember that when a cin method detects the EOF, it sets a flag in the cin object, indi- cating the EOF condition. When this flag is set, cin does not read anymore input, and fur- ther calls to cin have no effect. For file input, this makes sense because you shouldn’t read past the end of a file. For keyboard input, however, you might use a simulated EOF to ter- minate a loop but then want to read more input later.The cin.clear() method clears the EOF flag and lets input proceed again. Chapter 17, “Input, Output, and Files,” dis- cusses this further. Keep in mind, however, that in some systems, typing Ctrl+Z effectively terminates both input and output beyond the powers of cin.clear() to restore them.
+         */
+    
+    std::cin.clear();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Common Idioms for Character Input:
+    //-----------------------------------------------------------------------------------------------------------
+    
+    
+    
     std::cin.get();
     return 0;
 }
