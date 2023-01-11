@@ -12,7 +12,7 @@
 
 void listing_5_19()
 {
-    int ch; // should be int, not char
+    int ch; // should be int,  not char
     int count = 0;
     
     while ((ch = cin.get()) != EOF) // test for end-of-file
