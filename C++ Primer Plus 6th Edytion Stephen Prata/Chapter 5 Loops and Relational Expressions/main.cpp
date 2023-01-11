@@ -573,7 +573,7 @@ int main()
     
     while (cin.fail() == false)
     {
-        // some code...
+        // some code....
         
         cin.get(ch1);
     }
