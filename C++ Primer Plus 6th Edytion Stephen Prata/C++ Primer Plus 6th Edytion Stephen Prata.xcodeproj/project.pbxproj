@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.19 textin4.h"; sourceTree = "<group>"; };
 		B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.5 bigstep.h"; sourceTree = "<group>"; };
 		B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.6 forstr1.h"; sourceTree = "<group>"; };
 		B847D2972953A76A006C92FD /* Listing 5.7 plus_one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.7 plus_one.h"; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				B87165592964B909008B054F /* Listing 5.16 textin1.h */,
 				B871655A2964BC1D008B054F /* Listing 5.17 textin2.h */,
 				B871655B2968CC68008B054F /* Listing 5.18 textin3.h */,
+				B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */,
 			);
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";

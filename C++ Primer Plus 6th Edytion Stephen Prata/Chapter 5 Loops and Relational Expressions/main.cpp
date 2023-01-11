@@ -31,6 +31,7 @@
 #include "Listing 5.16 textin1.h"
 #include "Listing 5.17 textin2.h"
 #include "Listing 5.18 textin3.h"
+#include "Listing 5.19 textin4.h"
 
 // function prototypes:
 
@@ -397,7 +398,7 @@ int main()
     // listing_5_15();
     
                         // "infinity loop"
-    int op2;
+    int op2 = 0;
             
     for (; ; )          // sometimes called a "forever loop"
     {
@@ -562,6 +563,30 @@ int main()
     // Common Idioms for Character Input:
     //-----------------------------------------------------------------------------------------------------------
     
+        /*
+         The followinng is the essential design of a loop inntennded to read text a character at a time until EOF:
+         */
+    
+    char ch1;
+    
+    cin.get(ch1);
+    
+    while (cin.fail() == false)
+    {
+        // some code...
+        
+        cin.get(ch1);
+    }
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Yet Another Version of cin.get(): see example "Listing 5.19 textin4.h"
+    //-----------------------------------------------------------------------------------------------------------
+    
+    listing_5_19();
     
     
     std::cin.get();
