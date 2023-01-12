@@ -17,8 +17,10 @@ void listing_5_19()
     
     while ((ch = cin.get()) != EOF) // test for end-of-file
     {
-        
+        std::cout.put(char(ch));
+        ++count;
     }
+    std::cout << std::endl << " characters read\n";
 }
 
 

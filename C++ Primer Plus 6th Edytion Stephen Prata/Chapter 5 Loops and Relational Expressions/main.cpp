@@ -586,10 +586,8 @@ int main()
     // Yet Another Version of cin.get(): see example "Listing 5.19 textin4.h"
     //-----------------------------------------------------------------------------------------------------------
     
-    listing_5_19();
+    // listing_5_19();
     
-    // done ?
-    // Im
     
     std::cin.get();
     return 0;
