@@ -42,6 +42,7 @@
 		B871655A2964BC1D008B054F /* Listing 5.17 textin2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.17 textin2.h"; sourceTree = "<group>"; };
 		B871655B2968CC68008B054F /* Listing 5.18 textin3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.18 textin3.h"; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
+		B897A84A2971251A003084EC /* Listing 5.20 nested.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.20 nested.h"; sourceTree = "<group>"; };
 		B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 5 Loops and Relational Expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF2375293BEBFB00B09481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B8B47F3029547AEA008D7C2B /* Listing 5.9 forstr2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.9 forstr2.h"; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 				B871655A2964BC1D008B054F /* Listing 5.17 textin2.h */,
 				B871655B2968CC68008B054F /* Listing 5.18 textin3.h */,
 				B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */,
+				B897A84A2971251A003084EC /* Listing 5.20 nested.h */,
 			);
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";

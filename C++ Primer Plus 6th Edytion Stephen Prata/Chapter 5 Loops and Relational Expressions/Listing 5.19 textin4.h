@@ -20,7 +20,7 @@ void listing_5_19()
         std::cout.put(char(ch));
         ++count;
     }
-    std::cout << std::endl << " characters read\n";
+    std::cout << std::endl << count << " characters read\n";
 }
 
 
