@@ -601,88 +601,133 @@ int main()
 
     std::cin.clear();
 
-    
-    
-    
-    
+
+
+
+
     //-----------------------------------------------------------------------------------------------------------
     // Nested Loops and Two-Dimensional Arrays:
     //-----------------------------------------------------------------------------------------------------------
-    
+
         // '\t' in c++ is just TAB key
-    
-    
-    
-    
-    
+
+
+
+
+
     //-----------------------------------------------------------------------------------------------------------
     // Initializing a Two-Dimensional Array:
     //-----------------------------------------------------------------------------------------------------------
-    
-    
-    
-    
-    
+
+
+
+
+
     //-----------------------------------------------------------------------------------------------------------
     // Using a Two-Dimensional Array: see example "Listing 5.20 nested.h"
     //-----------------------------------------------------------------------------------------------------------
-    
+
     // listinng_5_20();
-    
-    
-    
-    
-    
+
+
+
+
+
     //-----------------------------------------------------------------------------------------------------------
     // Summary:
     //-----------------------------------------------------------------------------------------------------------
-    
-    
-    
-    
-    
+
+
+
+
+
     //-----------------------------------------------------------------------------------------------------
     // Chapter Review:
     //-----------------------------------------------------------------------------------------------------
     /*
      1. What’s the difference between an entry-condition loop and an exit-condition loop? Which kind is each of the C++ loops?
-     
+        - for-loop and while-loop is entry-condition loop and is check condision before body of loop is executing where do-while-loop is exit condition loop which mean body of loop is execution at least one time end then condition is check.
+
      2. What would the following code fragment print if it were part of a valid program?
      int i;
      for (i = 0; i < 5; i++)
      cout << i; cout << endl;
-     
+        - 01234
+        - new line
+
      3. What would the following code fragment print if it were part of a valid program?
      int j;
-     for (j = 0; j < 11; j += 3)
+     for (j = 0; j < 11; j = j + 3)
      cout << j;
      cout << endl << j << endl;
-     
+        - 0369
+        - newline 12
+        - new line
+
      4. What would the following code fragment print if it were part of a valid program?
-     int j = 5; while ( ++j < 9)
+     int j = 5;
+     while(++j < 9)
      cout << j++ << endl;
-     
+        - 6
+        - 8
+
      5. What would the following code fragment print if it were part of a valid program?
-     int k = 8; do
-     cout <<" k = " << k << endl; while (k++ < 5);
-     
+
+     int k = 8;
+     do
+     {
+        cout <<" k = " << k << endl;
+     }
+     while (k++ < 5);
+
+        - k = 8
+        - new line
+
      6. Write a for loop that prints the values 1 2 4 8 16 32 64 by increasing the value of a counting variable by a factor of two in each cycle.
-     
+
+        - for(int i = 1; i < 65; i *= 2)
+            std::cout <<  i << ' ';
+        std::cout << std::endl;
+
      7. How do you make a loop body include more than one statement?
-     
+
+        - for(;;)
+          {
+            // more then one statement code...
+          }
+
      8. Is the following statement valid? If not, why not? If so, what does it do?
+
      int x = (1,024);
+
+        Yes, is valid and x is = 024 which is octal for 20 so x = 20
+        Is equivalent to (x = 1),024; which means the commas have no effect.
+        When used with parentheses it returns the last value in the "comma delimited list"
+        This is all due to operator precedence.
+
+
      What about the following?
      int y;
      y = 1,024;
-     
+
+        - here is otherway y = 1 and the value after coma is ignor.
+
      9. How does cin>>ch differ from cin.get(ch) and ch=cin.get() in how it views input?
+     
+        - std::cin >> ch - " If ch is a type char variable, the following statement reads the next input character into ch
+                                however, it skips over spaces, newlines, and tabs."
+        - cin.get(ch) - "reads the next input character, regardless of its value, and places it in ch"
+        - ch=cin.get() - "The member function call cin.get() returns the next input character, including
+                                spaces, newlines, and tabs"
      */
+    
+    
 
 
     std::cin.get();
     return 0;
 }
+
 
 
 
