@@ -9,6 +9,8 @@
 #include <thread>
 #include <string>
 #include <cstring>
+#include <array>
+#include <vector>
 #include <limits> // for: std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 
@@ -34,8 +36,10 @@
 #include "Listing 5.19 textin4.h"
 #include "Listing 5.20 nested.h"
 
-// function prototypes:
-
+// Function prototypes for 'Programin Exercises':
+void Programming_exercises_1();
+void Programming_exercises_2();
+void Programming_exercises_3();
 
 int main()
 {
@@ -713,7 +717,7 @@ int main()
         - here is otherway y = 1 and the value after coma is ignor.
 
      9. How does cin>>ch differ from cin.get(ch) and ch=cin.get() in how it views input?
-     
+
         - std::cin >> ch - " If ch is a type char variable, the following statement reads the next input character into ch
                                 however, it skips over spaces, newlines, and tabs."
         - cin.get(ch) - "reads the next input character, regardless of its value, and places it in ch"
@@ -721,13 +725,82 @@ int main()
                                 spaces, newlines, and tabs"
      */
     
-    
-
+    // Programming_exercises_1();
+    // Programming_exercises_2();
+    Programming_exercises_3();
 
     std::cin.get();
     return 0;
 }
 
+void Programming_exercises_1()
+{
+    /*
+     Write a program that requests the user to enter two integers.The program should then calculate and report the sum of all the integers between and including the two integers. At this point, assume that the smaller integer is entered first. For example, if the user enters 2 and 9, the program should report that the sum of all the integers from 2 through 9 is 44.
+     */
+    
+    std::cout << "Yo enter first integers please: ";
+    int x;
+    std::cin >> x;
+    std::cout << "Yo enter second integers please: ";
+    int y;
+    std::cin >> y;
+    
+    int answer = x; // 5
+    
+    for(int i = x; i != y; i++)
+    {
+        answer += i + 1;
+    }
+    
+    std::cout << "The sum of all the integers = " << answer << '\n';
+}
 
+void Programming_exercises_2()
+{
+    /*
+     Redo Listing 5.4 using a type array object instead of a built-in array and type long double instead of long long. Find the value of 100!
+     */
+    
+    const int ArSize = 100;
+    
+    std::array<long double, ArSize> factorials;
+    
+    factorials[1] = factorials[0] = 1LL;
+    
+    for (int i = 2; i < ArSize; i++)
+    {
+        factorials[i] = i * factorials[i-1];
+    }
+    
+    for (int i = 0; i < ArSize; i++)
+        std::cout << i << "! = " << factorials[i] << std::endl;
+}
 
-
+void Programming_exercises_3()
+{
+    /*
+     Write a program that asks the user to type in numbers.After each entry,the pro- gram should report the cumulative sum of the entries to date.The program should terminate when the user enters 0.
+     */
+    
+    
+    int x;
+    
+    int answer = 0;
+    int rem = 0;
+    
+    while (x != 0)
+    {
+        std::cout << "Yo enter an integer please: ";
+        
+        std::cin >> x;
+        
+        rem = x;
+        
+        answer = answer + rem;
+        
+        ++rem;
+        
+        std::cout << "The sum of all the integers = " << answer << '\n';
+    }
+}

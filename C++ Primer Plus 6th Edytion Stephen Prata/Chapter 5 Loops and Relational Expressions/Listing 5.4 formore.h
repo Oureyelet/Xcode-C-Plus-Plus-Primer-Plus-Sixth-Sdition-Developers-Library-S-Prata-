@@ -14,6 +14,10 @@ void listing_5_4()
 {
     long long factorials[ArSize];
     
+    /*
+     Built-in Array is declaration a size must be able to be determined at compile time like in 'factorials' above...
+     */
+    
     factorials[1] = factorials[0] = 1LL;
     
     for (int i = 2; i < ArSize; i++)

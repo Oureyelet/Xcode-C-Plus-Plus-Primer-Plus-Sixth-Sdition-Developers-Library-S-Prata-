@@ -13,7 +13,7 @@
 #include <limits>
 
 
-//Programmin Exercises functions prototype:
+// Programin Exercises functions prototype:
 void Programming_exercises_1();
 void Programming_exercises_2();
 void Programming_exercises_3();
@@ -25,7 +25,7 @@ void Programming_exercises_8();
 void Programming_exercises_9();
 void Programming_exercises_10();
 
-//structure for Programming_exercises_5:
+// Structure for Programming_exercises_5:
 struct CandyBar
 {
     std::string name;
