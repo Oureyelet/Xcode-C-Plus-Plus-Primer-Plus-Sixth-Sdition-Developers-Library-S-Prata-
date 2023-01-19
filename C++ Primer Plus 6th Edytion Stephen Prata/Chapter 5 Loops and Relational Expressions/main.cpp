@@ -41,8 +41,8 @@ void Programming_exercises_1();
 void Programming_exercises_2();
 void Programming_exercises_3();
 void Programming_exercises_4();
-double dephnes_invests(double x);     // Assistence prototype function fo Programming_exercises_4
-double cleos_invests(double x); // Assistence prototype function for Programming_exercises_4
+double dephnes_invests(double);     // Assistence prototype function fo Programming_exercises_4
+double cleos_invests(double); // Assistence prototype function for Programming_exercises_4
 
 int main()
 {
@@ -826,16 +826,43 @@ void Programming_exercises_4()
     
     std::cout << "Enter you invest: ";
     double invest;
+    int years = 1;
     std::cin >> invest;
-    double cleos = cleos_invests(invest);
-    double dephnes = dephnes_invests(invest);
+//    double cleos_money = invest;
+//    double dephnes_money = invest;
+//
+//
+//    while (cleos_money <= dephnes_money)
+//    {
+//        dephnes_money = (0.10 * invest) + cleos_money;
+//        cleos_money = (0.05 * cleos_money) + cleos_money;
+//
+//        years++;
+//    }
+//
+//    std::cout << "Cleo's investment need " << years << " years to execeed the value of Daphne's invesment.\n";
+//
+    double x = cleos_invests(invest);
+    double y = dephnes_invests(invest);
+    
 }
 
 double dephnes_invests(double x)
 {
-    double interest = 0.10 * x;
+    double current_balance = x;
 
-    return interest;
+    int year = 1;
+
+    while (year != 50)
+    {
+        current_balance = (0.10 * x) + current_balance;
+
+        std::cout << year << " year current balance of Dephne's account = " << current_balance << '\n';
+
+        year++;
+    }
+
+    return current_balance;
 }
 
 double cleos_invests(double x)
@@ -844,12 +871,12 @@ double cleos_invests(double x)
     // double interest = 0.05 * current_balance; // 105£
     int year = 1;
 
-    while (year != 10)
+    while (year != 50)
     {
-        current_balance = 0.05 * current_balance;
-        
-        std::cout << year << " year current balance = " << current_balance << '\n';
-        
+        current_balance = (current_balance * 0.05) + current_balance ;
+
+        std::cout << year << " year current balance  of Cleo's account = " << current_balance << '\n';
+
         year++;
     }
 
