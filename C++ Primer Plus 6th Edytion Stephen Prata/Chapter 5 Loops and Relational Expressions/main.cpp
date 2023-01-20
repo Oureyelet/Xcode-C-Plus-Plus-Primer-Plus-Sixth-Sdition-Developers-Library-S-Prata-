@@ -41,8 +41,8 @@ void Programming_exercises_1();
 void Programming_exercises_2();
 void Programming_exercises_3();
 void Programming_exercises_4();
-double dephnes_invests(double);     // Assistence prototype function fo Programming_exercises_4
-double cleos_invests(double); // Assistence prototype function for Programming_exercises_4
+void Programming_exercises_5();
+
 
 int main()
 {
@@ -828,57 +828,53 @@ void Programming_exercises_4()
     double invest;
     int years = 1;
     std::cin >> invest;
-//    double cleos_money = invest;
-//    double dephnes_money = invest;
-//
-//
-//    while (cleos_money <= dephnes_money)
-//    {
-//        dephnes_money = (0.10 * invest) + cleos_money;
-//        cleos_money = (0.05 * cleos_money) + cleos_money;
-//
-//        years++;
-//    }
-//
-//    std::cout << "Cleo's investment need " << years << " years to execeed the value of Daphne's invesment.\n";
-//
-    double x = cleos_invests(invest);
-    double y = dephnes_invests(invest);
+    double dephnes_money = invest;
+    double cleos_money = invest;
+
+
+    while (cleos_money <= dephnes_money)
+    {
+        dephnes_money = (0.10 * invest) + dephnes_money;
+        cleos_money = (0.05 * cleos_money) + cleos_money;
+
+        std::cout << years << " year current balance of Dephne's account = " << dephnes_money << '\n';
+        std::cout << years << " year current balance of Cleo's account = " << cleos_money << '\n';
+        std::cout << std::endl;
+
+        years++;
+    }
+
+    std::cout << "Cleo's investment need " << years - 1 << " years to execeed the value of Daphne's invesment.\n";
+}
+
+void Programming_exercises_5()
+{
+    /*
+     You sell the book C++ for Fools.Write a program that has you enter a year’s worth of monthly sales (in terms of number of books, not of money).The program should use a loop to prompt you by month, using an array of char * (or an array of string objects, if you prefer) initialized to the month strings and storing the input data in an array of int.Then, the program should find the sum of the array con- tents and report the total sales for the year.
+     */
     
-}
-
-double dephnes_invests(double x)
-{
-    double current_balance = x;
-
-    int year = 1;
-
-    while (year != 50)
+    const int month = 12;
+    int nr_of_books;
+    std::cout << "Enter a year’s worth of monthly sales (in books): ";
+    std::cin >> nr_of_books; // 24
+    
+    std::string months[month] = { "January", "February", "March", "April", "May", "June", "July", "August",
+        "September", "October", "November", "December" };
+    
+    int data[month];
+    
+    for(int i = 0; i ; i++)
     {
-        current_balance = (0.10 * x) + current_balance;
-
-        std::cout << year << " year current balance of Dephne's account = " << current_balance << '\n';
-
-        year++;
+        
+        
     }
-
-    return current_balance;
-}
-
-double cleos_invests(double x)
-{
-    double current_balance = x;
-    // double interest = 0.05 * current_balance; // 105£
-    int year = 1;
-
-    while (year != 50)
-    {
-        current_balance = (current_balance * 0.05) + current_balance ;
-
-        std::cout << year << " year current balance  of Cleo's account = " << current_balance << '\n';
-
-        year++;
-    }
-
-    return current_balance;
+    
+    /*
+     I do not understand questionn. According to:
+     
+     https://github.com/gr0mazeka/StephenPrata/blob/master/chapter_05/sol-5-05.cpp
+     
+     I think this answer is wrong because the is no input of "year’s worth of monthly sales" as we've been asked in question.
+     */
+    
 }
