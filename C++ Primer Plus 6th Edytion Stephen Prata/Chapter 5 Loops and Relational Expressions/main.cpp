@@ -42,6 +42,7 @@ void Programming_exercises_2();
 void Programming_exercises_3();
 void Programming_exercises_4();
 void Programming_exercises_5();
+void Programming_exercises_6();
 
 
 int main()
@@ -731,8 +732,9 @@ int main()
     // Programming_exercises_1();
     // Programming_exercises_2();
     // Programming_exercises_3();
-    
-    Programming_exercises_4();
+    // Programming_exercises_4()
+    // Programming_exercises_5();
+     Programming_exercises_6();
 
     std::cin.get();
     return 0;
@@ -854,27 +856,62 @@ void Programming_exercises_5()
      */
     
     const int month = 12;
-    int nr_of_books;
-    std::cout << "Enter a year’s worth of monthly sales (in books): ";
-    std::cin >> nr_of_books; // 24
     
     std::string months[month] = { "January", "February", "March", "April", "May", "June", "July", "August",
         "September", "October", "November", "December" };
     
     int data[month];
+    int sum;
     
-    for(int i = 0; i ; i++)
+    for(int i = 0; i < month ; i++)
     {
-        
-        
+        std::cout << "Enter a year’s worth of monthly sales (in books) for month " << months[i] << ": ";
+        std::cin >> data[i];
+        sum += data[i];
     }
     
-    /*
-     I do not understand questionn. According to:
-     
-     https://github.com/gr0mazeka/StephenPrata/blob/master/chapter_05/sol-5-05.cpp
-     
-     I think this answer is wrong because the is no input of "year’s worth of monthly sales" as we've been asked in question.
-     */
+    std::cout << "The total sales for the year = " << sum << '\n';
+}
+
+void Programming_exercises_6()
+{
+        /*
+         Do Programming Exercise 5 but use a two-dimensional array to store input for 3 years of monthly sales. Report the total sales for each individual year and for the combined years.
+         */
     
+    const int year = 3;
+    const int month = 12;
+    
+    std::string months[year][month] = { { "January", "February", "March", "April", "May", "June", "July", "August",
+                                            "September", "October", "November", "December" },
+                                        { "January", "February", "March", "April", "May", "June", "July", "August",
+                                            "September", "October", "November", "December" },
+                                        { "January", "February", "March", "April", "May", "June", "July", "August",
+                                            "September", "October", "November", "December" }                        };
+    
+    std::string st_nd_th[year] = { "st", "nd", "th"};
+    
+    int data[year][month];
+    int sum[year] = {};
+    int total = 0;
+    
+    for(int i = 0; i < year ; i++)
+    {
+        for (int t = 0; t < month ; t++)
+        {
+            std::cout << "Enter a year’s worth of monthly sales (in books) for month " << months[i][t] << " in " << i+1 <<                    st_nd_th[i] << " year: ";
+            
+            std::cin >> data[i][t];
+            sum[i] += data[i][t];
+            
+            
+            // std::cout << "sum[" << i << "] = " << sum[i] << '\n';
+        }
+        
+        total += sum[i];
+        
+        std::cout << "The total sales for " << i+1 << st_nd_th[i] << " year = " << sum[i] << "$.\n";
+    }
+    
+    std::cout << "The total sales for " << year << " years = " << *sum << '\n';
 }
