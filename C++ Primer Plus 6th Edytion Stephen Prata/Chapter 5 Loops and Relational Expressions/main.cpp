@@ -44,6 +44,9 @@ void Programming_exercises_4();
 void Programming_exercises_5();
 void Programming_exercises_6();
 void Programming_exercises_7();
+void Programming_exercises_8();
+void Programming_exercises_9();
+void Programming_exercises_10();
 
 struct Car
 {
@@ -742,7 +745,10 @@ int main()
     // Programming_exercises_4()
     // Programming_exercises_5();
     // Programming_exercises_6();
-     Programming_exercises_7();
+    // Programming_exercises_7();
+    // Programming_exercises_8();
+    // Programming_exercises_9();
+    Programming_exercises_10();
     
     std::cin.get();
     return 0;
@@ -931,11 +937,11 @@ void Programming_exercises_7()
     Car* how_many = new Car[x];
     
     std::cout << "How many cars do you wish to catalog? ";
-    (std::cin >> x).get();  // READ MORE about line...
+    (std::cin >> x).get();  // READ MORE about this line...
     //std::cin >> x;
     //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i != x; i++)
     {
         std::cout << "Car #" << i+1 << ":\n";
         std::cout << "Please enter the make: ";
@@ -951,5 +957,91 @@ void Programming_exercises_7()
     {
         std::cout << how_many[i].year << ' ' << how_many[i].make << '\n';
     }
+}
+
+void Programming_exercises_8()
+{
+    /*
+     Write a program that uses an array of char and a loop to read one word at a time until the word done is entered.The program should then report the number of words entered (not counting done). A sample run could look like this:
+     Enter words (to stop, type the word done):
+     
+     anteater birthday category dumpster envy finagle geometry done for sure You entered a total of 7 words.
+     
+     You should include the cstring header file and use the strcmp() function to make the comparison test.
+     
+     */
     
+    char words[50];
+    char done[] = "done";
+    int count = 0;
+    
+    std::cout << "Enter words (to stop, type the word done): ";
+    
+    do
+    {
+        std::cin >> words;
+        count++;
+        
+    } while (strcmp(done, words) != 0);
+    
+    std::cout << "You entered a total of " << count-1 << " words.\n";
+}
+    
+void Programming_exercises_9()
+{
+        /*
+         Write a program that matches the description of the program in Programming Exercise 8, but use a string class object instead of an array. Include the string header file and use a relational operator to make the comparison test.
+         */
+    
+    std::string words;
+    int count = 0;
+    
+    std::cout << "Enter words (to stop, type the word done): ";
+    
+    do
+    {
+        std::cin >> words;
+        count++;
+        
+    } while (words != "done");
+    
+    std::cout << "You entered a total of " << count-1 << " words.\n";
+}
+
+void Programming_exercises_10()
+{
+    /*
+     Write a program using nested loops that asks the user to enter a value for the number of rows to display. It should then display that many rows of asterisks, with one asterisk in the first row, two in the second row, and so on. For each row, the asterisks are preceded by the number of periods needed to make all the rows display a total number of characters equal to the number of rows.A sample run would look like this:
+     
+     Enter number of rows: 5
+     
+     ....*
+     ...**
+     ..***
+     .****
+     *****
+     
+     */
+    
+    const char period = '.';
+    const char asterisk = '*';
+    int nr;
+    
+    std::cout << "Enter number of rows: ";
+    std::cin >> nr;
+    
+    for (int i = 1; i < nr; i++)
+    {
+        for (int t = nr; t > 1; t--)
+        {
+            std::cout << period;
+        }
+        
+        for (int o = 1; o != nr; o++)
+        {
+            std::cout << asterisk;
+        }
+        
+        std::cout << std::endl;
+    }
 }
