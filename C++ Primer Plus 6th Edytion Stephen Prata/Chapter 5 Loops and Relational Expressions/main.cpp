@@ -1030,9 +1030,17 @@ void Programming_exercises_10()
     std::cout << "Enter number of rows: ";
     std::cin >> nr;
     
-    for (int i = 1; i < nr; i++)
+    for (int i = 1; i <= nr; i++)
     {
-       
+        for(int t = nr; t > i; t--)
+        {
+            std::cout << period;
+        }
+        
+        for(int u = 1; u <= i; u++)
+        {
+            std::cout << asterisk;
+        }
         
         std::cout << std::endl;
     }

@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B8AF2376293BEBFB00B09481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8AF2375293BEBFB00B09481 /* main.cpp */; };
+		B8B649F42985CFF000541678 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8B649F32985CFF000541678 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B8AF2371293BEBFB00B09481 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B8B649EF2985CFF000541678 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -47,10 +57,19 @@
 		B8AF2375293BEBFB00B09481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B8B47F3029547AEA008D7C2B /* Listing 5.9 forstr2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.9 forstr2.h"; sourceTree = "<group>"; };
 		B8B47F312955CD1B008D7C2B /* Listing 5.10 equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.10 equal.h"; sourceTree = "<group>"; };
+		B8B649F12985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 6 Branching Statements and Logical Operators"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B649F32985CFF000541678 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B8AF2370293BEBFB00B09481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B649EE2985CFF000541678 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +84,7 @@
 			children = (
 				B8AF2368293BEAFF00B09481 /* Chapter 4 Compound Types */,
 				B8AF2374293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
+				B8B649F22985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */,
 				B87B06EB292988F600F1115A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
+				B8B649F12985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +135,14 @@
 			path = "Chapter 5 Loops and Relational Expressions";
 			sourceTree = "<group>";
 		};
+		B8B649F22985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */ = {
+			isa = PBXGroup;
+			children = (
+				B8B649F32985CFF000541678 /* main.cpp */,
+			);
+			path = "Chapter 6 Branching Statements and Logical Operators";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +163,23 @@
 			productReference = B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */;
 			productType = "com.apple.product-type.tool";
 		};
+		B8B649F02985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8B649F72985CFF000541678 /* Build configuration list for PBXNativeTarget "Chapter 6 Branching Statements and Logical Operators" */;
+			buildPhases = (
+				B8B649ED2985CFF000541678 /* Sources */,
+				B8B649EE2985CFF000541678 /* Frameworks */,
+				B8B649EF2985CFF000541678 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter 6 Branching Statements and Logical Operators";
+			productName = "Chapter 6 Branching Statements and Logical Operators";
+			productReference = B8B649F12985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +191,9 @@
 				TargetAttributes = {
 					B8AF2372293BEBFB00B09481 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					B8B649F02985CFF000541678 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -162,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				B8AF2372293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
+				B8B649F02985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +222,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8AF2376293BEBFB00B09481 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B649ED2985CFF000541678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B649F42985CFF000541678 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +375,32 @@
 			};
 			name = Release;
 		};
+		B8B649F52985CFF000541678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_COMMA = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8B649F62985CFF000541678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_COMMA = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +418,15 @@
 			buildConfigurations = (
 				B8AF2378293BEBFB00B09481 /* Debug */,
 				B8AF2379293BEBFB00B09481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8B649F72985CFF000541678 /* Build configuration list for PBXNativeTarget "Chapter 6 Branching Statements and Logical Operators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B649F52985CFF000541678 /* Debug */,
+				B8B649F62985CFF000541678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
