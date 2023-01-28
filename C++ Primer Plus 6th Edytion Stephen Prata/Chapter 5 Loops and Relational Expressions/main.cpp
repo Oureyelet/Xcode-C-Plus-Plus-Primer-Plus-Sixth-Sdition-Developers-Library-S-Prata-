@@ -1032,15 +1032,7 @@ void Programming_exercises_10()
     
     for (int i = 1; i < nr; i++)
     {
-        for (int t = nr; t > 1; t--)
-        {
-            std::cout << period;
-        }
-        
-        for (int o = 1; o != nr; o++)
-        {
-            std::cout << asterisk;
-        }
+       
         
         std::cout << std::endl;
     }
