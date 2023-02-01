@@ -7,9 +7,9 @@ I hope this give me some opportunities for find my dream job as a junior softwar
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-C++ Primer Plus 6th Edition Oct 2011 PDF
 
-[a link](https://zhjwpku.com/assets/pdf/books/C++.Primer.Plus.6th.Edition.Oct.2011.pdf)
+
+[C++ Primer Plus 6th Edition Oct 2011 PDF](https://zhjwpku.com/assets/pdf/books/C++.Primer.Plus.6th.Edition.Oct.2011.pdf)
 
 
 Kind Regards,
