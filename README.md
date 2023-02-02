@@ -1,7 +1,7 @@
 
 # Hello everyone :)
 
-Basic idea is to update all my progress data i learned from [C++ Primer Plus 6th Edition Oct 2011 PDF](https://zhjwpku.com/assets/pdf/books/C++.Primer.Plus.6th.Edition.Oct.2011.pdf) and share it here so you can see my learning process 
+This is my secound project on GitHub basic idea is to update all my progress data i learned from [C++ Primer Plus 6th Edition Oct 2011 PDF](https://zhjwpku.com/assets/pdf/books/C++.Primer.Plus.6th.Edition.Oct.2011.pdf) and share it here so you can see my learning process 
 also is going to by my own further knowledge reference.
 I hope this give me some opportunities for find my dream job as a junior software developer :)
 
