@@ -23,6 +23,8 @@ I hope this give me some opportunities for find my dream job as a junior softwar
 
 6 [`Branching Statements and Logical Operators`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/blob/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%206%20Branching%20Statements%20and%20Logical%20Operators/main.cpp) <br />
 
+![image](https://user-images.githubusercontent.com/69697624/216241788-f59cb531-dfcc-4be5-b9f7-d264e13d35ba.gif)
+
 7 `Functions: C++'s Programming Modules` <br />
 8 `Adventures in Functions` <br />
 9 `Memory Models and Namespaces` <br />
