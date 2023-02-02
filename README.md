@@ -9,17 +9,17 @@ I hope this give me some opportunities for find my dream job as a junior softwar
 
 ### Table of Contents
 
-1 [`Getting Started with C++`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%201%20Getting%20Started%20with%20C%2B%2B%20(vsCode)/spiffy.cpp) <br />
+- [x] 1 [`Getting Started with C++`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%201%20Getting%20Started%20with%20C%2B%2B%20(vsCode)/spiffy.cpp) <br />
 
-2 [`Setting Out to C++`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%202%20Setting%20Out%20to%20C%2B%2B%20(vsCode)/main.cpp) <br />
+- [x] 2 [`Setting Out to C++`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%202%20Setting%20Out%20to%20C%2B%2B%20(vsCode)/main.cpp) <br />
 
-3 [`Dealing with Data`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%203%20Dealing%20with%20Data%20(vsCode)/main.cpp) <br />
+- [x] 3 [`Dealing with Data`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%203%20Dealing%20with%20Data%20(vsCode)/main.cpp) <br />
 
-4 [`Compound Types A`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%204%20Compound%20Types%20(vsCode)/main.cpp) <br />
+- [x] 4 [`Compound Types A`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%204%20Compound%20Types%20(vsCode)/main.cpp) <br />
 
-4 [`Compound Types B`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/tree/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%204%20Compound%20Types) <br />
+- [x] 4 [`Compound Types B`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/tree/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%204%20Compound%20Types) <br />
 
-5 [`Loops and Relational Expressions`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/blob/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%205%20Loops%20and%20Relational%20Expressions/main.cpp) <br />
+- [x] 5 [`Loops and Relational Expressions`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/blob/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%205%20Loops%20and%20Relational%20Expressions/main.cpp) <br />
 
 6 [`Branching Statements and Logical Operators`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/blob/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%206%20Branching%20Statements%20and%20Logical%20Operators/main.cpp) <br />
 
