@@ -17,7 +17,7 @@ I hope this give me some opportunities for find my dream job as a junior softwar
 
 - [x] 4 [`Compound Types A`](https://github.com/Oureyelet/C-plus-plus-Primer-Plus-sixth-edition-Developer-s-Library-S-Prata/blob/master/Chapter%204%20Compound%20Types%20(vsCode)/main.cpp) <br />
 
-- [x] 4 [`Compound Types B`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/tree/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%204%20Compound%20Types) <br />
+- [x] 4 [`Compound Types B`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/blob/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%204%20Compound%20Types/main.cpp) <br />
 
 - [x] 5 [`Loops and Relational Expressions`](https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-/blob/main/C%2B%2B%20Primer%20Plus%206th%20Edytion%20Stephen%20Prata/Chapter%205%20Loops%20and%20Relational%20Expressions/main.cpp) <br />
 
