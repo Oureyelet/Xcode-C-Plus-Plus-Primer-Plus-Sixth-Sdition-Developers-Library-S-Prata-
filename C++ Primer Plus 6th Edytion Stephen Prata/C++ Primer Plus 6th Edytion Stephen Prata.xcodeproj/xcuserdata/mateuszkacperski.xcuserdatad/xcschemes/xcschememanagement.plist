@@ -18,6 +18,8 @@
 		</dict>
 		<key>Chapter 5 Loops and Relational Expressions.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -35,6 +37,11 @@
 			<true/>
 		</dict>
 		<key>B8AF2366293BEAFF00B09481</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8B649F02985CFF000541678</key>
 		<dict>
 			<key>primary</key>
 			<true/>

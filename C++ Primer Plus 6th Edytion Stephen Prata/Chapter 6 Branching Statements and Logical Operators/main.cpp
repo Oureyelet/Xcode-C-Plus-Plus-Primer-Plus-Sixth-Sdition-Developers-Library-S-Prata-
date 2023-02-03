@@ -7,6 +7,12 @@
 
 #include <iostream>
 
+// Examples has been included in header files:
+#include "Listing 6.1 if.h"
+#include "Listing 6.2 if else.h"
+
+
+
 int main()
 {
     std::cout << "Hello, World!\n";
@@ -23,12 +29,28 @@ int main()
      - Basic file input/output
      */
     
+    
+    
+    
+    
     //-----------------------------------------------------------------------------------------------------
-    // The if Statement: check example here -> "Listing 5.1 forloop.h"
+    // The if Statement: check example here -> "Listing 6.1 if.h"
     //-----------------------------------------------------------------------------------------------------
     
-    // editing readmefiles...
-    // editing conntinues...
+    // listinng_6_1();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The if else Statement: check example here -> "Listing 6.1 if.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    listing_6_2();
+    
+    
+    
     
     std::cin.get();
     return 0;
