@@ -48,7 +48,7 @@ int main()
     
      listing_6_2();
     
-    //.
+    std::cout << "Is that worked ?\n";
     
     std::cin.get();
     return 0;
