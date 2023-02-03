@@ -12,7 +12,6 @@
 #include "Listing 6.2 if else.h"
 
 
-
 int main()
 {
     std::cout << "Hello, World!\n";
@@ -47,9 +46,7 @@ int main()
     // The if else Statement: check example here -> "Listing 6.1 if.h"
     //-----------------------------------------------------------------------------------------------------
     
-    listing_6_2();
-    
-    
+     listing_6_2();
     
     
     std::cin.get();
