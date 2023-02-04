@@ -10,6 +10,7 @@
 // Examples has been included in header files:
 #include "Listing 6.1 if.h"
 #include "Listing 6.2 if else.h"
+#include "Listing 6.3 if else if.h"
 
 
 int main()
@@ -36,19 +37,36 @@ int main()
     // The if Statement: check example here -> "Listing 6.1 if.h"
     //-----------------------------------------------------------------------------------------------------
     
-    // listinng_6_1();
+    // listing_6_1();
     
     
     
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The if else Statement: check example here -> "Listing 6.1 if.h"
+    // The if else Statement: check example here -> "Listing 6.2 if else.h"
     //-----------------------------------------------------------------------------------------------------
     
-     listing_6_2();
+    // listing_6_2();
     
-    std::cout << "Is that worked ?\n";
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Formatting 'if else' Statements:
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The 'if else if else' Construction: check example here -> "Listing 6.3 if else if.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    listing_6_3();
+   
     
     std::cin.get();
     return 0;

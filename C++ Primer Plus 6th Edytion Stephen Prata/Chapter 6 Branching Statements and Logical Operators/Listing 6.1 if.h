@@ -10,7 +10,7 @@
 
 #include <iostream>
 
-void listinng_6_1()
+void listing_6_1()
 {
     std::cout << "Enter sentens with periot on the end please: ";
     char ch;
