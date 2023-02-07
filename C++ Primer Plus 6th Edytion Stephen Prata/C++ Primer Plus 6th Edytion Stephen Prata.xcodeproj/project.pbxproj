@@ -56,6 +56,8 @@
 		B8ACD988298F046300443A19 /* Listing 6.3 if else if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.3 if else if.h"; sourceTree = "<group>"; };
 		B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 5 Loops and Relational Expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF2375293BEBFB00B09481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B8B1EB3029921AD4006A45A4 /* Listing 6.4 or.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.4 or.h"; sourceTree = "<group>"; };
+		B8B1EB3129921F76006A45A4 /* Listing 6.5 end.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.5 end.h"; sourceTree = "<group>"; };
 		B8B47F3029547AEA008D7C2B /* Listing 5.9 forstr2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.9 forstr2.h"; sourceTree = "<group>"; };
 		B8B47F312955CD1B008D7C2B /* Listing 5.10 equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.10 equal.h"; sourceTree = "<group>"; };
 		B8B649F12985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 6 Branching Statements and Logical Operators"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				B8B649F32985CFF000541678 /* main.cpp */,
+				B8B1EB3129921F76006A45A4 /* Listing 6.5 end.h */,
+				B8B1EB3029921AD4006A45A4 /* Listing 6.4 or.h */,
 				B8ACD988298F046300443A19 /* Listing 6.3 if else if.h */,
 				B8DA5F0B298CD32900BEE6EC /* Listing 6.1 if.h */,
 				B8DA5F0C298CD92200BEE6EC /* Listing 6.2 if else.h */,

@@ -10,11 +10,28 @@
 #ifndef Listing_6_3_if_else_if_h
 #define Listing_6_3_if_else_if_h
 
-#inclue <iostream>
+#include <iostream>
+
+const int Fave = 77;
 
 void listing_6_3()
 {
+    int n;
     
+    std::cout << "Enter a number in the range 1-100 to find ";
+    std::cout << "my favorite number: ";
+    
+    do
+    {
+        std::cin >> n;
+        if(n < Fave)
+            std::cout << "Too low -- guess again: ";
+        else if(n > Fave)
+            std::cout << "Too high -- guess again: ";
+        else
+            std::cout << " is right!\n";
+        
+    } while(n != Fave);
 }
 
 #endif /* Listing_6_3_if_else_if_h */
