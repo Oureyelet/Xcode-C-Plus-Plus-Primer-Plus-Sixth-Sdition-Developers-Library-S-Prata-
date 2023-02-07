@@ -12,10 +12,25 @@
 
 #include <iostream>
 
+const int ArSize = 7;
+
 void listing_6_5()
 {
+    float naaq[ArSize];
+    std::cout << "Enter the NAAQs (New Age Awareness Quotients) "
+              << "of\nyour neighbors. Program terminates "
+              << "when you make\n" << ArSize << " entries "
+              << "or enter a negative value.\n";
     
+    int i = 0;
+    float temp;
+    std::cout << "First value: ";
+    std::cin >> temp;
     
+    while(i < ArSize && temp >= 0)
+    {
+        
+    }
 }
 
 #endif /* Listing_6_5_end_h */
