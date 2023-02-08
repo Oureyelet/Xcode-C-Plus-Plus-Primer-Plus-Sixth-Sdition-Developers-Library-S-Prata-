@@ -27,9 +27,31 @@ void listing_6_5()
     std::cout << "First value: ";
     std::cin >> temp;
     
-    while(i < ArSize && temp >= 0)
+    while(i < ArSize && temp >= 0)          // 2 quitting criteria
     {
+        naaq[i] = temp;
+        ++i;
         
+        if(i < ArSize)                      // room left in the array
+        {
+            std::cout << "Next value: ";
+            std::cin >> temp;               // so get next value
+        }
+    }
+    if(i == 0)
+        std::cout << "No data--bye.\n";
+    else
+    {
+        std::cout << "Enter your NAAQ: ";
+        float you;
+        std::cin >> you;
+        int count = 0;
+        for(int j = 0; j < i; j++)
+            if(naaq[j] > you)
+                ++count;
+        std::cout << count;
+        std::cout << " of your neighbors have greater awareness of\n"
+                  << "the New Age than you do\n";
     }
 }
 
