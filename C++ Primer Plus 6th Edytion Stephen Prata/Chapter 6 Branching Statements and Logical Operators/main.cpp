@@ -14,7 +14,10 @@
 #include "Listing 6.4 or.h"
 #include "Listing 6.5 end.h"
 #include "Listing 6.6 more end.h"
+#include "Listing 6.7 not.h"
 
+// Function prototypes:
+bool is_alphabetick(char);
 
 int main()
 {
@@ -137,12 +140,116 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The Logical NOT Operator !:
+    // The Logical NOT Operator !: check example here -> "Listing 6.7 not.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    std::cout << INT_MAX << '\n';   // to check what is the max int in current system -- INT_MIN to check minimum int
+    
+    // listing_6_7();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Logical Operator Facts:
     //-----------------------------------------------------------------------------------------------------
     
     
     
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Alternative Representations:
+    //-----------------------------------------------------------------------------------------------------
+        
+    /*
+     
+     Table 6.3 Logical Operators: Alternative Representations
+     Operator                       Alternative Representation
+     &&                             and                         -- both need to be true for result true
+     ||                             or                          -- If either or both is true the resulting expression has the value true.
+     !                              not                         --
+     
+     */
+
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The cctype Library of Character Functions:
+    //-----------------------------------------------------------------------------------------------------
+       
+    char letter;
+    
+    std::cout << "Enter alphabetick character: ";
+    std::cin >> letter;
+    
+    while( !is_alphabetick(letter) )
+    {
+        std::cout << "No! no! no! Try again... ";
+        std::cin >> letter;
+    }
+    
+    if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 1 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 2 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 3 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 4 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 5 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 6 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 7 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 8 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 9 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 10 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 11 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 12 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 13 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 14 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 15 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 16 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 17 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 18 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 19 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 20 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 21 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 22 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A')
+        std::cout << "That is right " << letter << " is " << 23 << " letter in alphabet.\n";
+    else if(letter == 'a' && letter == 'A'
+        std::cout << "That is right " << letter << " is " << 24 << " letter in alphabet.\n";
+    
     std::cin.get();
     std::cin.get();
     return 0;
+}
+
+bool is_alphabetick(char x)
+{
+    if((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
+        return true;
+    else
+       return false;
 }
