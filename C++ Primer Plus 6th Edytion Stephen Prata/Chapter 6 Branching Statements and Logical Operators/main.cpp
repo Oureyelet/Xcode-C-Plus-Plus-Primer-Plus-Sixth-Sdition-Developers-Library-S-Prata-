@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+#include <cctype>
 
 // Examples has been included in header files:
 #include "Listing 6.1 if.h"
@@ -15,6 +16,7 @@
 #include "Listing 6.5 end.h"
 #include "Listing 6.6 more end.h"
 #include "Listing 6.7 not.h"
+#include "Listing 6.8 cctypes.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -178,70 +180,43 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The cctype Library of Character Functions:
+    // The cctype Library of Character Functions: check example here -> "Listing 6.8 cctypes.h"
     //-----------------------------------------------------------------------------------------------------
        
-    char letter;
-    
+    char x;
+
     std::cout << "Enter alphabetick character: ";
-    std::cin >> letter;
-    
-    while( !is_alphabetick(letter) )
+    std::cin >> x;
+
+    while( !is_alphabetick(x))  // check if char is alphabetic and then i tell u which numer in alphabet it is
     {
         std::cout << "No! no! no! Try again... ";
-        std::cin >> letter;
+        std::cin >> x;
     }
+
+    // listing_6_8();
     
-    if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 1 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 2 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 3 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 4 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 5 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 6 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 7 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 8 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 9 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 10 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 11 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 12 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 13 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 14 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 15 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 16 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 17 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 18 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 19 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 20 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 21 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 22 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A')
-        std::cout << "That is right " << letter << " is " << 23 << " letter in alphabet.\n";
-    else if(letter == 'a' && letter == 'A'
-        std::cout << "That is right " << letter << " is " << 24 << " letter in alphabet.\n";
+    // Change lover case char to upper
+    char name;
+    std::cout << "Enter name: ";
+    std::cin.get(name);
+    if(islower(name))
+    {
+        char o = toupper(name);
+        std::cout << o << '\n';
+    }
+
     
-    std::cin.get();
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The ?: Operator:
+    //-----------------------------------------------------------------------------------------------------
+       
+            
+            
+    
     std::cin.get();
     return 0;
 }
@@ -249,7 +224,62 @@ int main()
 bool is_alphabetick(char x)
 {
     if((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
+    {
+        if(x == 'a' || x == 'A')
+            std::cout << "That is right " << x << " is " << 1 << " letter in alphabet.\n";
+        else if(x == 'b' || x == 'B')
+            std::cout << "That is right " << x << " is " << 2 << " letter in alphabet.\n";
+        else if(x == 'c' || x == 'C')
+            std::cout << "That is right " << x << " is " << 3 << " letter in alphabet.\n";
+        else if(x == 'd' || x == 'D')
+            std::cout << "That is right " << x << " is " << 4 << " letter in alphabet.\n";
+        else if(x == 'e' || x == 'E')
+            std::cout << "That is right " << x << " is " << 5 << " letter in alphabet.\n";
+        else if(x == 'f' || x == 'F')
+            std::cout << "That is right " << x << " is " << 6 << " letter in alphabet.\n";
+        else if(x == 'g' || x == 'G')
+            std::cout << "That is right " << x << " is " << 7 << " letter in alphabet.\n";
+        else if(x == 'h' || x == 'H')
+            std::cout << "That is right " << x << " is " << 8 << " letter in alphabet.\n";
+        else if(x == 'i' || x == 'I')
+            std::cout << "That is right " << x << " is " << 9 << " letter in alphabet.\n";
+        else if(x == 'j' || x == 'J')
+            std::cout << "That is right " << x << " is " << 10 << " letter in alphabet.\n";
+        else if(x == 'k' || x == 'K')
+            std::cout << "That is right " << x << " is " << 11 << " letter in alphabet.\n";
+        else if(x == 'l' || x == 'L')
+            std::cout << "That is right " << x << " is " << 12 << " letter in alphabet.\n";
+        else if(x == 'm' || x == 'M')
+            std::cout << "That is right " << x << " is " << 13 << " letter in alphabet.\n";
+        else if(x == 'n' || x == 'N')
+            std::cout << "That is right " << x << " is " << 14 << " letter in alphabet.\n";
+        else if(x == 'o' || x == 'O')
+            std::cout << "That is right " << x << " is " << 15 << " letter in alphabet.\n";
+        else if(x == 'p' || x == 'P')
+            std::cout << "That is right " << x << " is " << 16 << " letter in alphabet.\n";
+        else if(x == 'q' || x == 'Q')
+            std::cout << "That is right " << x << " is " << 17 << " letter in alphabet.\n";
+        else if(x == 'r' || x == 'R')
+            std::cout << "That is right " << x << " is " << 18 << " letter in alphabet.\n";
+        else if(x == 's' || x == 'S')
+            std::cout << "That is right " << x << " is " << 19 << " letter in alphabet.\n";
+        else if(x == 't' || x == 'T')
+            std::cout << "That is right " << x << " is " << 20 << " letter in alphabet.\n";
+        else if(x == 'u' || x == 'U')
+            std::cout << "That is right " << x << " is " << 21 << " letter in alphabet.\n";
+        else if(x == 'v' || x == 'V')
+            std::cout << "That is right " << x << " is " << 22 << " letter in alphabet.\n";
+        else if(x == 'w' || x == 'W')
+            std::cout << "That is right " << x << " is " << 23 << " letter in alphabet.\n";
+        else if(x == 'x' || x == 'X')
+            std::cout << "That is right " << x << " is " << 24 << " letter in alphabet.\n";
+        else if(x == 'y' || x == 'Y')
+            std::cout << "That is right " << x << " is " << 25 << " letter in alphabet.\n";
+        else if(x == 'z' || x == 'Z')
+            std::cout << "That is right " << x << " is " << 26 << " letter in alphabet.\n";
+
         return true;
+    }
     else
        return false;
 }
