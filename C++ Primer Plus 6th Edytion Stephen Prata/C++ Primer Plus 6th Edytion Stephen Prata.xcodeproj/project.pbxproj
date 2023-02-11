@@ -35,6 +35,7 @@
 /* Begin PBXFileReference section */
 		B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.19 textin4.h"; sourceTree = "<group>"; };
 		B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.5 bigstep.h"; sourceTree = "<group>"; };
+		B84407622998334800A1961D /* Listing 6.9 condit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.9 condit.h"; sourceTree = "<group>"; };
 		B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.6 forstr1.h"; sourceTree = "<group>"; };
 		B847D2972953A76A006C92FD /* Listing 5.7 plus_one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.7 plus_one.h"; sourceTree = "<group>"; };
 		B847D29829544EFE006C92FD /* Listing 5.8 block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.8 block.h"; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B8B649F32985CFF000541678 /* main.cpp */,
+				B84407622998334800A1961D /* Listing 6.9 condit.h */,
 				B897697029960EEA0095C7DA /* Listing 6.8 cctypes.h */,
 				B897696F2994BB070095C7DA /* Listing 6.7 not.h */,
 				B897696E29936DE40095C7DA /* Listing 6.6 more end.h */,

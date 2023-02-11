@@ -17,6 +17,7 @@
 #include "Listing 6.6 more end.h"
 #include "Listing 6.7 not.h"
 #include "Listing 6.8 cctypes.h"
+#include "Listing 6.9 condit.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -183,39 +184,55 @@ int main()
     // The cctype Library of Character Functions: check example here -> "Listing 6.8 cctypes.h"
     //-----------------------------------------------------------------------------------------------------
        
-    char x;
-
-    std::cout << "Enter alphabetick character: ";
-    std::cin >> x;
-
-    while( !is_alphabetick(x))  // check if char is alphabetic and then i tell u which numer in alphabet it is
-    {
-        std::cout << "No! no! no! Try again... ";
-        std::cin >> x;
-    }
-
-    // listing_6_8();
-    
-    // Change lover case char to upper
-    char name;
-    std::cout << "Enter name: ";
-    std::cin.get(name);
-    if(islower(name))
-    {
-        char o = toupper(name);
-        std::cout << o << '\n';
-    }
+//    char x;
+//
+//    std::cout << "Enter alphabetick character: ";
+//    std::cin >> x;
+//
+//    while( !is_alphabetick(x))  // check if char is alphabetic and then i tell u which numer in alphabet it is
+//    {
+//        std::cout << "No! no! no! Try again... ";
+//        std::cin >> x;
+//    }
+//
+//    // listing_6_8();
+//
+//    // Change lover case char to upper
+//    char name;
+//    std::cout << "Enter name: ";
+//    std::cin.get(name);
+//    if(islower(name))
+//    {
+//        char o = toupper(name);
+//        std::cout << o << '\n';
+//    }
 
     
     
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The ?: Operator:
+    // The ?: Operator: check example here -> "Listing 6.9 condit.h"
     //-----------------------------------------------------------------------------------------------------
        
-            
-            
+    /*
+     C++ has an operator that can often be used instead of the if else statement.This opera- tor is called the conditional operator,
+     written ?:, and, for you trivia buffs, it is the only C++ operator that requires three operands.The general form looks like this:
+     
+     expression1 ? expression2 : expression3
+     */
+    
+    // listing_6_9();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The switch Statement: 
+    //-----------------------------------------------------------------------------------------------------
+       
+    
     
     std::cin.get();
     return 0;
