@@ -18,6 +18,7 @@
 #include "Listing 6.7 not.h"
 #include "Listing 6.8 cctypes.h"
 #include "Listing 6.9 condit.h"
+#include "Listing 6.10 switch.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -229,9 +230,12 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The switch Statement: 
+    // The switch Statement:
     //-----------------------------------------------------------------------------------------------------
-       
+    
+    std::cout << "\ayo" << '\n';
+    
+    //listing_6_10();
     
     
     std::cin.get();
