@@ -19,6 +19,7 @@
 #include "Listing 6.8 cctypes.h"
 #include "Listing 6.9 condit.h"
 #include "Listing 6.10 switch.h"
+#include "Listing 6.11 enum.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -230,12 +231,20 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The switch Statement:
+    // The switch Statement: check example here -> "Listing 6.10 switch.h"
     //-----------------------------------------------------------------------------------------------------
     
-    std::cout << "\ayo" << '\n';
+    // listing_6_10();
     
-    //listing_6_10();
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Using Enumerators as Labels: check example here -> "Listing 6.11 enum.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    listing_6_11();
     
     
     std::cin.get();
