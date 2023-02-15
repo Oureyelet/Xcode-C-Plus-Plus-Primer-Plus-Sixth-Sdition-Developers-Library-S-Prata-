@@ -20,6 +20,7 @@
 #include "Listing 6.9 condit.h"
 #include "Listing 6.10 switch.h"
 #include "Listing 6.11 enum.h"
+#include "Listing 6.12 jump.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -234,6 +235,10 @@ int main()
     // The switch Statement: check example here -> "Listing 6.10 switch.h"
     //-----------------------------------------------------------------------------------------------------
     
+    /*
+     Each switch case label must be a single value. Also that value must be an integer (which includes char).
+     */
+    
     // listing_6_10();
     
     
@@ -244,7 +249,33 @@ int main()
     // Using Enumerators as Labels: check example here -> "Listing 6.11 enum.h"
     //-----------------------------------------------------------------------------------------------------
     
-    listing_6_11();
+     // listing_6_11();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Switch and if else:
+    //-----------------------------------------------------------------------------------------------------
+    
+    /*
+     "If you can use either an if else if sequence or a switch statement, the usual practice is to use switch if you have three or more alternatives."
+     */
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    //  The break and continue Statements
+    //-----------------------------------------------------------------------------------------------------
+    
+    /*
+    "The break and continue statements enable a program to skip over parts of the code.You can use the break statement in a switch statement and in any of the loops. It causes pro- gram execution to pass to the next statement following the switch or the loop.The continue statement is used in loops and causes a program to skip the rest of the body of the loop and then start a new loop cycle (see Figure 6.4)."
+     */
+    
+    listing_6_12();
     
     
     std::cin.get();

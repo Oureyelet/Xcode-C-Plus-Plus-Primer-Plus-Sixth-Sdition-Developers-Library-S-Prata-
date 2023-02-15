@@ -55,6 +55,7 @@
 		B879A908299ABC95001309D4 /* Listing 6.10 switch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.10 switch.h"; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
 		B888420A299B593C00E3D338 /* Listing 6.11 enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.11 enum.h"; sourceTree = "<group>"; };
+		B890E9C1299CA9C700CD1C80 /* Listing 6.12 jump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.12 jump.h"; sourceTree = "<group>"; };
 		B897696E29936DE40095C7DA /* Listing 6.6 more end.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.6 more end.h"; sourceTree = "<group>"; };
 		B897696F2994BB070095C7DA /* Listing 6.7 not.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.7 not.h"; sourceTree = "<group>"; };
 		B897697029960EEA0095C7DA /* Listing 6.8 cctypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.8 cctypes.h"; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				B8B649F32985CFF000541678 /* main.cpp */,
+				B890E9C1299CA9C700CD1C80 /* Listing 6.12 jump.h */,
 				B888420A299B593C00E3D338 /* Listing 6.11 enum.h */,
 				B879A908299ABC95001309D4 /* Listing 6.10 switch.h */,
 				B84407622998334800A1961D /* Listing 6.9 condit.h */,

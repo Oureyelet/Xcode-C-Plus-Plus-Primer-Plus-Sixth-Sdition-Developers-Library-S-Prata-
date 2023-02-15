@@ -526,7 +526,7 @@ int main()
 //    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 //
 //    std::cout << "[STD::STRING] Enter your name and surname please: ";
-//    std::getline(std::cin, name_and_surname2); // here is read whole line
+//    std::getline(std::cin, name_and_surname2); // here program can read whole line
 //    std::cout << "[STD::STRING] Hello " << name_and_surname2 << '\n';
 
 
