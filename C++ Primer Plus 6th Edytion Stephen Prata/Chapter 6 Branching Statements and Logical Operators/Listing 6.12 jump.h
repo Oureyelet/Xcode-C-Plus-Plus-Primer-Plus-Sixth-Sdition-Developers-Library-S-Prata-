@@ -19,9 +19,9 @@ void listing_6_12()
     char line[ArSize_v2];
     int spaces = 0;
     
-    std::cout << "Enter a line of text:\n";
+    std::cout << "Enter a line of text: ";
     std::cin.get(line, ArSize_v2);
-    std::cout << "Complete linne:\n " << line << std::endl;
+    std::cout << "Complete linne:\n" << line << std::endl;
     std::cout << "Line through first period:\n";
     
     for (int i = 0; line[i] != '\0'; i++)
@@ -29,7 +29,7 @@ void listing_6_12()
         std::cout << line[i];   // display character
         if(line[i] == '.')      // quit if it's a period
             break;
-        if(line[i] == ' ')      // skip rest of loop
+        if(line[i] != ' ')      // skip rest of loop
             continue;
         spaces++;
     }
