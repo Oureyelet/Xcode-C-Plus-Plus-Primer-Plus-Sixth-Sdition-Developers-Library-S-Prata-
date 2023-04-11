@@ -317,6 +317,7 @@ int main()
     //  Number-Reading Loops: check example here -> "Listing 6.12 jump.h"
     //-----------------------------------------------------------------------------------------------------
     
+    std::cout << "New start after Easter - Jezus Christ is my Lord" << '\n';
     
     std::cin.get();
     return 0;
