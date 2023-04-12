@@ -22,6 +22,7 @@
 #include "Listing 6.10 switch.h"
 #include "Listing 6.11 enum.h"
 #include "Listing 6.12 jump.h"
+#include "Listing 6.13 cinfish.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -205,7 +206,7 @@ int main()
     
     // Change lover case char to upper
     char name;
-    std::cout << "Enter name: ";
+    std::cout << "Enter char (if will be lover case i will chang it to upper): ";
     std::cin.get(name);
     if(islower(name))
     {
@@ -277,8 +278,6 @@ int main()
     "The break and continue statements enable a program to skip over parts of the code.You can use the break statement in a switch statement and in any of the loops. It causes pro- gram execution to pass to the next statement following the switch or the loop.The continue statement is used in loops and causes a program to skip the rest of the body of the loop and then start a new loop cycle (see Figure 6.4)."
      */
     
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    
 //    listing_6_12();
     
 //    std::string test = "H]llo Worl[d";
@@ -297,14 +296,16 @@ int main()
     
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     
-    tuesday: std::cout << "Tha's mean your monday inclue :P" << '\n';
+    
+    std::cout << "Enter char (I'll check is that was 'P')" << '\n';
     
     char monday;
     std::cin >> monday;
     if(monday == 'P')
         goto tuesday;
     
-    std::cout << "Tha's mean your monday did not inclue P." << '\n';
+    std::cout << "Tha's mean your char did not inclue P." << '\n';
+    tuesday: std::cout << "but eventually your char inclue :P" << '\n';
     
     /*
      In most circumstances (some would say in all circumstances), using goto is a bad hack, and you should use structured controls, such as if else, switch, continue, and the like, to control program flow.
@@ -318,6 +319,14 @@ int main()
     //-----------------------------------------------------------------------------------------------------
     
     std::cout << "New start after Easter - Jezus Christ is my Lord" << '\n';
+    
+    std::cout << "Here we have int 'n' try to enter a word instead of number... \n";
+    int n;
+    std::cin >> n;
+    
+    std::cout << n << '\n';
+    
+    
     
     std::cin.get();
     return 0;
