@@ -23,6 +23,7 @@
 #include "Listing 6.11 enum.h"
 #include "Listing 6.12 jump.h"
 #include "Listing 6.13 cinfish.h"
+#include "Listing 6.14 cingolf.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -189,30 +190,30 @@ int main()
     // The cctype Library of Character Functions: check example here -> "Listing 6.8 cctypes.h"
     //-----------------------------------------------------------------------------------------------------
        
-    char x;
-
-    std::cout << "Enter alphabetick character: ";
-    std::cin >> x;
-
-    while( !is_alphabetick(x))  // check if char is alphabetic and then i tell u which numer in alphabet it is
-    {
-        std::cout << "No! no! no! Try again... ";
-        std::cin >> x;
-    }
-
-    // listing_6_8();
-
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    
-    // Change lover case char to upper
-    char name;
-    std::cout << "Enter char (if will be lover case i will chang it to upper): ";
-    std::cin.get(name);
-    if(islower(name))
-    {
-        char o = toupper(name);
-        std::cout << o << '\n';
-    }
+//    char x;
+//
+//    std::cout << "Enter alphabetick character: ";
+//    std::cin >> x;
+//
+//    while( !is_alphabetick(x))  // check if char is alphabetic and then i tell u which numer in alphabet it is
+//    {
+//        std::cout << "No! no! no! Try again... ";
+//        std::cin >> x;
+//    }
+//
+//    // listing_6_8();
+//
+//    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+//
+//    // Change lover case char to upper
+//    char name;
+//    std::cout << "Enter char (if will be lover case i will chang it to upper): ";
+//    std::cin.get(name);
+//    if(islower(name))
+//    {
+//        char o = toupper(name);
+//        std::cout << o << '\n';
+//    }
 
     
     
@@ -294,18 +295,18 @@ int main()
      C++, like C, also has a goto statement. A statement like this means to jump to the location bearing the paris: label:
      */
     
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    
-    
-    std::cout << "Enter char (I'll check is that was 'P')" << '\n';
-    
-    char monday;
-    std::cin >> monday;
-    if(monday == 'P')
-        goto tuesday;
-    
-    std::cout << "Tha's mean your char did not inclue P." << '\n';
-    tuesday: std::cout << "but eventually your char inclue :P" << '\n';
+//    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+//
+//
+//    std::cout << "Enter char (I'll check is that was 'P')" << '\n';
+//
+//    char monday;
+//    std::cin >> monday;
+//    if(monday == 'P')
+//        goto tuesday;
+//
+//    std::cout << "Tha's mean your char did not inclue P." << '\n';
+//    tuesday: std::cout << "but eventually your char inclue :P" << '\n';
     
     /*
      In most circumstances (some would say in all circumstances), using goto is a bad hack, and you should use structured controls, such as if else, switch, continue, and the like, to control program flow.
@@ -318,15 +319,21 @@ int main()
     //  Number-Reading Loops: check example here -> "Listing 6.12 jump.h"
     //-----------------------------------------------------------------------------------------------------
     
-    std::cout << "New start after Easter - Jezus Christ is my Lord" << '\n';
+//    std::cout << "New start after Easter - Jezus Christ is my Lord" << '\n';
+//
+//    std::cout << "Here we have int 'n' try to enter a word instead of number... \n";
+//    int n;
+//    std::cin >> n;
+//
+//    std::cout << n << '\n';
     
-    std::cout << "Here we have int 'n' try to enter a word instead of number... \n";
-    int n;
-    std::cin >> n;
+    // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     
-    std::cout << n << '\n';
+    std::cout << "Listing 6_13:\n";
+    listing_6_13();
     
-    
+    std::cout << "Listing 6_14:\n";
+    listing_6_14();
     
     std::cin.get();
     return 0;

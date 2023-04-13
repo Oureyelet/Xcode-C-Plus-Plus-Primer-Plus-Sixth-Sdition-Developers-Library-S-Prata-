@@ -61,6 +61,7 @@
 		B897697029960EEA0095C7DA /* Listing 6.8 cctypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.8 cctypes.h"; sourceTree = "<group>"; };
 		B897A84A2971251A003084EC /* Listing 5.20 nested.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.20 nested.h"; sourceTree = "<group>"; };
 		B89DE63429E6709E0035A55C /* Listing 6.13 cinfish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.13 cinfish.h"; sourceTree = "<group>"; };
+		B8A9D6BD29E7C5EC00975744 /* Listing 6.14 cingolf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.14 cingolf.h"; sourceTree = "<group>"; };
 		B8ACD988298F046300443A19 /* Listing 6.3 if else if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.3 if else if.h"; sourceTree = "<group>"; };
 		B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 5 Loops and Relational Expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF2375293BEBFB00B09481 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 				B8DA5F0C298CD92200BEE6EC /* Listing 6.2 if else.h */,
 				B8DA5F0B298CD32900BEE6EC /* Listing 6.1 if.h */,
 				B89DE63429E6709E0035A55C /* Listing 6.13 cinfish.h */,
+				B8A9D6BD29E7C5EC00975744 /* Listing 6.14 cingolf.h */,
 			);
 			path = "Chapter 6 Branching Statements and Logical Operators";
 			sourceTree = "<group>";
