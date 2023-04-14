@@ -24,6 +24,7 @@
 #include "Listing 6.12 jump.h"
 #include "Listing 6.13 cinfish.h"
 #include "Listing 6.14 cingolf.h"
+#include "Listing 6.15 outfile.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -316,7 +317,7 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    //  Number-Reading Loops: check example here -> "Listing 6.12 jump.h"
+    //  Number-Reading Loops (check example here -> "Listing 6.13 cinfish.h" and "Listing 6.14 cingolf.h")
     //-----------------------------------------------------------------------------------------------------
     
 //    std::cout << "New start after Easter - Jezus Christ is my Lord" << '\n';
@@ -329,11 +330,39 @@ int main()
     
     // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     
-    std::cout << "Listing 6_13:\n";
-    listing_6_13();
+//    std::cout << "Listing 6_13:\n";
+//    listing_6_13();
     
-    std::cout << "Listing 6_14:\n";
-    listing_6_14();
+//    std::cout << "Listing 6_14:\n";
+//    listing_6_14();
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    //  Simple file Input/Output (collectively termed "console I/O", "file I/O")
+    //-----------------------------------------------------------------------------------------------------
+    
+    /*
+     We'll look at simple text file I/O now
+     */
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    //  Text I/O and Text Files
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    //  Writing to a Text File (check example here -> "Listing 6.15 outfile.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
     
     std::cin.get();
     return 0;

@@ -60,6 +60,7 @@
 		B897696F2994BB070095C7DA /* Listing 6.7 not.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.7 not.h"; sourceTree = "<group>"; };
 		B897697029960EEA0095C7DA /* Listing 6.8 cctypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.8 cctypes.h"; sourceTree = "<group>"; };
 		B897A84A2971251A003084EC /* Listing 5.20 nested.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.20 nested.h"; sourceTree = "<group>"; };
+		B89A835429E916B7006FA723 /* Listing 6.15 outfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.15 outfile.h"; sourceTree = "<group>"; };
 		B89DE63429E6709E0035A55C /* Listing 6.13 cinfish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.13 cinfish.h"; sourceTree = "<group>"; };
 		B8A9D6BD29E7C5EC00975744 /* Listing 6.14 cingolf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.14 cingolf.h"; sourceTree = "<group>"; };
 		B8ACD988298F046300443A19 /* Listing 6.3 if else if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.3 if else if.h"; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 				B8DA5F0B298CD32900BEE6EC /* Listing 6.1 if.h */,
 				B89DE63429E6709E0035A55C /* Listing 6.13 cinfish.h */,
 				B8A9D6BD29E7C5EC00975744 /* Listing 6.14 cingolf.h */,
+				B89A835429E916B7006FA723 /* Listing 6.15 outfile.h */,
 			);
 			path = "Chapter 6 Branching Statements and Logical Operators";
 			sourceTree = "<group>";
