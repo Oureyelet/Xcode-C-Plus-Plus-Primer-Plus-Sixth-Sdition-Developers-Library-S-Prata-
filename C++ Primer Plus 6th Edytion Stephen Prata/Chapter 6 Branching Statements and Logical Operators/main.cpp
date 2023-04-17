@@ -8,6 +8,7 @@
 #include <iostream>
 #include <cctype>
 #include <string>
+#include <fstream>
 
 // Examples has been included in header files:
 #include "Listing 6.1 if.h"
@@ -361,7 +362,7 @@ int main()
     //  Writing to a Text File (check example here -> "Listing 6.15 outfile.h"
     //-----------------------------------------------------------------------------------------------------
     
-    
+    listing_6_15();
     
     
     std::cin.get();
