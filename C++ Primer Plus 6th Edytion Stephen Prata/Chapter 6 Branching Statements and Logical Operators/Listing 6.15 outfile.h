@@ -52,6 +52,31 @@ void listing_6_15()
     outFile << "Was asking $" << a_price << std::endl;
     outFile << "Now asking $" << b_price <<std::endl;
     
+    /*
+     If you want to open contain folde go to top menu -> Product -> Show build folder in finder -> producks -> Debug
+     */
+    
+    
+    /*
+     here is some play with this code...
+     */
+    
+    std::ofstream trial1;
+    std::ofstream trial2;
+    
+    trial1.open("trial 1 here");
+    trial2.open("trial 2 here");
+    
+    trial1.precision(6);
+    trial2.precision(3);
+    
+    double trial_1 = 4.678976;
+    double trial_2 = 7.678976;
+    
+    trial1 << trial_1;
+    trial2 << trial_2;
+    
+     
     outFile.close();    // done with file
 }
 

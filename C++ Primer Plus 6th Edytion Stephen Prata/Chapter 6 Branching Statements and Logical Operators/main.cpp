@@ -362,7 +362,26 @@ int main()
     //  Writing to a Text File (check example here -> "Listing 6.15 outfile.h"
     //-----------------------------------------------------------------------------------------------------
     
-    listing_6_15();
+//    listing_6_15();
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    //  Reading from a Text File (check example here -> "Listing 6.15 outfile.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    std::ifstream fin;
+    
+    fin.open("trial 1 hre");
+    
+    if(!fin.is_open())
+        std::cout << "Error the file not existed.\n";
+    char from_file[50];
+    
+    fin.getline(from_file, 50);
+    std::cout << from_file << '\n';
     
     
     std::cin.get();
