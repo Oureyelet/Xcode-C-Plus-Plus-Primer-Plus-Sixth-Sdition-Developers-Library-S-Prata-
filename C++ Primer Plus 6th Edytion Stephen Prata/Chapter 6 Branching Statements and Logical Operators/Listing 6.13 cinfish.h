@@ -1,7 +1,7 @@
 //
 //  C++ Primer Plus 6th Edytion Stephen Prata
 //  Chapter 6 Branching Statements and Logical Operators
-//  Listing 6. -- non-numeric input terminates loop
+//  Listing 6.13 -- non-numeric input terminates loop
 //
 //  Created by Mateusz Kacperski on 12/04/2023.
 

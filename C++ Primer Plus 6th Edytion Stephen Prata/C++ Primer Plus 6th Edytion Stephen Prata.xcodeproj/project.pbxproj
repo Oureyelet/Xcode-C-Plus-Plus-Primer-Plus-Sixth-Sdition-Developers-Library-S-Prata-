@@ -52,6 +52,7 @@
 		B87165592964B909008B054F /* Listing 5.16 textin1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.16 textin1.h"; sourceTree = "<group>"; };
 		B871655A2964BC1D008B054F /* Listing 5.17 textin2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.17 textin2.h"; sourceTree = "<group>"; };
 		B871655B2968CC68008B054F /* Listing 5.18 textin3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.18 textin3.h"; sourceTree = "<group>"; };
+		B87705A729EFA949006FDC44 /* Listing 6.16 sumafile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.16 sumafile.h"; sourceTree = "<group>"; };
 		B879A908299ABC95001309D4 /* Listing 6.10 switch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.10 switch.h"; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
 		B888420A299B593C00E3D338 /* Listing 6.11 enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.11 enum.h"; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 				B89DE63429E6709E0035A55C /* Listing 6.13 cinfish.h */,
 				B8A9D6BD29E7C5EC00975744 /* Listing 6.14 cingolf.h */,
 				B89A835429E916B7006FA723 /* Listing 6.15 outfile.h */,
+				B87705A729EFA949006FDC44 /* Listing 6.16 sumafile.h */,
 			);
 			path = "Chapter 6 Branching Statements and Logical Operators";
 			sourceTree = "<group>";

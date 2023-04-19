@@ -1,7 +1,7 @@
 //
 //  C++ Primer Plus 6th Edytion Stephen Prata
 //  Chapter 6 Branching Statements and Logical Operators
-//  Listing 6. -- non-numeric input skipped
+//  Listing 6.14 -- non-numeric input skipped
 //
 //  Created by Mateusz Kacperski on 13/04/2023.
 

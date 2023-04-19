@@ -26,6 +26,7 @@
 #include "Listing 6.13 cinfish.h"
 #include "Listing 6.14 cingolf.h"
 #include "Listing 6.15 outfile.h"
+#include "Listing 6.16 sumafile.h"
 
 // Function prototypes:
 bool is_alphabetick(char);
@@ -372,16 +373,18 @@ int main()
     //-----------------------------------------------------------------------------------------------------
     
     
-    std::ifstream fin;
+//    std::ifstream fin; // create object for input - read text from file
+//
+//    fin.open("trial 1 hre");
+//
+//    if(!fin.is_open())
+//        std::cout << "Error the file not existed.\n";
+//    char from_file[50];
+//
+//    fin.getline(from_file, 50);
+//    std::cout << from_file << '\n';
     
-    fin.open("trial 1 hre");
-    
-    if(!fin.is_open())
-        std::cout << "Error the file not existed.\n";
-    char from_file[50];
-    
-    fin.getline(from_file, 50);
-    std::cout << from_file << '\n';
+    listing_6_16();
     
     
     std::cin.get();

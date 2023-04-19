@@ -1,7 +1,7 @@
 //
 //  C++ Primer Plus 6th Edytion Stephen Prata
 //  Chapter 6 Branching Statements and Logical Operators
-//  Listing 6. -- writing to a file
+//  Listing 6.15 -- writing to a file
 //
 //  Created by Mateusz Kacperski on 14/04/2023.
 
@@ -20,7 +20,7 @@ void listing_6_15()
     double a_price;
     double b_price;
     
-    std::ofstream outFile;          // create object for output
+    std::ofstream outFile;          // create object for output - save in file
     outFile.open("carinfo.txt");    // associate with a file
     
     std::cout << "Enter the make and model of automobile: ";
