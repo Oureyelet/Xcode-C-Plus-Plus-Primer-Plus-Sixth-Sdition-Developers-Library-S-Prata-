@@ -46,8 +46,30 @@ void listing_6_16()
      */
     while (fromFile >> value)   // read and test for success
     {
-        
+        ++count;                // one more item read
+        sum += value;           // calculate runing total
     }
+    
+    if (fromFile.eof())
+        std::cout << "End of file reached.\n";
+    else if (fromFile.fail())
+        std::cout << "Input terminated by data mismatch.\n";
+    else
+        std::cout << "Imput terminate for unknow reason.\n";
+    
+    if (count == 0)
+        std::cout << "No data processed.\n";
+    else
+    {
+//        std::cout << std::fixed;
+        std::cout.precision(20);
+        std::cout << "Items read: " << count << std::endl;
+        std::cout << "Sum: " << sum << std::endl;
+        std::cout << "Average: " << sum / count << std::endl;
+    }
+    
+    fromFile.close();       // finished with the file
+    
 }
 
 

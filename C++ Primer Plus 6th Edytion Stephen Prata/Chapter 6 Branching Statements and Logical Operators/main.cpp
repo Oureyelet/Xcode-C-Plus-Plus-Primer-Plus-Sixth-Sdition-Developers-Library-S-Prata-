@@ -30,6 +30,7 @@
 
 // Function prototypes:
 bool is_alphabetick(char);
+void test();
 
 int main()
 {
@@ -384,12 +385,131 @@ int main()
 //    fin.getline(from_file, 50);
 //    std::cout << from_file << '\n';
     
-    listing_6_16();
+   // listing_6_16();
     
+    test();
+    
+    
+    //-----------------------------------------------------------------------------------------------------------
+    // Summary:
+    //-----------------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Chapter Review:
+    //-----------------------------------------------------------------------------------------------------
+    /*
+     1. Consider the following two code fragments for counting spaces and newlines:
+     
+     // Version 1
+     while (cin.get(ch)) // quit on eof
+     {
+        if (ch == ' ')
+            spaces++;
+        if (ch == '\n')
+            newlines++;
+     }
+     
+     // Version 2
+     while (cin.get(ch)) // quit on eof
+     {
+        if (ch == ' ')
+            spaces++;
+        else if (ch == '\n')
+            newlines++;
+     }
+     What advantages, if any, does the second form have over the first?
+     
+     2. In Listing 6.2, what is the effect of replacing ++ch with ch+1?
+     
+     3. Carefully consider the following program:
+     
+     #include <iostream>
+     
+     using namespace std;
+     int main()
+     {
+        char ch;
+        int ct1, ct2;
+        ct1 = ct2 = 0;
+        while ((ch = cin.get()) != '$') {
+        cout << ch; ct1++;
+        if (ch = '$')
+        ct2++; cout << ch;
+     }
+        cout <<"ct1 = " << ct1 << ", ct2 = " << ct2 << "\n";
+     
+        return 0;
+     }
+     
+     Suppose you provide the following input, pressing the Enter key at the end of each line:
+     Hi!
+     Send $10 or $20 now!
+     What is the output? (Recall that input is buffered.)
+     
+     4. Construct logical expressions to represent the following conditions:
+        a. weight is greater than or equal to 115 but less than 125. b. chisqorQ.
+        c. x is even but is not 26.
+        d. x is even but is not a multiple of 26.
+        e. donation is in the range 1,000–2,000 or guest is 1.
+        f. ch is a lowercase letter or an uppercase letter. (Assume, as is true for ASCII, that lowercase letters are coded sequentially and that uppercase letters are coded sequentially but that there is a gap in the code between uppercase and lowercase.)
+     
+     5. In English, the statement “I will not not speak” means the same as “I will speak.” In C++, is !!x the same as x?
+     
+     6. Construct a conditional expression that is equal to the absolute value of a variable. That is, if a variable x is positive, the value of the expression is just x, but if x is neg- ative, the value of the expression is -x, which is positive.
+     
+     7. Rewrite the following fragment using switch:
+     
+     if (ch == 'A')
+        a_grade++;
+     else if (ch == 'B')
+        b_grade++;
+     else if (ch == 'C')
+        c_grade++;
+     else if (ch == 'D')
+        d_grade++;
+     else
+        f_grade++;
+     
+     8. In Listing 6.10, what advantage would there be in using character labels, such as a and c, instead of numbers for the menu choices and switch cases? (Hint:Think about what happens if the user types q in either case and what happens if the user types 5 in either case.)
+     
+     9. Consider the following code fragment:
+        int line = 0;
+        char ch;
+        while (cin.get(ch))
+        {
+            if (ch == 'Q') break;
+            if (ch != '\n') continue;
+            line++;
+        }
+     
+     Rewrite this code without using break or continue.
+     */
     
     std::cin.get();
     return 0;
 }
+
+void test()
+{
+    bool test = true;
+    
+    if(test)
+        std::cout << "Test is true.\n";
+    else if(!test)
+        std::cout << "Test is false.\n";
+    
+    
+    int nr = 5;
+    
+    if(nr == 5)
+        std::cout << "Nr = 5 " << '\n';
+    if(nr > 4)
+        std::cout << "Nr is bigger then 4" << '\n';
+}
+
 
 bool is_alphabetick(char x)
 {
