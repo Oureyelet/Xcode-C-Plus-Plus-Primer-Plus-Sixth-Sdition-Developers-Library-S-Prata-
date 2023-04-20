@@ -386,8 +386,8 @@ int main()
 //    std::cout << from_file << '\n';
     
    // listing_6_16();
+
     
-    test();
     
     
     //-----------------------------------------------------------------------------------------------------------
@@ -420,7 +420,12 @@ int main()
         else if (ch == '\n')
             newlines++;
      }
+     
      What advantages, if any, does the second form have over the first?
+     
+     - MY ANSWER: Secound one has non advantages at all becouse when if condition is executed if statement will fount space then newline interation inside next condition is omited where on other hand in first version we are able to count spaces and newlines independently.
+        - WRONG ANSWER. Correct one is: "Both versions give the same answers, but the if else version is more efficient. Consider what happens, for example, when ch is a space.Version 1, after increment- ing spaces, tests whether the character is a newline.This wastes time because the program has already established that ch is a space and hence could not be a new- line.Version 2, in the same situation, skips the newline test."
+            - My answer was wrong becouse i forget that ch char catch every single individual character instead of full line as string litteral did.
      
      2. In Listing 6.2, what is the effect of replacing ++ch with ch+1?
      
@@ -488,26 +493,29 @@ int main()
      Rewrite this code without using break or continue.
      */
     
+    test();
+    
     std::cin.get();
     return 0;
 }
 
 void test()
 {
-    bool test = true;
+    char ch;
+    int spaces = 0;
+    int newlines = 0;
     
-    if(test)
-        std::cout << "Test is true.\n";
-    else if(!test)
-        std::cout << "Test is false.\n";
+    while (std::cin.get(ch)) // quit on eof
+    {
+        if (ch == ' ')
+           spaces++;
+        if (ch == '\n')
+           newlines++;
+        if(ch == '!')
+            break;
+    }
     
-    
-    int nr = 5;
-    
-    if(nr == 5)
-        std::cout << "Nr = 5 " << '\n';
-    if(nr > 4)
-        std::cout << "Nr is bigger then 4" << '\n';
+    std::cout << "After all you entered " << spaces << " spaces and " << newlines << " new lines.\n";
 }
 
 
