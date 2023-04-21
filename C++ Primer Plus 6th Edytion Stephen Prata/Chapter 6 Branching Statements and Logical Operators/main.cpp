@@ -428,23 +428,33 @@ int main()
             - My answer was wrong becouse i forget that ch char catch every single individual character instead of full line as string litteral did.
      
      2. In Listing 6.2, what is the effect of replacing ++ch with ch+1?
+        - Instead of displaing 2 symbols before expected charaster when we change ++ch with ch+1 we will display numbers but i dont know why.
+                - Correct answer: "Both ++ch and ch + 1 have the same numerical value. But ++ch is type char and prints as a character, while ch + 1, because it adds a char to an int, is type int and prints as a number."
      
      3. Carefully consider the following program:
      
      #include <iostream>
      
-     using namespace std;
      int main()
      {
         char ch;
-        int ct1, ct2;
+        int ct1;
+        int ct2;
+     
         ct1 = ct2 = 0;
-        while ((ch = cin.get()) != '$') {
-        cout << ch; ct1++;
-        if (ch = '$')
-        ct2++; cout << ch;
-     }
-        cout <<"ct1 = " << ct1 << ", ct2 = " << ct2 << "\n";
+     
+        while ((ch = std::cin.get()) != '$')
+        {
+            std::cout << ch;
+            ct1++;
+     
+            if (ch = '$')
+                ct2++;
+     
+            std::cout << ch;
+        }
+        
+        std::cout << "ct1 = " << ct1 << ", ct2 = " << ct2 << "\n";
      
         return 0;
      }
@@ -453,17 +463,50 @@ int main()
      Hi!
      Send $10 or $20 now!
      What is the output? (Recall that input is buffered.)
+        - The output from that input will be:
+     Hi !
+     ct1 = 2 , ct2 = 3
+            - WRONG ANSWER correct one is:
+     "Hi!
+     H$i$!$
+     $Send $10 or $20 now! S$e$n$d$
+     ct1 = 9, ct2 = 9"
+        -Each character is converted to the $ character before being printed the second time. Also the value of the expression ch = $ is the code for the $ character, hence nonzero, hence true; so ct2 is incremented each time.
+     
      
      4. Construct logical expressions to represent the following conditions:
-        a. weight is greater than or equal to 115 but less than 125. b. chisqorQ.
+     
+        a. weight is greater than or equal to 115 but less than 125.
+            - (125 > weight >= 115)
+                - WRONG ANSWER: weight >= 115 && weight < 125
+     
+        b. ch is q or Q.
+            - (ch == q || ch == Q)
+     
         c. x is even but is not 26.
+            - ((x % 2 == 0) &&  x != 26)
+     
         d. x is even but is not a multiple of 26.
-        e. donation is in the range 1,000–2,000 or guest is 1.
-        f. ch is a lowercase letter or an uppercase letter. (Assume, as is true for ASCII, that lowercase letters are coded sequentially and that uppercase letters are coded sequentially but that there is a gap in the code between uppercase and lowercase.)
+            - ((x % 2 == 0) && (x * 2 != 26))
+                - WRONG ANSWER: x % 2 == 0 && !(x % 26 == 0)
+     
+        e. donation is in the range 1,000 – 2,000 or guest is 1.
+            - ((donation >= 1,000) && (donation >= 2,000) || (donation == 1))
+        
+     f. ch is a lowercase letter or an uppercase letter. (Assume, as is true for ASCII, that lowercase letters are coded sequentially and that uppercase letters are coded sequentially but that there is a gap in the code between uppercase and lowercase.)
+            - (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
      
      5. In English, the statement “I will not not speak” means the same as “I will speak.” In C++, is !!x the same as x?
+        - !No :)
+            Correct answer is: Not necessarily. For example, if x is 10, then !x is 0 and !!x is 1. However, if x is a
+     bool variable, then !!x is x.
      
      6. Construct a conditional expression that is equal to the absolute value of a variable. That is, if a variable x is positive, the value of the expression is just x, but if x is neg- ative, the value of the expression is -x, which is positive.
+        - (x > 0) ? x : (x *= -1)
+            Correct answer is: x < 0)? -x : x
+                                    or
+                                (x >= 0)? x : -x
+
      
      7. Rewrite the following fragment using switch:
      
