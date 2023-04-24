@@ -574,6 +574,16 @@ int main()
                 }
      */
     
+     Programming_exercises_1();
+    // Programming_exercises_2();
+    // Programming_exercises_3();
+    // Programming_exercises_4()
+    // Programming_exercises_5();
+    // Programming_exercises_6();
+    // Programming_exercises_7();
+    // Programming_exercises_8();
+    // Programming_exercises_9();
+    
     std::cin.get();
     return 0;
 }
@@ -583,6 +593,47 @@ void Programming_exercises_1()
     /*
      Write a program that reads keyboard input to the @ symbol and that echoes the input except for digits, converting each uppercase character to lowercase, and vice versa. (Don’t forget the cctype family.)
      */
+    //listing_6_2();
+    std::cout << "Type whatever you want but only until '@' "
+            << "symbol.\nPlease do't type digits also i will covert each uppercase "
+            << "character to lowrcase, and vice versa." << '\n';
+
+    char ch;
+    std::cin.get(ch);
+
+    while(ch != '@')
+    {
+        if (isdigit(ch))
+        {
+            std::cin.clear();
+            std::cin.ignore(1000, '\n');
+            
+            std::cout << "Wront try again...\n";
+        }
+        else if(isupper(ch))
+        {
+            char o = tolower(ch);
+            
+            if (o == ' ')
+            {
+                std::cout << ' ' << o;
+            }
+            
+        }
+        else if(islower(ch))
+        {
+            char p = toupper(ch);
+            
+            if (p == ' ')
+            {
+                std::cout << ' ' << p;
+            }
+        }
+        
+        std::cin.get(ch);
+    }
+    std::cout << std::endl;
+    
 }
 
 void Programming_exercises_2()
