@@ -9,6 +9,7 @@
 #include <cctype>
 #include <string>
 #include <fstream>
+#include <array>
 
 // Examples has been included in header files:
 #include "Listing 6.1 if.h"
@@ -593,7 +594,7 @@ void Programming_exercises_1()
     /*
      Write a program that reads keyboard input to the @ symbol and that echoes the input except for digits, converting each uppercase character to lowercase, and vice versa. (Don’t forget the cctype family.)
      */
-    //listing_6_2();
+    
     std::cout << "Type whatever you want but only until '@' "
             << "symbol.\nPlease do't type digits also i will covert each uppercase "
             << "character to lowrcase, and vice versa." << '\n';
@@ -603,33 +604,26 @@ void Programming_exercises_1()
 
     while(ch != '@')
     {
-        if (isdigit(ch))
+        if(isdigit(ch))
         {
+            std::cout << "Wrong try again...\n";
+            
             std::cin.clear();
             std::cin.ignore(1000, '\n');
             
-            std::cout << "Wront try again...\n";
+            std::cin.get(ch);
+            continue;
         }
         else if(isupper(ch))
         {
-            char o = tolower(ch);
-            
-            if (o == ' ')
-            {
-                std::cout << ' ' << o;
-            }
-            
+                ch = tolower(ch);
         }
         else if(islower(ch))
         {
-            char p = toupper(ch);
-            
-            if (p == ' ')
-            {
-                std::cout << ' ' << p;
-            }
+                ch = toupper(ch);
         }
         
+        std::cout << ch;
         std::cin.get(ch);
     }
     std::cout << std::endl;
@@ -640,8 +634,11 @@ void Programming_exercises_2()
 {
     /*
      Write a program that reads up to 10 donation values into an array of double. (Or, if you prefer, use an array template object.) The program should terminate input on non-numeric input. It should report the average of the numbers and also report how many numbers in the array are larger than the average.
-
      */
+    
+    double donation[10];
+    // or:
+    std::array<double, 10> donation2;
 }
 
 void Programming_exercises_3()
