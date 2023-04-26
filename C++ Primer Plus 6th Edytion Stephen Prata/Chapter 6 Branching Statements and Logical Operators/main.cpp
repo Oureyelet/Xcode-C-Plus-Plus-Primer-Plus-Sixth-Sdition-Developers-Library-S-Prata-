@@ -575,9 +575,9 @@ int main()
                 }
      */
     
-     Programming_exercises_1();
+    // Programming_exercises_1();
     // Programming_exercises_2();
-    // Programming_exercises_3();
+     Programming_exercises_3();
     // Programming_exercises_4()
     // Programming_exercises_5();
     // Programming_exercises_6();
@@ -636,22 +636,88 @@ void Programming_exercises_2()
      Write a program that reads up to 10 donation values into an array of double. (Or, if you prefer, use an array template object.) The program should terminate input on non-numeric input. It should report the average of the numbers and also report how many numbers in the array are larger than the average.
      */
     
-    double donation[10];
-    // or:
-    std::array<double, 10> donation2;
+    double sum = 0.0;
+    int count_index = 0;
+    int how_many_bigger = 0;
+    std::array<double, 10> donation;
+    
+    std::cout << "Enter 10 donation values into an array please: ";
+    
+    for (int i = 0; i < 10; i++)
+    {
+        
+        if (std::cin >> donation[i])
+        {
+            sum += donation[i];
+            ++count_index;
+        }
+    }
+    
+    for (int i = 0; i < 10; i++)
+    {
+        if (donation[i] > (sum / count_index))
+        {
+            ++how_many_bigger;
+        }
+    }
+    
+    std::cout << "Average of " << count_index << " donation = " << sum / count_index << '\n';
+    std::cout << "There is a " << how_many_bigger << " numbers in the array larger than the average.\n";
+    
+    
 }
 
 void Programming_exercises_3()
 {
     /*
-     Write a precursor to a menu-driven program.The program should display a menu offering four choices, each labeled with a letter. If the user responds with a letter other than one of the four valid choices, the program should prompt the user to enter a valid response until the user complies.Then the program should use a switch to select a simple action based on the user’s selection.A program run could look something like this:
-     Please enter c) carnivore t) tree
+     Write a precursor to a menu-driven program.The program should display a menu offering four choices, each labeled with a letter. If the user responds with a letter other than one of the four valid choices, the program should prompt the user to enter a valid response until the user complies.Then the program should use a switch to select a simple action based on the user’s selection.
+     A program run could look something like this.
+     
+     Please enter one of the following choices:
+     c) carnivore p) pianist
+     t) tree      g) game
+     
      f
-     Please enter Please enter A maple is a
-     one of the following choices: p) pianist
-     g) game
-     a c, p, t, or g: q a c, p, t, or g: t tree.
+     
+     Please enter a c, p, t, or g: q
+     Please enter a c, p, t, or g: t
+     
+     A maple is a tree.
      */
+    
+    char ch;
+    
+    std::cout << "Please enter one of the following choices: " << '/';
+    std::cout << "c) carnivore p) pianist\n";
+    std::cout << "t) tree      g) game\n";
+    
+    std::cin.get(ch); //This function does not ignore any leading whitespace or newline characters in the input stream
+    
+    while (ch == 'c' || ch == 'p' || ch == 't' || ch == 'g')
+    {
+        switch (ch)
+        {
+            case 'c':
+                std::cout << "A maple is a carnivore.\n";
+                break;
+            case 'p':
+                std::cout << "A maple is a pianist.\n";
+                break;
+            case 't':
+                std::cout << "A maple is a tree.\n";
+                break;
+            case 'g':
+                std::cout << "A maple is a game.\n";
+                break;
+                
+            default:
+                std::cout << "Please enter a c, p, t, or g: ";
+                break;
+        }
+    }
+    
+    
+    
 }
 
 void Programming_exercises_4()
