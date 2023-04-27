@@ -31,6 +31,7 @@
 
 // Function prototypes:
 bool is_alphabetick(char);
+void show_menu();   // function menu for exercises 3
 
 // Function prototypes for 'Programin Exercises':
 void Programming_exercises_1();
@@ -42,6 +43,8 @@ void Programming_exercises_6();
 void Programming_exercises_7();
 void Programming_exercises_8();
 void Programming_exercises_9();
+
+
 
 int main()
 {
@@ -685,73 +688,107 @@ void Programming_exercises_3()
      A maple is a tree.
      */
     
+    show_menu();
     char ch;
+    std::cin >> ch;
     
-    std::cout << "Please enter one of the following choices: " << '/';
-    std::cout << "c) carnivore p) pianist\n";
-    std::cout << "t) tree      g) game\n";
+   // std::cin.get(ch); //This function does not ignore any leading whitespace or newline characters in the input stream
     
-    std::cin.get(ch); //This function does not ignore any leading whitespace or newline characters in the input stream
-    
-    while (ch == 'c' || ch == 'p' || ch == 't' || ch == 'g')
+    while (true)
     {
         switch (ch)
         {
-            case 'c':
-                std::cout << "A maple is a carnivore.\n";
+            case 'c': std::cout << "A maple is a carnivore.\n";
                 break;
-            case 'p':
-                std::cout << "A maple is a pianist.\n";
+            case 'p': std::cout << "A maple is a pianist.\n";
                 break;
-            case 't':
-                std::cout << "A maple is a tree.\n";
+            case 't': std::cout << "A maple is a tree.\n";
                 break;
-            case 'g':
-                std::cout << "A maple is a game.\n";
+            case 'g': std::cout << "A maple is a game.\n";
                 break;
                 
-            default:
-                std::cout << "Please enter a c, p, t, or g: ";
-                break;
+            default: std::cout << "Please enter a c, p, t, or g: \n";
         }
+        
+        std::cout << std::endl;
+        show_menu();
+        std::cin.clear();
+        std::cin.ignore(1000, '\n');
+        
+        /*
+         Without clear() and ignore() program goint to endless infinity input loop.
+         To deal with those who don’t follow instructions, it’s better to use char- acter input insterd of ints
+         */
+        
+        std::cin >> ch;
     }
-    
-    
-    
+}
+
+void show_menu() // function for exer 3
+{
+    std::cout << "Please enter one of the following choices: " << '\n';
+    std::cout << "c) carnivore p) pianist\n";
+    std::cout << "t) tree      g) game\n";
 }
 
 void Programming_exercises_4()
 {
     /*
-     When you join the Benevolent Order of Programmers, you can be known at BOP meetings by your real name, your job title, or your secret BOP name.Write a pro- gram that can list members by real name, by job title, by secret name, or by a mem- ber’s preference. Base the program on the following structure:
-     // Benevolent Order of Programmers name structure struct bop {
-     char fullname[strsize]; // real name
-     char title[strsize]; // job title
-     char bopname[strsize]; // secret BOP name
-     int preference; // 0 = fullname, 1 = title, 2 = bopname
+     When you join the Benevolent Order of Programmers, you can be known at BOP meetings by your real name, your job title, or your secret BOP name.Write a program that can list members by real name, by job title, by secret name, or by a member’s preference. Base the program on the following structure:
+     
+     // Benevolent Order of Programmers name structure
+     struct bop
+     {
+         char fullname[strsize];    // real name
+         char title[strsize];       // job title
+         char bopname[strsize];     // secret BOP name
+         int preference;            // 0 = fullname, 1 = title, 2 = bopname
      };
-     In the program, create a small array of such structures and initialize it to suitable values. Have the program run a loop that lets the user select from different alterna- tives:
-     a. display by name b. display by title
-     c. display by bopname d. display by preference q. quit
-     Programming Exercises 301
-                                             302 Chapter 6 Branching Statements and Logical Operators
-     Note that “display by preference” does not mean display the preference member; it means display the member corresponding to the preference number. For instance, if preference is1,choicedwould display the programmer’s job title.A sample run may look something like the following:
-     Benevolent
-     a. display
-     c. display
+     
+     In the program, create a small array of such structures and initialize it to suitable values. Have the program run a loop that lets the user select from different alternatives:
+     
+     a. display by name             b. display by title
+     c. display by bopname          d. display by preference
      q. quit
-     Enter your
+     
+     Note that “display by preference” does not mean display the preference member; it means display the member corresponding to the preference number. For instance, if preference is 1,choiced would display the programmer’s job title. A sample run may look something like the following:
+     
+     Benevolent Order of Programmers Report
+     a. display by name     b. display by title
+     c. display by bopname  d. display by preference
+     q. quit
+     
+     Enter your choice: a
      Wimp Macho
-     Raki Rhodes Celia Laiter Hoppy Hipman
+     Raki Rhodes
+     Celia Laiter
+     Hoppy Hipman
      Pat Hand
-     Next choice: d Wimp Macho Junior Programmer MIPS
-     Order of Programmers Report
-     by name b. display by title
-     by bopname d. display by preference
-     choice: a
-     Analyst Trainee LOOPY
-     Next choice: q Bye!
+     
+     Next choice: d
+     Wimp Macho
+     Junior Programmer
+     MIPS
+     Analyst Trainee
+     LOOPY
+     
+     Next choice: q
+     Bye!
      */
+    
+    const int strsize = 50;
+    
+    struct bop
+    {
+        char fullname[strsize];    // real name
+        char title[strsize];       // job title
+        char bopname[strsize];     // secret BOP name
+        int preference;            // 0 = fullname, 1 = title, 2 = bopname
+    };
+    
+    bop* bop_str = 
+
+    
 }
 
 void Programming_exercises_5()
