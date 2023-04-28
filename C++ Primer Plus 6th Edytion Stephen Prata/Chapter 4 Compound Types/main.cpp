@@ -270,6 +270,8 @@ void Programming_exercises_9()
 {
     /*
      Do Programming Exercise 6, but instead of declaring an array of three CandyBar structures, use new to allocate the array dynamically.
+     
+     You can use the new keyword in C++ to dynamically allocate an array of structs. This is useful when you need to create an array of structs at runtime and you don't know the size of the array ahead of time.
      */
     
     CandyBar* ptr_CandyBar = new CandyBar[3];

@@ -31,7 +31,8 @@
 
 // Function prototypes:
 bool is_alphabetick(char);
-void show_menu();   // function menu for exercises 3
+void show_menu_exer_3();   // function menu for exercises 3
+void show_menu_exer_4();   // function menu for exercises 4
 
 // Function prototypes for 'Programin Exercises':
 void Programming_exercises_1();
@@ -580,8 +581,8 @@ int main()
     
     // Programming_exercises_1();
     // Programming_exercises_2();
-     Programming_exercises_3();
-    // Programming_exercises_4()
+    // Programming_exercises_3();
+    Programming_exercises_4();
     // Programming_exercises_5();
     // Programming_exercises_6();
     // Programming_exercises_7();
@@ -688,7 +689,7 @@ void Programming_exercises_3()
      A maple is a tree.
      */
     
-    show_menu();
+    show_menu_exer_3();
     char ch;
     std::cin >> ch;
     
@@ -707,11 +708,11 @@ void Programming_exercises_3()
             case 'g': std::cout << "A maple is a game.\n";
                 break;
                 
-            default: std::cout << "Please enter a c, p, t, or g: \n";
+            default: std::cout << "Please enter a c, p, t, or g. \n";
         }
         
         std::cout << std::endl;
-        show_menu();
+        show_menu_exer_3();
         std::cin.clear();
         std::cin.ignore(1000, '\n');
         
@@ -724,7 +725,7 @@ void Programming_exercises_3()
     }
 }
 
-void show_menu() // function for exer 3
+void show_menu_exer_3() // function for exer 3
 {
     std::cout << "Please enter one of the following choices: " << '\n';
     std::cout << "c) carnivore p) pianist\n";
@@ -777,6 +778,7 @@ void Programming_exercises_4()
      */
     
     const int strsize = 50;
+    char ch;
     
     struct bop
     {
@@ -786,9 +788,93 @@ void Programming_exercises_4()
         int preference;            // 0 = fullname, 1 = title, 2 = bopname
     };
     
-    bop* bop_str = 
+    enum bop_pref
+    {
+      
+        
+        
+    };
+    
+    bop bops[3] =
+    {
+        {"Anna Kacperska", "Zona", "Ponczolinka", 1},
+        {"Sophie", "Curka", "Dziamdziak", 2},
+        {"Mateusz", "Maz", "Paczek", 0}
+    };
+    
+    show_menu_exer_4();
+    std::cin.get(ch);
+    
+    while (true)
+    {
+        switch (ch)
+        {
+            case 'a':
+                
+                        for (int i = 0; i < 3; i++)
+                        {
+                            std::cout << bops[i].fullname << '\n';
+                        }
+                break;
+                
+            case 'b':
+                
+                        for (int i = 0; i < 3; i++)
+                        {
+                            std::cout << bops[i].title << '\n';
+                        }
+                break;
+                
+            case 'c':
+                
+                        for (int i = 0; i < 3; i++)
+                        {
+                            std::cout << bops[i].bopname << '\n';
+                        }
+                break;
+                
+            case 'd':
+                
+                        for (int i = 0; i < 3; i++)
+                        {
+                            std::cout << bops[i].preference << '\n';
+                            
+                        }
+                break;
+                
+            case 'q':   std::cout << "Bye!\n";
+                exit(0);
+                
+            default: std::cout << "\nPlease enter an a, b, c, d, or q for exit. \n\n";
+        }
+        
+        std::cout << std::endl;
+        show_menu_exer_4();
+        std::cin.clear();
+        std::cin.ignore(1000, '\n');
+        
+        /*
+         Without clear() and ignore() program goint to endless infinity input loop.
+         To deal with those who don’t follow instructions, it’s better to use char- acter input insterd of ints
+         */
+        
+        std::cin.get(ch);
+    }
+    
+    
+    
 
     
+}
+
+void show_menu_exer_4() // function for exer 3
+{
+    std::cout << "Benevolent Order of Programmers Report\n";
+    std::cout << "a. Display by name     b. Display by title\n";
+    std::cout << "c. Display by bopname  d. Display by preference\n";
+    std::cout << "q. Quit\n\n";
+    
+    std::cout << "Enter your choice: ";
 }
 
 void Programming_exercises_5()
