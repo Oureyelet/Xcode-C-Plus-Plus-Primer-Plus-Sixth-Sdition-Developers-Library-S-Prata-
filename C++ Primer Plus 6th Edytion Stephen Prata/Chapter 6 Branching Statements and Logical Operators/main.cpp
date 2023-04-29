@@ -582,8 +582,8 @@ int main()
     // Programming_exercises_1();
     // Programming_exercises_2();
     // Programming_exercises_3();
-    Programming_exercises_4();
-    // Programming_exercises_5();
+    // Programming_exercises_4();
+     Programming_exercises_5();
     // Programming_exercises_6();
     // Programming_exercises_7();
     // Programming_exercises_8();
@@ -834,11 +834,11 @@ void Programming_exercises_4()
                             {
                                 std::cout << bops[i].fullname << '\n';
                             }
-                            if(bops[i].preference == 1)
+                            else if(bops[i].preference == 1)
                             {
                                 std::cout << bops[i].title << '\n';
                             }
-                            if(bops[i].preference == 2)
+                            else if(bops[i].preference == 2)
                             {
                                 std::cout << bops[i].bopname << '\n';
                             }
@@ -863,14 +863,9 @@ void Programming_exercises_4()
         
         std::cin.get(ch);
     }
-    
-    
-    
-
-    
 }
 
-void show_menu_exer_4() // function for exer 3
+void show_menu_exer_4() // function for exer 4
 {
     std::cout << "Benevolent Order of Programmers Report\n";
     std::cout << "a. Display by name     b. Display by title\n";
@@ -883,10 +878,49 @@ void show_menu_exer_4() // function for exer 3
 void Programming_exercises_5()
 {
     /*
-     The Kingdom of Neutronia, where the unit of currency is the tvarp, has the fol- lowing income tax code:
-     First 5,000 tvarps: 0% tax Next 10,000 tvarps: 10% tax Next 20,000 tvarps: 15% tax Tvarps after 35,000: 20% tax
+     The Kingdom of Neutronia, where the unit of currency is the tvarp, has the following income tax code:
+     
+     First 5,000 tvarps: 0% tax
+     Next 10,000 tvarps: 10% tax
+     Next 20,000 tvarps: 15% tax
+     Tvarps after 35,000: 20% tax
+     
      For example, someone earning 38,000 tvarps would owe 5,000 × 0.00 + 10,000 × 0.10 + 20,000 × 0.15 + 3,000 × 0.20, or 4,600 tvarps.Write a program that uses a loop to solicit incomes and to report tax owed.The loop should terminate when the user enters a negative number or non-numeric input.
      */
+    
+    double income = 0.0;
+    
+    while (true)
+    {
+        if (income > 0 && (std::cin >> income && income < 5000))
+        {
+            std::cout << "You have to pay 0% tax.\n";
+            break;
+        }
+        else if (income > 5000 && income < 15000)
+        {
+            double temp = income - 5000;
+            std::cout << "You have to pay 10% tax = "
+                      << 5000 * 0.00 + 10000 * 0.10 + temp * 0.10 << '\n';
+            break;
+        }
+        else if(income > 15000 && income < 35000)
+        {
+            double temp = income - 35000;
+            std::cout << "You have to pay 15% tax = "
+                      << 5000 * 0.00 + 10000 * 0.10 + 20000 * 0.15 + temp * 0.20 << '\n';
+            break;
+        }
+        else if(income > 35000)
+        {
+            double temp = income - 35000;
+            std::cout << "You have to pay 20% tax = "
+                      << 5000 * 0.00 + 10000 * 0.10 + 20000 * 0.15 + temp * 0.20 << '\n';
+            break;
+        }
+        else
+            break;
+    }
 }
 
 void Programming_exercises_6()
