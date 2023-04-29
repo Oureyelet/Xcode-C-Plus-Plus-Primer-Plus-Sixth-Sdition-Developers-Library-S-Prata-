@@ -788,16 +788,9 @@ void Programming_exercises_4()
         int preference;            // 0 = fullname, 1 = title, 2 = bopname
     };
     
-    enum bop_pref
-    {
-      
-        
-        
-    };
-    
     bop bops[3] =
     {
-        {"Anna Kacperska", "Zona", "Ponczolinka", 1},
+        {"Ania", "Zona", "Ponczolinka", 1},
         {"Sophie", "Curka", "Dziamdziak", 2},
         {"Mateusz", "Maz", "Paczek", 0}
     };
@@ -837,8 +830,18 @@ void Programming_exercises_4()
                 
                         for (int i = 0; i < 3; i++)
                         {
-                            std::cout << bops[i].preference << '\n';
-                            
+                            if(bops[i].preference == 0)
+                            {
+                                std::cout << bops[i].fullname << '\n';
+                            }
+                            if(bops[i].preference == 1)
+                            {
+                                std::cout << bops[i].title << '\n';
+                            }
+                            if(bops[i].preference == 2)
+                            {
+                                std::cout << bops[i].bopname << '\n';
+                            }
                         }
                 break;
                 
