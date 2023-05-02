@@ -270,7 +270,13 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // Using Enumerators as Labels: check example here -> "Listing 6.11 enum.h"
+    // Using Enumerators as Labels: check example here -> "Listing 6.11
+        
+        
+        
+        
+        
+        
     //-----------------------------------------------------------------------------------------------------
     
      // listing_6_11();
@@ -583,8 +589,8 @@ int main()
     // Programming_exercises_2();
     // Programming_exercises_3();
     // Programming_exercises_4();
-     Programming_exercises_5();
-    // Programming_exercises_6();
+    // Programming_exercises_5();
+     Programming_exercises_6();
     // Programming_exercises_7();
     // Programming_exercises_8();
     // Programming_exercises_9();
@@ -890,9 +896,13 @@ void Programming_exercises_5()
     
     double income = 0.0;
     
-    while (true)
+    while (std::cin >> income)
     {
-        if (income > 0 && (std::cin >> income && income < 5000))
+        if (income <= 0)
+        {
+            break;
+        }
+        else if (income < 5000)
         {
             std::cout << "You have to pay 0% tax.\n";
             break;
@@ -901,14 +911,14 @@ void Programming_exercises_5()
         {
             double temp = income - 5000;
             std::cout << "You have to pay 10% tax = "
-                      << 5000 * 0.00 + 10000 * 0.10 + temp * 0.10 << '\n';
+                      << temp * 0.10 << '\n';
             break;
         }
         else if(income > 15000 && income < 35000)
         {
-            double temp = income - 35000;
+            double temp = income - 15000;
             std::cout << "You have to pay 15% tax = "
-                      << 5000 * 0.00 + 10000 * 0.10 + 20000 * 0.15 + temp * 0.20 << '\n';
+                      << 5000 * 0.00 + 10000 * 0.10 + temp * 0.20 << '\n';
             break;
         }
         else if(income > 35000)
@@ -926,9 +936,62 @@ void Programming_exercises_5()
 void Programming_exercises_6()
 {
     /*
-     Put together a program that keeps track of monetary contributions to the Society for the Preservation of Rightful Influence. It should ask the user to enter the num- ber of contributors and then solicit the user to enter the name and contribution of each contributor.The information should be stored in a dynamically allocated array of structures. Each structure should have two members: a character array (or else a string object) to store the name and a double member to hold the amount of the contribution. After reading all the data, the program should display the names and amounts donated for all donors who contributed $10,000 or more.This list should
+     Put together a program that keeps track of monetary contributions to the Society for the Preservation of Rightful Influence. It should ask the user to enter the number of contributors and then solicit the user to enter the name and contribution of each contributor.The information should be stored in a dynamically allocated array of structures. Each structure should have two members: a character array (or else a string object) to store the name and a double member to hold the amount of the contribution.
+     
+     After reading all the data, the program should display the names and amounts donated for all donors who contributed $10,000 or more.This list should
                                              be headed by the label Grand Patrons.After that,the program should list the remaining donors.That list should be headed Patrons. If there are no donors in one of the categories, the program should print the word “none.” Aside from displaying two categories, the program need do no sorting.
      */
+    
+    struct name_and_contribution_of_each_contributor
+    {
+        std::string name;
+        double amount_of_the_contribution;
+    };
+    
+    int number_of_contributors;
+    std::cout << "Pleae enter the number of contributors: ";
+    std::cin >> number_of_contributors;
+    
+    name_and_contribution_of_each_contributor* ptr_con = new name_and_contribution_of_each_contributor[number_of_contributors];
+    
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        std::cout << "Please enter the name of contributor: ";
+        (std::cin >> ptr_con[i].name).get();
+        /*
+         The (std::cin >> name).get() statement does the same thing as std::cin >> name, but additionally it reads the next character in the input buffer, which is the newline character (\n) that was left there by the >> operator. The get() function then extracts this newline character from the input buffer and returns it.
+         The get() function will read the newline character from the input buffer and discard it, preventing it from being read as input later in your program.
+         */
+        std::cout << "Please enter the contribution: ";
+        std::cin >> ptr_con[i].amount_of_the_contribution;
+    }
+    
+    int num_of_grands = 0;
+    
+    std::cout << '\n';
+    std::cout << "Grand Patrons: \n";
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        if (ptr_con[i].amount_of_the_contribution > 10000)
+        {
+            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount_of_the_contribution << "$\n";
+            ++num_of_grands;
+        }
+    }
+    
+    if (num_of_grands == 0)
+    {
+        std::cout << "none.\n";
+    }
+    
+    std::cout << "Remaining patrons: \n";
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        if (ptr_con[i].amount_of_the_contribution < 10000)
+        {
+            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount_of_the_contribution << "$\n";
+        }
+    }
 }
 
 void Programming_exercises_7()
