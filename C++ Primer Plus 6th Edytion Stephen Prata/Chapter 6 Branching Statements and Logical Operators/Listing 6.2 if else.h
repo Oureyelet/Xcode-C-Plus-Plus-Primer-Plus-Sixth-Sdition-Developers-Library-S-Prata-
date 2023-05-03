@@ -21,7 +21,7 @@ void listing_6_2()
         if(ch == '\n')
             std::cout << ch;    // done if newline
         else
-            std::cout << ++ch;  // done otherwise
+            std::cout << ch;  // done otherwise
         std::cin.get(ch);
     }
     

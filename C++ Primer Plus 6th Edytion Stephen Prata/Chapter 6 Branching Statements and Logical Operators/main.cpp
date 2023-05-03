@@ -33,7 +33,8 @@
 bool is_alphabetick(char);
 void show_menu_exer_3();   // function menu for exercises 3
 void show_menu_exer_4();   // function menu for exercises 4
-
+bool begins_with_vowel(const std::string&);     // function menu for exercises 7
+ 
 // Function prototypes for 'Programin Exercises':
 void Programming_exercises_1();
 void Programming_exercises_2();
@@ -590,8 +591,8 @@ int main()
     // Programming_exercises_3();
     // Programming_exercises_4();
     // Programming_exercises_5();
-     Programming_exercises_6();
-    // Programming_exercises_7();
+    // Programming_exercises_6();
+     Programming_exercises_7();
     // Programming_exercises_8();
     // Programming_exercises_9();
     
@@ -997,14 +998,43 @@ void Programming_exercises_6()
 void Programming_exercises_7()
 {
     /*
-     Write a program that reads input a word at a time until a lone q is entered.The program should then report the number of words that began with vowels, the num- ber that began with consonants, and the number that fit neither of those categories. One approach is to use isalpha() to discriminate between words beginning with letters and those that don’t and then use an if or switch statement to further iden- tify those passing the isalpha() test that begin with vowels. A sample run might look like this:
+     Write a program that reads input a word at a time until a lone q is entered.The program should then report the number of words that began with vowels, the number that began with consonants, and the number that fit neither of those categories. One approach is to use isalpha() to discriminate between words beginning with letters and those that don’t and then use an if or switch statement to further identify those passing the isalpha() test that begin with vowels. A sample run might look like this:
+     
      Enter words (q to quit):
      The 12 awesome oxen ambled
      quietly across 15 meters of lawn. q
-     5 words beginning with vowels
-     4 words beginning with consonants
+     5 words beginning with vowels : awesome, oxen, ambled, across, of
+     4 words beginning with consonants : quietly, meters, lawn, The
      2 others
      */
+    
+    std::string word;
+    std::cout << "Enter words (q to quit): ";
+    int vowels = 0;
+    int consonants = 0;
+    int others = 0;
+    
+    while (std::cin >> word && word != "q")
+    {
+        if (begins_with_vowel(word))
+        {
+            std::cout << ++vowels << " vovels." << '\n';
+        }
+        
+        std::cout << ++vowels << " vovels." << '\n';
+    }
+    
+    
+    
+}
+
+bool begins_with_vowel(const std::string& word) {
+    // Check if the word is not empty
+    if (!word.empty()) {
+        char c = std::tolower(word.front()); // Get the first character and convert to lowercase
+        return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    }
+    return false;
 }
 
 void Programming_exercises_8()
