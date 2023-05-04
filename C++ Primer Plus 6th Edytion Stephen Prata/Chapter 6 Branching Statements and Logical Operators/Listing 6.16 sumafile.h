@@ -19,7 +19,7 @@ const int SIZE = 60;
 void listing_6_16()
 {
     char filename[SIZE];
-    std::ifstream fromFile; // object for handling file input
+    std::ifstream fromFile; // object for handling file input - read from file.
     
     std::cout << "Enter name of date file: ";
     std::cin.getline(filename, 60);

@@ -592,8 +592,8 @@ int main()
     // Programming_exercises_4();
     // Programming_exercises_5();
     // Programming_exercises_6();
-     Programming_exercises_7();
-    // Programming_exercises_8();
+    // Programming_exercises_7();
+     Programming_exercises_8();
     // Programming_exercises_9();
     
     std::cin.get();
@@ -1009,20 +1009,28 @@ void Programming_exercises_7()
      */
     
     std::string word;
-    std::cout << "Enter words (q to quit): ";
+    std::cout << "Enter words (q to quit): \n";
     int vowels = 0;
     int consonants = 0;
     int others = 0;
+    
     
     while (std::cin >> word && word != "q")
     {
         if (begins_with_vowel(word))
         {
-            std::cout << ++vowels << " vovels." << '\n';
+            ++vowels;
         }
+        else if(!std::isalpha(word[0]))
+            ++others;
+        else
+            ++consonants;
+            
         
-        std::cout << ++vowels << " vovels." << '\n';
     }
+    std::cout << vowels << " words beginning with vowels.\n";
+    std::cout << consonants << " words beginning with consonants.\n";
+    std::cout << others << " others.\n";
     
     
     
@@ -1041,8 +1049,34 @@ void Programming_exercises_8()
 {
     /*
      Write a program that opens a text file, reads it character-by-character to the end of the file, and reports the number of characters in the file.
-
      */
+    
+    char file_name[26] = "Programming Exercises.txt";
+    std::ifstream fromfile;
+    fromfile.open(file_name);
+    
+    int count = 0;
+    int spaces = 0;
+    char ch;
+    
+    if(!fromfile.is_open())
+    {
+        std::cout << "Could not open the file " << file_name << std::endl;
+        std::cout << "Program terminating.\n";
+        exit(EXIT_FAILURE);
+    }
+    
+    while (fromfile >> ch && fromfile.fail() == false)
+    {
+        if (ch == ' ')
+        {
+            ++spaces;
+        }
+        
+        ++count;
+    }
+    
+    std::cout << "File contain " << count << " chars and " << spaces << " spaces.\n";
 }
 
 void Programming_exercises_9()
