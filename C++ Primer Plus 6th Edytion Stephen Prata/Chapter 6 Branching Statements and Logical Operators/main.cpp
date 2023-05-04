@@ -1066,11 +1066,11 @@ void Programming_exercises_8()
         exit(EXIT_FAILURE);
     }
     
-    while (fromfile >> ch && fromfile.fail() == false)
+    while(fromfile.get(ch) && fromfile.fail() == false)
     {
         if (ch == ' ')
         {
-            ++spaces;
+            spaces++;
         }
         
         ++count;
