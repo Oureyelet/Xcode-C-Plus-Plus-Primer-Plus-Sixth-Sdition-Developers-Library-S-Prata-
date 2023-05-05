@@ -33,7 +33,7 @@
 bool is_alphabetick(char);
 void show_menu_exer_3();   // function menu for exercises 3
 void show_menu_exer_4();   // function menu for exercises 4
-bool begins_with_vowel(const std::string&);     // function menu for exercises 7
+bool begins_with_vowel(const std::string&);     // function check if first letter in word is vowel - for exercises 7
  
 // Function prototypes for 'Programin Exercises':
 void Programming_exercises_1();
@@ -593,8 +593,8 @@ int main()
     // Programming_exercises_5();
     // Programming_exercises_6();
     // Programming_exercises_7();
-     Programming_exercises_8();
-    // Programming_exercises_9();
+    // Programming_exercises_8();
+     Programming_exercises_9();
     
     std::cin.get();
     return 0;
@@ -1077,17 +1077,85 @@ void Programming_exercises_8()
     }
     
     std::cout << "File contain " << count << " chars and " << spaces << " spaces.\n";
+    
+    fromfile.close();
 }
 
 void Programming_exercises_9()
 {
     /*
-     Do Programming Exercise 6 but modify it to get information from a file.The first item in the file should be the number of contributors, and the rest of the file should consist of pairs of lines, with the first line of each pair being a contributor’s name and the second line being a contribution.That is, the file should look like this:
+     Do Programming Exercise 6 but modify it to get information from a file.
+     
+     The first item in the file should be the number of contributors, and the rest of the file should consist of pairs of lines, with the first line of each pair being a contributor’s name and the second line being a contribution.
+     
+     That is, the file should look like this:
+     
      4
      Sam Stone 2000
-     Freida Flass 100500 Tammy Tubbs 5000
+     Freida Flass 100500
+     Tammy Tubbs 5000
      Rich Raptor 55000
      */
+    
+    char file_name[28] = "Programming Exercises 8.txt";
+    std::ifstream fromfile;
+    fromfile.open(file_name);
+    
+    if (!fromfile.is_open())
+    {
+        std::cout << "Error " << file_name << " did not been opened.\n";
+        exit(EXIT_FAILURE);
+    }
+    
+    struct name_and_contribution_of_each_contributor
+    {
+        std::string name;
+        double amount_of_the_contribution;
+    };
+    
+    int number_of_contributors;
+    fromfile >> number_of_contributors;
+    
+    name_and_contribution_of_each_contributor* ptr_con = new name_and_contribution_of_each_contributor[number_of_contributors];
+    
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        (fromfile >> ptr_con[i].name).get();
+        //fromfile.getline(ptr_con[i].name, 50);
+        /*
+         The (std::cin >> name).get() statement does the same thing as std::cin >> name, but additionally it reads the next character in the input buffer, which is the newline character (\n) that was left there by the >> operator. The get() function then extracts this newline character from the input buffer and returns it.
+         The get() function will read the newline character from the input buffer and discard it, preventing it from being read as input later in your program.
+         */
+
+        fromfile >> ptr_con[i].amount_of_the_contribution;
+    }
+    
+    int num_of_grands = 0;
+    
+    std::cout << '\n';
+    std::cout << "Grand Patrons: \n";
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        if (ptr_con[i].amount_of_the_contribution > 10000)
+        {
+            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount_of_the_contribution << "$\n";
+            ++num_of_grands;
+        }
+    }
+    
+    if (num_of_grands == 0)
+    {
+        std::cout << "none.\n";
+    }
+    
+    std::cout << "Remaining patrons: \n";
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        if (ptr_con[i].amount_of_the_contribution < 10000)
+        {
+            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount_of_the_contribution << "$\n";
+        }
+    }
 }
 
 bool is_alphabetick(char x)
