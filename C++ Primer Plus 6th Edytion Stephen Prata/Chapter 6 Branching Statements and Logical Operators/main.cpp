@@ -1097,7 +1097,7 @@ void Programming_exercises_9()
      Rich Raptor 55000
      */
     
-    char file_name[28] = "Programming Exercises 8.txt";
+    char file_name[28] = "Programming Exercises 9.txt";
     std::ifstream fromfile;
     fromfile.open(file_name);
     
@@ -1107,55 +1107,54 @@ void Programming_exercises_9()
         exit(EXIT_FAILURE);
     }
     
-    struct name_and_contribution_of_each_contributor
+    struct ex_9_struct
     {
         std::string name;
-        double amount_of_the_contribution;
+        int amount;
     };
     
     int number_of_contributors;
     fromfile >> number_of_contributors;
     
-    name_and_contribution_of_each_contributor* ptr_con = new name_and_contribution_of_each_contributor[number_of_contributors];
+    ex_9_struct* ptr_con = new ex_9_struct[number_of_contributors];
     
     for (int i = 0; i < number_of_contributors; i++)
     {
-        (fromfile >> ptr_con[i].name).get();
-        //fromfile.getline(ptr_con[i].name, 50);
-        /*
-         The (std::cin >> name).get() statement does the same thing as std::cin >> name, but additionally it reads the next character in the input buffer, which is the newline character (\n) that was left there by the >> operator. The get() function then extracts this newline character from the input buffer and returns it.
-         The get() function will read the newline character from the input buffer and discard it, preventing it from being read as input later in your program.
-         */
-
-        fromfile >> ptr_con[i].amount_of_the_contribution;
+        std::getline(fromfile, ptr_con[i].name, ' ');
+        (fromfile >> ptr_con[i].amount).get();
     }
     
-    int num_of_grands = 0;
-    
-    std::cout << '\n';
-    std::cout << "Grand Patrons: \n";
     for (int i = 0; i < number_of_contributors; i++)
     {
-        if (ptr_con[i].amount_of_the_contribution > 10000)
-        {
-            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount_of_the_contribution << "$\n";
-            ++num_of_grands;
-        }
+        std::cout << i << " Name: " << ptr_con[i].name << ", Amound: " << ptr_con[i].amount << '\n';
     }
     
-    if (num_of_grands == 0)
-    {
-        std::cout << "none.\n";
-    }
-    
-    std::cout << "Remaining patrons: \n";
-    for (int i = 0; i < number_of_contributors; i++)
-    {
-        if (ptr_con[i].amount_of_the_contribution < 10000)
-        {
-            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount_of_the_contribution << "$\n";
-        }
-    }
+//    int num_of_grands = 0;
+//
+//    std::cout << '\n';
+//    std::cout << "Grand Patrons: \n";
+//    for (int i = 0; i < number_of_contributors; i++)
+//    {
+//        if (ptr_con[i].amount > 10000)
+//        {
+//            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount << "$\n";
+//            ++num_of_grands;
+//        }
+//    }
+//
+//    if (num_of_grands == 0)
+//    {
+//        std::cout << "none.\n";
+//    }
+//
+//    std::cout << "Remaining patrons: \n";
+//    for (int i = 0; i < number_of_contributors; i++)
+//    {
+//        if (ptr_con[i].amount < 10000)
+//        {
+//            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount << "$\n";
+//        }
+//    }
 }
 
 bool is_alphabetick(char x)
