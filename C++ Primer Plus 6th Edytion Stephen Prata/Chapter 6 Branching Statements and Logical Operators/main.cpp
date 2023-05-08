@@ -1138,11 +1138,6 @@ void Programming_exercises_9()
         (fromfile >> ptr_con[i].amount).get();
     }
     
-//    for (int i = 0; i < number_of_contributors; i++)
-//    {
-//        std::cout << i << " Name: " << ptr_con[i].name << ", amound: " << ptr_con[i].amount << '\n';
-//    }
-    
     int num_of_grands = 0;
 
     std::cout << '\n';
