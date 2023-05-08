@@ -172,7 +172,7 @@ int main()
     // The Logical NOT Operator !: check example here -> "Listing 6.7 not.h"
     //-----------------------------------------------------------------------------------------------------
     
-    std::cout << INT_MAX << '\n';   // to check what is the max int in current system -- INT_MIN to check minimum int
+    // std::cout << INT_MAX << '\n';   // to check what is the max int in current system -- INT_MIN to check minimum int
     
     // listing_6_7();
     
@@ -1113,48 +1113,62 @@ void Programming_exercises_9()
         int amount;
     };
     
+    
     int number_of_contributors;
-    fromfile >> number_of_contributors;
+    (fromfile >> number_of_contributors).get();
+    
+    /*
+     In C++, you can use the peek() function of std::cin to check the next character in the input stream without extracting it from the stream.
+
+     For example, if you want to check if there are any more characters in the input stream, you can use peek() like this:
+     */
+    
+    if (fromfile.peek() != EOF)
+    {
+        std::cout << "there is still more characters in the input stream...\n";
+    }
+    else
+        std::cout << "The input stream is empty.\n";
     
     ex_9_struct* ptr_con = new ex_9_struct[number_of_contributors];
     
     for (int i = 0; i < number_of_contributors; i++)
     {
-        std::getline(fromfile, ptr_con[i].name, ' ');
+        std::getline(fromfile, ptr_con[i].name);
         (fromfile >> ptr_con[i].amount).get();
     }
     
+//    for (int i = 0; i < number_of_contributors; i++)
+//    {
+//        std::cout << i << " Name: " << ptr_con[i].name << ", amound: " << ptr_con[i].amount << '\n';
+//    }
+    
+    int num_of_grands = 0;
+
+    std::cout << '\n';
+    std::cout << "Grand Patrons: \n";
     for (int i = 0; i < number_of_contributors; i++)
     {
-        std::cout << i << " Name: " << ptr_con[i].name << ", Amound: " << ptr_con[i].amount << '\n';
+        if (ptr_con[i].amount > 10000)
+        {
+            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount << "$\n";
+            ++num_of_grands;
+        }
     }
-    
-//    int num_of_grands = 0;
-//
-//    std::cout << '\n';
-//    std::cout << "Grand Patrons: \n";
-//    for (int i = 0; i < number_of_contributors; i++)
-//    {
-//        if (ptr_con[i].amount > 10000)
-//        {
-//            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount << "$\n";
-//            ++num_of_grands;
-//        }
-//    }
-//
-//    if (num_of_grands == 0)
-//    {
-//        std::cout << "none.\n";
-//    }
-//
-//    std::cout << "Remaining patrons: \n";
-//    for (int i = 0; i < number_of_contributors; i++)
-//    {
-//        if (ptr_con[i].amount < 10000)
-//        {
-//            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount << "$\n";
-//        }
-//    }
+
+    if (num_of_grands == 0)
+    {
+        std::cout << "none.\n";
+    }
+
+    std::cout << "\nRemaining patrons: \n";
+    for (int i = 0; i < number_of_contributors; i++)
+    {
+        if (ptr_con[i].amount < 10000)
+        {
+            std::cout << ptr_con[i].name << ": " << ptr_con[i].amount << "$\n";
+        }
+    }
 }
 
 bool is_alphabetick(char x)
