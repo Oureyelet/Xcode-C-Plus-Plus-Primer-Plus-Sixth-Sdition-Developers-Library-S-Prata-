@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82128C82A090A5500270F26 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B82128C72A090A5500270F26 /* main.cpp */; };
 		B8AF2376293BEBFB00B09481 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8AF2375293BEBFB00B09481 /* main.cpp */; };
 		B8B649F42985CFF000541678 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8B649F32985CFF000541678 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B82128C32A090A5500270F26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B8AF2371293BEBFB00B09481 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B81442162A0A00720068A72F /* Listing 7.1 calling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.1 calling.h"; sourceTree = "<group>"; };
+		B82128C52A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 7 Functions C++'s Programming Module"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82128C72A090A5500270F26 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.19 textin4.h"; sourceTree = "<group>"; };
 		B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.5 bigstep.h"; sourceTree = "<group>"; };
 		B84407622998334800A1961D /* Listing 6.9 condit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.9 condit.h"; sourceTree = "<group>"; };
@@ -78,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B82128C22A090A5500270F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8AF2370293BEBFB00B09481 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +115,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82128C62A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */ = {
+			isa = PBXGroup;
+			children = (
+				B82128C72A090A5500270F26 /* main.cpp */,
+				B81442162A0A00720068A72F /* Listing 7.1 calling.h */,
+			);
+			path = "Chapter 7 Functions C++'s Programming Module";
+			sourceTree = "<group>";
+		};
 		B87B06E1292988F600F1115A = {
 			isa = PBXGroup;
 			children = (
 				B8AF2368293BEAFF00B09481 /* Chapter 4 Compound Types */,
 				B8AF2374293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
 				B8B649F22985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */,
+				B82128C62A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */,
 				B87B06EB292988F600F1115A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +140,7 @@
 			children = (
 				B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
 				B8B649F12985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */,
+				B82128C52A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +209,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B82128C42A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B82128C92A090A5500270F26 /* Build configuration list for PBXNativeTarget "Chapter 7 Functions C++'s Programming Module" */;
+			buildPhases = (
+				B82128C12A090A5500270F26 /* Sources */,
+				B82128C22A090A5500270F26 /* Frameworks */,
+				B82128C32A090A5500270F26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter 7 Functions C++'s Programming Module";
+			productName = "Chapter 7 Functions C++'s Programming Module";
+			productReference = B82128C52A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */;
+			productType = "com.apple.product-type.tool";
+		};
 		B8AF2372293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8AF2377293BEBFB00B09481 /* Build configuration list for PBXNativeTarget "Chapter 5 Loops and Relational Expressions" */;
@@ -221,6 +269,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					B82128C42A090A5500270F26 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					B8AF2372293BEBFB00B09481 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -244,11 +295,20 @@
 			targets = (
 				B8AF2372293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */,
 				B8B649F02985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */,
+				B82128C42A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B82128C12A090A5500270F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82128C82A090A5500270F26 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8AF236F293BEBFB00B09481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +328,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B82128CA2A090A5500270F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_COMMA = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B82128CB2A090A5500270F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_COMMA = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B87B06EF292988F600F1115A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -436,6 +522,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B82128C92A090A5500270F26 /* Build configuration list for PBXNativeTarget "Chapter 7 Functions C++'s Programming Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82128CA2A090A5500270F26 /* Debug */,
+				B82128CB2A090A5500270F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B87B06E5292988F600F1115A /* Build configuration list for PBXProject "C++ Primer Plus 6th Edytion Stephen Prata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
