@@ -44,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		B81442162A0A00720068A72F /* Listing 7.1 calling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.1 calling.h"; sourceTree = "<group>"; };
+		B81442172A0A0B3D0068A72F /* Listing 7.2 protos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.2 protos.h"; sourceTree = "<group>"; };
 		B82128C52A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 7 Functions C++'s Programming Module"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82128C72A090A5500270F26 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.19 textin4.h"; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 			children = (
 				B82128C72A090A5500270F26 /* main.cpp */,
 				B81442162A0A00720068A72F /* Listing 7.1 calling.h */,
+				B81442172A0A0B3D0068A72F /* Listing 7.2 protos.h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";

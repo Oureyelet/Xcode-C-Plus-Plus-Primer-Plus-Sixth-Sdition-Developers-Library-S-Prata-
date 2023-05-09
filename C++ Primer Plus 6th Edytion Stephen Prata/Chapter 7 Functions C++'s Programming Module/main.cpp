@@ -10,12 +10,13 @@
 
 // Examples has been included in header files:
 #include "Listing 7.1 calling.h"
+#include "Listing 7.2 protos.h"
 
 // Function prototypes:
-bool is_alphabetick(char);
-void show_menu_exer_3();   // function menu for exercises 3
-void show_menu_exer_4();   // function menu for exercises 4
-bool begins_with_vowel(const std::string&);     // function check if first letter in word is vowel - for exercises 7
+void cheers(int);
+int test(double);
+int bigger(int,int);
+
  
 // Function prototypes for 'Programin Exercises':
 void Programming_exercises_1();
@@ -52,8 +53,51 @@ int main()
     // Function Review: check example here -> "Listing 7.1 calling.h"
     //-----------------------------------------------------------------------------------------------------
     
-    // listing_6_1();
+    listing_7_1();
+    std::cout << std::endl;
     
     
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Defining a Function:
+    //-----------------------------------------------------------------------------------------------------
+    
+    cheers(15);
+    
+    std::cout << test(15.99999) << '\n'; // The double value (from parameters) in test() function is type cast to type int.
+    
+    std::cout << bigger(13, 14) << '\n';
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Prototyping and Calling a Function: check example here -> "Listing 7.2 protos.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    std::cin.get();
     return 0;
+}
+
+void cheers(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        std::cout << "Cheers!";
+        std::cout << std::endl;
+    }
+}
+
+int test(double n)
+{
+    return n * 2;
+}
+
+int bigger(int a, int b)
+{
+    if (a > b)
+        return a;   // if a > b, function terminates here
+   // else
+        return b;   // otherwise, function terminates here
 }
