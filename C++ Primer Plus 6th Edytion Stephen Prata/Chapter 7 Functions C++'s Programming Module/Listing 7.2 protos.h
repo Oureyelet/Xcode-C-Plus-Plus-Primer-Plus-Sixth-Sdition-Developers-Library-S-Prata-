@@ -15,15 +15,21 @@ double cube(double x);  // prototype: return a double
 
 void listing_7_2()  // we treat listing_7_2() as a example of using main() in main.cpp
 {
-    
+    cheers(15); // function call
+    std::cout << "Give me a number: ";
+    double side;
+    std::cin >> side;
+    double volume = cube(side); // function call
+    std::cout << "A " << side << "-foot cube has a volume fo ";
+    std::cout << volume << " cubic feet.\n";
+    cheers(cube(2));    // prototype protection at work
 }
 
 void cheers(int x)
 {
     for (int i = 0; i < x; i++)
     {
-        std::cout << "Cheers! ";
-        std::cout << std::endl;
+        std::cout << "Cheers! " << ' ';
     }
 }
 

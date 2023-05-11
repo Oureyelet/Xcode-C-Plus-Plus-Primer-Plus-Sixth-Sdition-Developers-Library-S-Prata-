@@ -13,9 +13,13 @@
 #include "Listing 7.2 protos.h"
 
 // Function prototypes:
-void cheers(int);
+void cheerss(int);
 int test(double);
 int bigger(int,int);
+void say_hi();
+int change_x(int&);
+int x_100 = 100; // example global variable could be change by passing by reference to function argumeter...
+void favorite_char_and_number(int, char);
 
  
 // Function prototypes for 'Programin Exercises':
@@ -53,8 +57,8 @@ int main()
     // Function Review: check example here -> "Listing 7.1 calling.h"
     //-----------------------------------------------------------------------------------------------------
     
-    listing_7_1();
-    std::cout << std::endl;
+//    listing_7_1();
+//    std::cout << std::endl;
     
     
     
@@ -62,11 +66,11 @@ int main()
     // Defining a Function:
     //-----------------------------------------------------------------------------------------------------
     
-    cheers(15);
-    
-    std::cout << test(15.99999) << '\n'; // The double value (from parameters) in test() function is type cast to type int.
-    
-    std::cout << bigger(13, 14) << '\n';
+//    cheers(15);
+//
+//    std::cout << test(15.99999) << '\n'; // The double value (from parameters) in test() function is type cast to type int.
+//
+//    std::cout << bigger(13, 14) << '\n';
     
     
     
@@ -75,12 +79,67 @@ int main()
     // Prototyping and Calling a Function: check example here -> "Listing 7.2 protos.h"
     //-----------------------------------------------------------------------------------------------------
     
+//    listing_7_2();
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Why Prototypes?
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Prototype Syntax:
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // C++ Versus ANSI C Prototyping:
+    //-----------------------------------------------------------------------------------------------------
+    
+    say_hi();
+
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // What Prototypes Do for you:
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Function Arguments and Passing by Value:
+    //-----------------------------------------------------------------------------------------------------
+    
+    std::cout << "Before calling the funnction x_100 = " << x_100 << '\n';
+    
+    std::cout << change_x(x_100);
+    
+    std::cout << "After callinng function x_100 = " << x_100 << '\n';
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Multiple Arguments:
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    favorite_char_and_number(123);
+    
     
     std::cin.get();
     return 0;
 }
 
-void cheers(int n)
+void cheerss(int n)
 {
     for (int i = 0; i <= n; i++)
     {
@@ -100,4 +159,21 @@ int bigger(int a, int b)
         return a;   // if a > b, function terminates here
    // else
         return b;   // otherwise, function terminates here
+}
+
+void say_hi()
+{
+    std::cout << "Hello World! :)\n";
+}
+
+int change_x(int& x)
+{
+    x = 1;
+    
+    return x;
+}
+
+void favorite_char_and_number(int x, char c = 'Q')
+{
+    std::cout << "The favorite char is " << c << " and the favorite number is " << x << '\n';
 }
