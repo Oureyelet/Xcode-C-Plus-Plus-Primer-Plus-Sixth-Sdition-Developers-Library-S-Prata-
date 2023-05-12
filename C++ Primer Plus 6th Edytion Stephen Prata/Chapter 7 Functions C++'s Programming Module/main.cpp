@@ -11,6 +11,7 @@
 // Examples has been included in header files:
 #include "Listing 7.1 calling.h"
 #include "Listing 7.2 protos.h"
+#include "Listing 7.3 twoarg.h"
 
 // Function prototypes:
 void cheerss(int);
@@ -132,6 +133,8 @@ int main()
     //-----------------------------------------------------------------------------------------------------
     
     std::cout << "12 may 23:16" << '\n';
+    
+    listing_7_3();
     
     
     std::cin.get();

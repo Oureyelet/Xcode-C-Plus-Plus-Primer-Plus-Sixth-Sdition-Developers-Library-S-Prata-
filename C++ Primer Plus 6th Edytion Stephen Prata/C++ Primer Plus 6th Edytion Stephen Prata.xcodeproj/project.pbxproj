@@ -49,6 +49,7 @@
 		B82128C72A090A5500270F26 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B830B95C296E87F7009639B1 /* Listing 5.19 textin4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.19 textin4.h"; sourceTree = "<group>"; };
 		B83620E6295251CA0048A399 /* Listing 5.5 bigstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.5 bigstep.h"; sourceTree = "<group>"; };
+		B8387AA22A0EE58500B8DEED /* Listing 7.3 twoarg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.3 twoarg.h"; sourceTree = "<group>"; };
 		B84407622998334800A1961D /* Listing 6.9 condit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.9 condit.h"; sourceTree = "<group>"; };
 		B847D29629525B9B006C92FD /* Listing 5.6 forstr1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.6 forstr1.h"; sourceTree = "<group>"; };
 		B847D2972953A76A006C92FD /* Listing 5.7 plus_one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.7 plus_one.h"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				B82128C72A090A5500270F26 /* main.cpp */,
 				B81442162A0A00720068A72F /* Listing 7.1 calling.h */,
 				B81442172A0A0B3D0068A72F /* Listing 7.2 protos.h */,
+				B8387AA22A0EE58500B8DEED /* Listing 7.3 twoarg.h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";
