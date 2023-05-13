@@ -19,7 +19,21 @@ void listing_7_3()
     int times;
     char ch;
     
-    std::cout << "Ennter a"
+    std::cout << "Enter a character: ";
+    std::cin >> ch;
+    
+    while (ch != 'q')   // q to quit
+    {
+        std::cout << "Enter an integer: ";
+        std::cin >> times;  // std::cin >> skips spaces and newlines.
+        n_chars(ch, times); // function with two arguments
+        
+        std::cout << "\nEnter another character or press the"
+                        " q-key to quit: ";
+        std::cin >> ch;
+    }
+    std::cout << "The value of times is " << times << ".\n";
+    std::cout << "Bye\n";
 }
 
 void n_chars(char c, int n) // displays c n times
