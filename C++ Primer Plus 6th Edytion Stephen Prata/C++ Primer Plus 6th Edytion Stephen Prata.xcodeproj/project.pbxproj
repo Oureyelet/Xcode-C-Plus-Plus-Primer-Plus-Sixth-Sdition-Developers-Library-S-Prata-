@@ -70,6 +70,8 @@
 		B87705A729EFA949006FDC44 /* Listing 6.16 sumafile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.16 sumafile.h"; sourceTree = "<group>"; };
 		B879A908299ABC95001309D4 /* Listing 6.10 switch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.10 switch.h"; sourceTree = "<group>"; };
 		B87B06F429298A3E00F1115A /* Listing 4.24 choices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 4.24 choices.h"; sourceTree = "<group>"; };
+		B883EFF42A12C3C80059DEE7 /* Listing 7.5 arrfun1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.5 arrfun1.h"; sourceTree = "<group>"; };
+		B883EFF52A12C7970059DEE7 /* Listing 7.5b arrfun (my own).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.5b arrfun (my own).h"; sourceTree = "<group>"; };
 		B888420A299B593C00E3D338 /* Listing 6.11 enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.11 enum.h"; sourceTree = "<group>"; };
 		B890E9C1299CA9C700CD1C80 /* Listing 6.12 jump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.12 jump.h"; sourceTree = "<group>"; };
 		B897696E29936DE40095C7DA /* Listing 6.6 more end.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.6 more end.h"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		B897A84A2971251A003084EC /* Listing 5.20 nested.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.20 nested.h"; sourceTree = "<group>"; };
 		B89A835429E916B7006FA723 /* Listing 6.15 outfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.15 outfile.h"; sourceTree = "<group>"; };
 		B89DE63429E6709E0035A55C /* Listing 6.13 cinfish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.13 cinfish.h"; sourceTree = "<group>"; };
+		B8A54FB72A12B93200A1314E /* Listing 7.4 lotto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.4 lotto.h"; sourceTree = "<group>"; };
 		B8A9D6BD29E7C5EC00975744 /* Listing 6.14 cingolf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.14 cingolf.h"; sourceTree = "<group>"; };
 		B8ACD988298F046300443A19 /* Listing 6.3 if else if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.3 if else if.h"; sourceTree = "<group>"; };
 		B8AF2373293BEBFB00B09481 /* Chapter 5 Loops and Relational Expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 5 Loops and Relational Expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +127,9 @@
 				B81442162A0A00720068A72F /* Listing 7.1 calling.h */,
 				B81442172A0A0B3D0068A72F /* Listing 7.2 protos.h */,
 				B8387AA22A0EE58500B8DEED /* Listing 7.3 twoarg.h */,
+				B8A54FB72A12B93200A1314E /* Listing 7.4 lotto.h */,
+				B883EFF42A12C3C80059DEE7 /* Listing 7.5 arrfun1.h */,
+				B883EFF52A12C7970059DEE7 /* Listing 7.5b arrfun (my own).h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";
@@ -339,8 +345,8 @@
 				CLANG_WARN_COMMA = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,8 +358,8 @@
 				CLANG_WARN_COMMA = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -410,6 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				"GCC_WARN_UNINITIALIZED_AUTOS[arch=*]" = NO;
 				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -465,6 +472,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MTL_ENABLE_DEBUG_INFO = NO;

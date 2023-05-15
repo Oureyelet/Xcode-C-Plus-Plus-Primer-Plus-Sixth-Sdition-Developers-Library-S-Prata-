@@ -12,6 +12,9 @@
 #include "Listing 7.1 calling.h"
 #include "Listing 7.2 protos.h"
 #include "Listing 7.3 twoarg.h"
+#include "Listing 7.4 lotto.h"
+#include "Listing 7.5 arrfun1.h"
+#include "Listing 7.5b arrfun (my own).h"
 
 // Function prototypes:
 void cheerss(int);
@@ -121,7 +124,7 @@ int main()
     
     std::cout << "Before calling the funnction x_100 = " << x_100 << '\n';
     
-    std::cout << change_x(x_100);
+//    std::cout << change_x(x_100);
     
     std::cout << "After callinng function x_100 = " << x_100 << '\n';
     
@@ -129,22 +132,42 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // Multiple Arguments:
+    // Multiple Arguments: : check example here -> "Listing 7.3 twoarg.h"
     //-----------------------------------------------------------------------------------------------------
     
     std::cout << "12 may 23:16" << '\n';
     
-    listing_7_3();
+//    listing_7_3();
     
     
     
     
     //-----------------------------------------------------------------------------------------------------
-    // Another Two-Argument Function:
+    // Another Two-Argument Function: check example here -> "Listing 7.4 lotto.h"
+    //-----------------------------------------------------------------------------------------------------
+        
+//    listing_7_4();
+    
+    
+    
+    
+    //------------------------------------------------------------------------------------------------------------------------
+    // Functions and Arrays: check example here -> "Listing 7.5 arrfun1.h" and my own version "Listing 7.5b arrfun (my own).h"
+    //------------------------------------------------------------------------------------------------------------------------
+        
+//    listing_7_5();
+        
+//    listing_7_5b();
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The Implications of Using Arrays as Arguments:
     //-----------------------------------------------------------------------------------------------------
     
     
-    
+       
     
     
     std::cin.get();

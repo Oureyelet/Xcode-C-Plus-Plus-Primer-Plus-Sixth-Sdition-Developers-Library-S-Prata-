@@ -16,7 +16,7 @@ void n_chars(char,int);
 
 void listing_7_3()
 {
-    int times;
+    int times = 0;
     char ch;
     
     std::cout << "Enter a character: ";

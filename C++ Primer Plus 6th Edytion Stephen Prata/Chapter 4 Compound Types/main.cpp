@@ -60,7 +60,7 @@ int main()
     
     std::vector<int> vi;        // create a zero-size array of int
     
-    std::cout << "Enter size of std::vector<int> vi: ";
+    std::cout << "Enter size of std::vector<int> vd: ";
     int n;
     std::cin >> n;
     
