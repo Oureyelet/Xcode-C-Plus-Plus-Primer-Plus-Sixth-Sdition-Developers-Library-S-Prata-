@@ -93,6 +93,7 @@
 		B8B649F32985CFF000541678 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B8DA5F0B298CD32900BEE6EC /* Listing 6.1 if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.1 if.h"; sourceTree = "<group>"; };
 		B8DA5F0C298CD92200BEE6EC /* Listing 6.2 if else.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.2 if else.h"; sourceTree = "<group>"; };
+		B8F57B462A14140A00073D80 /* Listing 7.6 arrfun2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.6 arrfun2.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +131,7 @@
 				B8A54FB72A12B93200A1314E /* Listing 7.4 lotto.h */,
 				B883EFF42A12C3C80059DEE7 /* Listing 7.5 arrfun1.h */,
 				B883EFF52A12C7970059DEE7 /* Listing 7.5b arrfun (my own).h */,
+				B8F57B462A14140A00073D80 /* Listing 7.6 arrfun2.h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";

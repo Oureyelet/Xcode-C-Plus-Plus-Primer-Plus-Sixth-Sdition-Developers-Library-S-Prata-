@@ -15,6 +15,7 @@
 #include "Listing 7.4 lotto.h"
 #include "Listing 7.5 arrfun1.h"
 #include "Listing 7.5b arrfun (my own).h"
+#include "Listing 7.6 arrfun2.h"
 
 // Function prototypes:
 void cheerss(int);
@@ -24,6 +25,7 @@ void say_hi();
 int change_x(int&);
 int x_100 = 100; // example global variable could be change by passing by reference to function argumeter...
 void favorite_char_and_number(int, char);
+int test_2(int arr[], int n); // test only
 
  
 // Function prototypes for 'Programin Exercises':
@@ -163,11 +165,65 @@ int main()
     
     
     //-----------------------------------------------------------------------------------------------------
-    // The Implications of Using Arrays as Arguments:
+    // The Implications of Using Arrays as Arguments: check example here -> "Listing 7.6 arrfun2.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    int arr_for_test[] = {1,2,3,4,5};
+    
+    std::cout << "Before calling function: " << '\n';
+    
+    for (int i = 0; i < 5; i++)
+    {
+        std::cout << arr_for_test[i] << ' ';
+    }
+    std::cout << std::endl;
+    
+    std::cout << "After caling function: " << '\n';
+    
+    test_2(arr_for_test, 5);
+    
+    for (int i = 0; i < 5; i++)
+    {
+        std::cout << arr_for_test[i] << ' ';
+    }
+    std::cout << std::endl;
+    
+    std::cout << sizeof arr_for_test << " = sizeof of the whole arr_for_test (in bytes)\n";
+    
+    std::cout << arr_for_test << " = arr_for_test.\n";
+    
+    std::cout << &arr_for_test[0] << " = arr_for_test.\n";
+    
+    std::cout << *arr_for_test << " = arr_for_test.\n";
+    
+    /*
+     With code above we have proved even array is not passed by references through function - function changed the orginal array content where an ordinary variable, where function works with a copy.
+     
+     Because a function with an array name argument accesses the original array, not a copy, you can use a function call to assign values to array elements. 
+     */
+    
+    
+    listing_7_6();
+    
+    /*
+     Regarding listing 7.6:
+     
+     Sizeof cookies is 32, whereas sizeof arr is only 4.That’s because sizeof cookies is the size of the whole array, whereas sizeof arr is the size of the pointer variable.
+     */
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // More Array Function Examples:
     //-----------------------------------------------------------------------------------------------------
     
     
-       
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Filling the Array:
+    //-----------------------------------------------------------------------------------------------------
     
     
     std::cin.get();
@@ -211,4 +267,14 @@ int change_x(int& x)
 void favorite_char_and_number(int x, char c = 'Q')
 {
     std::cout << "The favorite char is " << c << " and the favorite number is " << x << '\n';
+}
+
+int test_2(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] += 1;
+    }
+    
+    return 0;
 }
