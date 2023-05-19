@@ -73,6 +73,7 @@
 		B883EFF42A12C3C80059DEE7 /* Listing 7.5 arrfun1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.5 arrfun1.h"; sourceTree = "<group>"; };
 		B883EFF52A12C7970059DEE7 /* Listing 7.5b arrfun (my own).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.5b arrfun (my own).h"; sourceTree = "<group>"; };
 		B888420A299B593C00E3D338 /* Listing 6.11 enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.11 enum.h"; sourceTree = "<group>"; };
+		B88DE0C92A1739EE00E288A6 /* Listing 7.7 arrfun3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.7 arrfun3.h"; sourceTree = "<group>"; };
 		B890E9C1299CA9C700CD1C80 /* Listing 6.12 jump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.12 jump.h"; sourceTree = "<group>"; };
 		B897696E29936DE40095C7DA /* Listing 6.6 more end.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.6 more end.h"; sourceTree = "<group>"; };
 		B897696F2994BB070095C7DA /* Listing 6.7 not.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.7 not.h"; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 				B883EFF42A12C3C80059DEE7 /* Listing 7.5 arrfun1.h */,
 				B883EFF52A12C7970059DEE7 /* Listing 7.5b arrfun (my own).h */,
 				B8F57B462A14140A00073D80 /* Listing 7.6 arrfun2.h */,
+				B88DE0C92A1739EE00E288A6 /* Listing 7.7 arrfun3.h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";

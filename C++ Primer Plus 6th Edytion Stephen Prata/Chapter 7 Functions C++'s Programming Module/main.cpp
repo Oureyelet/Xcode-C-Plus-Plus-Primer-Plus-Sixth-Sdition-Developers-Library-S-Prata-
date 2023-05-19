@@ -16,6 +16,7 @@
 #include "Listing 7.5 arrfun1.h"
 #include "Listing 7.5b arrfun (my own).h"
 #include "Listing 7.6 arrfun2.h"
+#include "Listing 7.7 arrfun3.h"
 
 // Function prototypes:
 void cheerss(int);
@@ -26,6 +27,8 @@ int change_x(int&);
 int x_100 = 100; // example global variable could be change by passing by reference to function argumeter...
 void favorite_char_and_number(int, char);
 int test_2(int arr[], int n); // test only
+int fill_array(int arr[], int limit);
+void read_only_array(const int arr[], int size); // 'read only' prototype function
 
  
 // Function prototypes for 'Programin Exercises':
@@ -225,6 +228,57 @@ int main()
     // Filling the Array:
     //-----------------------------------------------------------------------------------------------------
     
+    /*
+     Because a function with an array name argument accesses the original array, not a copy, you can use a function call to assign values to array elements.
+     */
+    
+    int f_array[] = {};
+    int arr_size = 10;
+    
+//    std::cout << fill_array(f_array, arr_size) << '\n';
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Showing the Array and Protecting It with 'const':
+    //-----------------------------------------------------------------------------------------------------
+    
+    /*
+     Building a function to display the array contents is simple.You pass the name of the array and the number of filled elements to the function, which then uses a loop to display each element. But there is another consideration—guaranteeing that the display function doesn’t alter the original array. Unless the purpose of a function is to alter data passed to it, you should safeguard it from doing so.That protection comes automatically with ordinary arguments because C++ passes them by value, and the function works with a copy. But functions that use an array work with the original.After all,that’s why thefill_array() function is able to do its job.To keep a function from accidentally altering the contents of an array argument, you can use the keyword const (discussed in Chapter 3,“Dealing with Data”) when you declare the formal argument:
+     void show_array(const double ar[], int n);
+
+     
+
+     Here is the code for the show_array() function:
+     */
+    
+    int arr_for_read_only[] = {1,2,3,4,5,6,7};
+    
+    read_only_array(arr_for_read_only, 7); // Be aware passing array does not have to be const...
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Modifying the Array:
+    //-----------------------------------------------------------------------------------------------------
+    
+    /*
+     Anytime you need to to modifying arra content through function pass arr with out const:
+     */
+    
+    // for example:  void revalue(double r, double ar[], int n)
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Putting the Pieces Together: check example here -> "Listing 7.7 arrfun3.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    listing_7_7();
+    
     
     std::cin.get();
     return 0;
@@ -277,4 +331,44 @@ int test_2(int arr[], int n)
     }
     
     return 0;
+}
+
+int fill_array(int arr[], int limit)
+{
+    double temp;
+    int i;
+    
+    for (i = 0; i < limit; i++)
+    {
+        std::cout << "Enter value #" << i + 1 << ": ";
+        std::cin >> temp;
+        
+        if (!std::cin) // bad input check
+        {
+            std::cin.clear();
+            
+            /*
+             By repeatedly calling (in while loop) std::cin.get() and ignoring the returned characters until a newline character is found, we ensure that any remaining characters in the buffer are discarded. This clears out any invalid or unwanted input, so the buffer is empty and ready for fresh input.
+             */
+            
+            while (std::cin.get() != '\n')
+                continue;
+            std::cout << "Bad input, input process terminated.\n";
+            break;
+        }
+        else if(temp < 0)
+            break;
+        arr[i] = temp;
+    }
+    
+    return i;
+}
+
+void read_only_array(const int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        std::cout << arr[i] << ' ';
+    }
+    std::cout << std::endl;
 }
