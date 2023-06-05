@@ -294,6 +294,9 @@ int main()
      - Delete / Resotre document.
      - Restore whole library to previously version ex. yesturday
      
+     5-05-2023:
+     - How to crea alert from sinngle file or full library
+     - Searching option
      
      */
     
