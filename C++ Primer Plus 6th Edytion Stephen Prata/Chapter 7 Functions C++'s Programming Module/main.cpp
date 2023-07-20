@@ -279,28 +279,6 @@ int main()
     
     listing_7_7();
     
-    
-    
-    
-    //-----------------------------------------------------------------------------------------------------
-    // IMPORTANT ANNOUCMENT !
-    //-----------------------------------------------------------------------------------------------------
-    
-    /*
-     Since 5-30-2023 I started learn M365 - Share Point and Power App due to new opportunity in my work place
-     I will use this place to updadate pad for still updating GitHub acctivity page.
-     
-     2-6-2023:
-     - Delete / Resotre document.
-     - Restore whole library to previously version ex. yesturday
-     
-     5-05-2023:
-     - How to crea alert from sinngle file or full library
-     - Searching option
-     
-     */
-    
-    
     std::cin.get();
     return 0;
 }
