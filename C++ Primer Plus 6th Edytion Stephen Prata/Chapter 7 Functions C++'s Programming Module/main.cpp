@@ -17,6 +17,7 @@
 #include "Listing 7.5b arrfun (my own).h"
 #include "Listing 7.6 arrfun2.h"
 #include "Listing 7.7 arrfun3.h"
+#include "Listing 7.8 arrfun4.h"
 
 // Function prototypes:
 void cheerss(int);
@@ -265,7 +266,9 @@ int main()
     //-----------------------------------------------------------------------------------------------------
     
     /*
-     Anytime you need to to modifying arra content through function pass arr with out const:
+     Anytime you need to to modifying arra content through function pass arr without const:
+     
+     (If you need only display/show array the argument inn functionn should include 'const' to protect any changes )
      */
     
     // for example:  void revalue(double r, double ar[], int n)
@@ -278,6 +281,25 @@ int main()
     //-----------------------------------------------------------------------------------------------------
     
     listing_7_7();
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // The Usual Array Function Idiom
+    //-----------------------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Function Using Array Ranges: check example here -> "Listing 7.8 arrfun4.h"
+    //-----------------------------------------------------------------------------------------------------
+    
+    listing_7_8();
+    
     
     std::cin.get();
     return 0;

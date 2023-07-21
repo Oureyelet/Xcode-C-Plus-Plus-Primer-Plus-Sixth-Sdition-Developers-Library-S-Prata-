@@ -92,6 +92,7 @@
 		B8B47F312955CD1B008D7C2B /* Listing 5.10 equal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 5.10 equal.h"; sourceTree = "<group>"; };
 		B8B649F12985CFF000541678 /* Chapter 6 Branching Statements and Logical Operators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 6 Branching Statements and Logical Operators"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B649F32985CFF000541678 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B8CC8C1A2A6A497300D6D78E /* Listing 7.8 arrfun4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.8 arrfun4.h"; sourceTree = "<group>"; };
 		B8DA5F0B298CD32900BEE6EC /* Listing 6.1 if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.1 if.h"; sourceTree = "<group>"; };
 		B8DA5F0C298CD92200BEE6EC /* Listing 6.2 if else.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 6.2 if else.h"; sourceTree = "<group>"; };
 		B8F57B462A14140A00073D80 /* Listing 7.6 arrfun2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.6 arrfun2.h"; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 				B883EFF52A12C7970059DEE7 /* Listing 7.5b arrfun (my own).h */,
 				B8F57B462A14140A00073D80 /* Listing 7.6 arrfun2.h */,
 				B88DE0C92A1739EE00E288A6 /* Listing 7.7 arrfun3.h */,
+				B8CC8C1A2A6A497300D6D78E /* Listing 7.8 arrfun4.h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";

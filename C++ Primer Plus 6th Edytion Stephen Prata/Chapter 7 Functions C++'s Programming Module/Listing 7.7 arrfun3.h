@@ -12,12 +12,45 @@
 
 #include <iostream>
 
+int fill_array(double ar[], int limit);
+void show_array(const double ar[], int n); // don't changed data
+void revalue(double r, double ar[], int n);
+
+const int MAX = 5;
+
 void listing_7_7()
 {
- 
+    double properties[MAX];
+    
+    int size = fill_array(properties, MAX);
+    show_array(properties, size);
+    
+    if(size > 0)
+    {
+        std::cout << "Enter revaluation factor: ";
+        
+        double factor;
+        while (!(std::cin >> factor))   // Basicly that while loop checking if we enter a number if not 'continue' start again from beggining until we enter a number
+        {
+            std::cin.clear();
+            
+            while (std::cin.get() != '\n')
+                continue;
+            
+            std::cout << "Bad input; Pleace enter a number: ";
+        }
+        
+        revalue(factor, properties, size);
+        show_array(properties, size);
+    }
+    
+    std::cout << "Done.\n";
     
     
     
+    
+    std::cin.get();
+    std::cin.get();
 }
 
 int fill_array(double ar[], int limit)
@@ -37,7 +70,7 @@ int fill_array(double ar[], int limit)
             while (std::cin.get() != '\n')
                 continue;
             
-            std::cout << "Bad innput; input process terminated.\n";
+            std::cout << "Bad input; input process terminated.\n";
             
             break;
         }
@@ -48,6 +81,22 @@ int fill_array(double ar[], int limit)
     }
     
     return i;
+}
+
+void show_array(const double ar[], int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        std::cout << "Property #" << (i + 1) << ": $";
+        std::cout << ar[i] << std::endl;
+    }
+}
+
+//multiplies each element of ar[] by r
+void revalue(double r, double ar[], int n)
+{
+    for(int i = 0; i < n; i++)
+        ar[i] *= r;
 }
 
 
