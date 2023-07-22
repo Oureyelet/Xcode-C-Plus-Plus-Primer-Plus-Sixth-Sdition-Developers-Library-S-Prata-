@@ -10,6 +10,10 @@
 #ifndef Listing_7_8_arrfun4_h
 #define Listing_7_8_arrfun4_h
 
+#include <iostream>
+
+
+
 void listing_7_8()
 {
     

@@ -30,6 +30,7 @@ void favorite_char_and_number(int, char);
 int test_2(int arr[], int n); // test only
 int fill_array(int arr[], int limit);
 void read_only_array(const int arr[], int size); // 'read only' prototype function
+void displeymyarray(const int *begin, const int *end); // just example about using array range innstead of data type, the location of the beggining of the array and the number of elements
 
  
 // Function prototypes for 'Programin Exercises':
@@ -280,7 +281,7 @@ int main()
     // Putting the Pieces Together: check example here -> "Listing 7.7 arrfun3.h"
     //-----------------------------------------------------------------------------------------------------
     
-    listing_7_7();
+    // listing_7_7();
     
     
     
@@ -300,9 +301,27 @@ int main()
     
     listing_7_8();
     
+    int myarrayexample[5] = {2, 4, 5, 6, 7};
+    
+    displeymyarray(myarrayexample, myarrayexample + 5);
+    
+    
+    
     
     std::cin.get();
     return 0;
+}
+
+void displeymyarray(const int *begin, const int *end)
+{
+    std::cout << "Here is our array: ";
+    
+    for(int i = 0; i < 5; i++)
+    {
+        std::cout << begin[i] << ' ';
+    }
+    
+    std::cout << std::endl;
 }
 
 void cheerss(int n)
