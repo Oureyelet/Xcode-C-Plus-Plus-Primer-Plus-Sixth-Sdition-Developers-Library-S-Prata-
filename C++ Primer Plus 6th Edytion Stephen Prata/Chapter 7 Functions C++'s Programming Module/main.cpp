@@ -301,10 +301,28 @@ int main()
     
     listing_7_8();
     
-    int myarrayexample[5] = {2, 4, 5, 6, 7};
+    // int myarrayexample[5] = {2, 4, 5, 6, 7};
     
-    displeymyarray(myarrayexample, myarrayexample + 5);
+    // displeymyarray(myarrayexample, myarrayexample + 5);
     
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Pointer and const
+    //-----------------------------------------------------------------------------------------------------
+    
+    int age = 31;
+    const int *ptr = &age;
+    
+    // *ptr += 1;           INVALID because pt points to a const int
+    // std::cin >> *ptr     INVALID for the same reason
+    
+    // however !
+    
+    // *ptr = 21;           INVALID because pt points to a const int
+    age = 21;            // VALID because age is not declared to be const
     
     
     
