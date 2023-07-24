@@ -31,6 +31,7 @@ int test_2(int arr[], int n); // test only
 int fill_array(int arr[], int limit);
 void read_only_array(const int arr[], int size); // 'read only' prototype function
 void displeymyarray(const int *begin, const int *end); // just example about using array range innstead of data type, the location of the beggining of the array and the number of elements
+int display_const_array(const int arr[], int n);
 
  
 // Function prototypes for 'Programin Exercises':
@@ -295,6 +296,7 @@ int main()
     
     
     
+    
     //-----------------------------------------------------------------------------------------------------
     // Function Using Array Ranges: check example here -> "Listing 7.8 arrfun4.h"
     //-----------------------------------------------------------------------------------------------------
@@ -324,10 +326,59 @@ int main()
     // *ptr = 21;           INVALID because pt points to a const int
     age = 21;            // VALID because age is not declared to be const
     
+    const float g_earth = 9.8;
+    const float* g_earth_ptr = &g_earth;    // VALID
+    
+    const float g_moon = 1.63;
+    // float* g_moon_ptr = &g_moon;         // INVALID because C++ prohibits you from assigning the adress of a const to a mom-const pointer.
+    
+    const int months[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    
+    display_const_array(months, 12);
+    
+    
+    // Anonther example...
+    
+    int level = 31;
+    const int* f_ptr= &level;
+    
+    std::cout << &f_ptr << '\n';
+    std::cout << f_ptr << '\n';
+    
+    /*
+     Above const in the second declaration only prevents you from channging the value to which f_ptr points, which is 31.
+     
+     // *f_ptr += 1; // INVALID.
+     
+     It doeasn't prevennt you from changing the value of pt itself.
+     This is, you can assign a new address to f_pre:
+     */
+    
+    int sex = 1;
+    f_ptr = &sex;   // okay to point to another  location.
+    
+    
+    
+    
+    
+    
     
     
     std::cin.get();
     return 0;
+}
+
+//function with const array argument can be use only with const array.
+int display_const_array(const int arr[], int n)
+{
+    for (int i = 0; i < 12; i++)
+    {
+        std::cout << arr[i] << ' ';
+    }
+    
+    std::cout << std::endl;
+    
+    return n;
 }
 
 void displeymyarray(const int *begin, const int *end)
