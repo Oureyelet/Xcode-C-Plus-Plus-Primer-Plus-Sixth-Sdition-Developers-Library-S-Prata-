@@ -32,6 +32,7 @@ int fill_array(int arr[], int limit);
 void read_only_array(const int arr[], int size); // 'read only' prototype function
 void displeymyarray(const int *begin, const int *end); // just example about using array range innstead of data type, the location of the beggining of the array and the number of elements
 int display_const_array(const int arr[], int n);
+int sum(int data[][4], int rows); // int sum(int (*data)[4], int rows) is exacly same meaning
 
  
 // Function prototypes for 'Programin Exercises':
@@ -357,15 +358,63 @@ int main()
     int sex = 1;
     f_ptr = &sex;   // okay to point to another  location.
     
+    /*
+     There is a way to change the value to which pointer pointing to:
+     */
+    
+    int sloth = 3;
+    const int* sloth_ptr = &sloth;  // a pointer to const int
+    int* const finger = &sloth;     // a const pointer to int
+    
+    /*
+     Note that the last declaration has repositioned the keyword const.This form of decla- ration constrains finger to point only to sloth. However, it allows you to use finger to alter the value of sloth.The middle declaration does not allow you to use ps to alter the value of sloth, but it permits you to have ps point to another location
+     */
+    
+    // If you like, you can declare a const pointer to a const object:
+    
+    double light_in_the_world = 7.7;
+    const double* const stick = &light_in_the_world;
+    
+    /*
+     Here stick can point only to trouble, and stick cannot be used to change the value of trouble. In short, both stick and *stick are const.
+     */
     
     
     
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Function and Two-Dimensional Array
+    //-----------------------------------------------------------------------------------------------------
+    
+    int data[3][4] = {{1,2,3,4}, {9,8,7,6}, {2,4,6,8}};
+    int total = sum(data, 3);
+    std::cout << "Total from Two-Dimensional Array = " << total << '\n';
+    
+    /*
+     Dereferencing a pointer in C++ means accessing the value stored at the memory address pointed to by the pointer. Pointers are variables that store memory addresses, and by dereferencing them, you can retrieve the value stored in the memory location to which they point.
+     */
     
     
     
     
     std::cin.get();
     return 0;
+}
+
+int sum(int data[][4], int rows)
+{
+    int total = 0;
+    
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            total += data[i][j];
+        }
+    }
+    
+    return total;
 }
 
 //function with const array argument can be use only with const array.
