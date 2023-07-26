@@ -7,6 +7,7 @@
 
 
 #include <iostream>
+#include <string>
 
 // Examples has been included in header files:
 #include "Listing 7.1 calling.h"
@@ -18,6 +19,7 @@
 #include "Listing 7.6 arrfun2.h"
 #include "Listing 7.7 arrfun3.h"
 #include "Listing 7.8 arrfun4.h"
+#include "Listing 7.9 strgfun.h"
 
 // Function prototypes:
 void cheerss(int);
@@ -394,6 +396,51 @@ int main()
     /*
      Dereferencing a pointer in C++ means accessing the value stored at the memory address pointed to by the pointer. Pointers are variables that store memory addresses, and by dereferencing them, you can retrieve the value stored in the memory location to which they point.
      */
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Functions and C-Style Strings
+    //-----------------------------------------------------------------------------------------------------
+    
+    const char c_style_string[] = "I am C-Style string";
+    std::string cpp_string = "I am string from C++ Standard Library strings (std::string)";
+    
+    /*
+     Recall that a C-style string consists of a series of characters terminated by the null charac- ter. Much of what you’ve learned about designing array functions applies to string func- tions, too.
+     */
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------------------------------------
+    // Functions with C-Style String Arguments
+    //-----------------------------------------------------------------------------------------------------
+    
+    Listing_7_9();
+    
+    /*
+     C-style string and String Literal is basicly the same think but string litreal usually is as a const pointer:
+     
+     const char strCStyle[] = "Hello"; // C-style string
+     
+     const char* strLiteral = "Hello"; // String literal
+     */
+    
+    char ghost[15] = "galloping";
+    const char* str = "galumphing";
+    
+    std::size_t n1 = strlen(ghost);         // ghost is &ghost[0]
+    std::size_t n2 = strlen(str);           // const pointer to char
+    std::size_t n3 = strlen("gamboling");   // address of string
+    
+    /*
+     Informally, you can say that you’re passing a string as an argument, but you’re really pass- ing the address of the first character in the string.
+     */
+    
     
     
     

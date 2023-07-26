@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B80A71C72A70D790009DC357 /* Listing 7.9 strgfun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.9 strgfun.h"; sourceTree = "<group>"; };
 		B81442162A0A00720068A72F /* Listing 7.1 calling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.1 calling.h"; sourceTree = "<group>"; };
 		B81442172A0A0B3D0068A72F /* Listing 7.2 protos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listing 7.2 protos.h"; sourceTree = "<group>"; };
 		B82128C52A090A5500270F26 /* Chapter 7 Functions C++'s Programming Module */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter 7 Functions C++'s Programming Module"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +137,7 @@
 				B8F57B462A14140A00073D80 /* Listing 7.6 arrfun2.h */,
 				B88DE0C92A1739EE00E288A6 /* Listing 7.7 arrfun3.h */,
 				B8CC8C1A2A6A497300D6D78E /* Listing 7.8 arrfun4.h */,
+				B80A71C72A70D790009DC357 /* Listing 7.9 strgfun.h */,
 			);
 			path = "Chapter 7 Functions C++'s Programming Module";
 			sourceTree = "<group>";
